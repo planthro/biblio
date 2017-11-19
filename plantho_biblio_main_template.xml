@@ -2144,6 +2144,7 @@ head.appendChild(script);
   </macro:if>
 </macro:includable>
 
+
 <b:section-contents id='footer-1'>
   <b:widget id='HTML2' locked='false' title='FloatingSidebar' type='HTML'>
     <b:widget-settings>
