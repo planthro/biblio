@@ -654,8 +654,28 @@ z-index: -1;
 
 .post {
   margin: 0 0 0 0;
-}.status-msg-body{
-z-index:0
+}.status-msg-wrap{
+width: 100%;
+margin: 0 0 0 0;
+}
+
+.status-msg-body{
+z-index:0;
+top: -60px;
+text-align: -webkit-left;
+width: 98%;
+margin-left: 1%;
+}
+
+.status-msg-border{
+margin-top: 60px;
+margin-bottom: -60px;
+}
+
+
+.status-msg-bg{
+top: -60px;
+height: 77px;
 }
 
 .footer-cap-bottom cap-bottom{  height: 2px;
@@ -677,25 +697,6 @@ display:none;
 }
 .fauxborder-left footer-fauxborder-left{
 display:none;
-}
-
-.status-msg-border{
-margin-top: 60px;
-margin-bottom: -60px;
-}
-
-.status-msg-body{
-z-index:0;
-top: -60px;
-text-align: justify;
-width: 900px;
-margin-left: 9px;
-margin-right: 9px;
-}
-
-.status-msg-bg{
-top: -60px;
-height: 77px;
 }]]></b:skin>
 
     <b:template-skin>
@@ -2842,10 +2843,7 @@ $(&quot;#floating_sidebar&quot;).show();
           width:180px; <!--This determines how far left the right-bar menu is when inactive (not hovered)-->
           }
 		</style>
-      </b:if>
-
-
-
+      </b:if>.status-msg-body.status-msg-body
 
   </div>
 
