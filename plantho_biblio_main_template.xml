@@ -580,17 +580,10 @@ body.mobile  {
   border-$startSide: 1px solid $(tabs.border.color);
 }
 #navbar {display:none;}
+
 #header {position:fixed; z-index:100000;}
-
-.content-inner {padding: 0px;}
 #header {margin:0px; padding:0px; background:#000000; opacity: 0.95; margin-top:-50px;}
-.main-outer {margin-top:99px; padding:0px;}
-
-#Attribution1{display:none !important;}
-#cookieChoiceInfo{display:none !important;}
 #header a {font-family:"Open Sans", "serif"; font-size:2.5em; font-weight:100; color: #1693A5; text-decoration: none !important;}
-
-
 #header {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);  
 @font-face {
@@ -601,20 +594,26 @@ body.mobile  {
    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 }
-
 #header {
 overflow: none;
-position: fixed;
 height: auto;
-//margin: ;
 width: 100%;
-top: 1%;
 right:0;
 }
+#header {
+top: 2%;
+left: 2%
+}
+
+.content-inner {padding: 0px;}
+.main-outer {margin-top:99px; padding:0px;}
+
+#Attribution1{display:none !important;}
+#cookieChoiceInfo{display:none !important;}
+
 
 .home-link { display: none; }
 a, a:visited, a:hover {color: #1693A5; text-decoration: none !important;}
-
 
 
 
@@ -718,7 +717,9 @@ display:none;
 
 .reaction-buttons{
 display:none;
-}]]></b:skin>
+}
+
+]]></b:skin>
 
     <b:template-skin>
       <b:variable default='960px' name='content.width' type='length' value='1080px'/>
@@ -867,8 +868,6 @@ document.getElementById("custom-toolbar").style.visibility = "hidden";
   <div class='content-inner'>
 
     <header>
-
-    <div class='region-inner header-inner'>
       <b:section class='header' id='header' maxwidgets='3' name='Header' showaddelement='yes'>
         <b:widget id='HTML1' locked='false' title='PlanthroHeader' type='HTML'>
           <b:widget-settings>
@@ -910,8 +909,6 @@ document.getElementById("custom-toolbar").style.visibility = "hidden";
 </b:includable>
         </b:widget>
       </b:section>
-
-    </div>
     </header>
 
     <div class='main-outer'>
