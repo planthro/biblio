@@ -827,43 +827,6 @@ document.getElementById("custom-toolbar").style.visibility = "hidden";
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
-  <b:section class='navbar' id='navbar' maxwidgets='1' name='Navbar' showaddelement='no'>
-    <b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'>
-      <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
-    function setAttributeOnload(object, attribute, val) {
-      if(window.addEventListener) {
-        window.addEventListener(&#39;load&#39;,
-          function(){ object[attribute] = val; }, false);
-      } else {
-        window.attachEvent(&#39;onload&#39;, function(){ object[attribute] = val; });
-      }
-    }
-  &lt;/script&gt;
-&lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-      gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
-        if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
-          gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d5713380503392852407\x26blogName\x3dPlatform+anthropocene\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttp://beta.planthro.org/search\x26blogLocale\x3den_GB\x26v\x3d2\x26homepageUrl\x3dhttp://beta.planthro.org/\x26vt\x3d9148137705584059291&#39;,
-              where: document.getElementById(&quot;navbar-iframe-container&quot;),
-              id: &quot;navbar-iframe&quot;
-          });
-        }
-      });
-    &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
-(function() {
-var script = document.createElement(&#39;script&#39;);
-script.type = &#39;text/javascript&#39;;
-script.src = &#39;//pagead2.googlesyndication.com/pagead/js/google_top_exp.js&#39;;
-var head = document.getElementsByTagName(&#39;head&#39;)[0];
-if (head) {
-head.appendChild(script);
-}})();
-&lt;/script&gt;
-</b:includable>
-    </b:widget>
-  </b:section>
 
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
     <div itemscope='itemscope' itemtype='http://schema.org/Blog' style='display: none;'>
@@ -874,63 +837,20 @@ head.appendChild(script);
     </div>
   </b:if>
 
-  <div class='body-fauxcolumns'>
-    <div class='fauxcolumn-outer body-fauxcolumn-outer'>
-    <div class='cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    <div class='fauxborder-left'>
-    <div class='fauxborder-right'/>
-    <div class='fauxcolumn-inner'>
-    </div>
-    </div>
-    <div class='cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-  </div>
 
   <div class='content'>
-  <div class='content-fauxcolumns'>
-    <div class='fauxcolumn-outer content-fauxcolumn-outer'>
-    <div class='cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    <div class='fauxborder-left'>
-    <div class='fauxborder-right'/>
-    <div class='fauxcolumn-inner'>
-    </div>
-    </div>
-    <div class='cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-  </div>
 
   <div class='content-outer'>
-  <div class='content-cap-top cap-top'>
-    <div class='cap-left'/>
-    <div class='cap-right'/>
-  </div>
+
   <div class='fauxborder-left content-fauxborder-left'>
-  <div class='fauxborder-right content-fauxborder-right'/>
+
   <div class='content-inner'>
 
     <header>
-    <div class='header-outer'>
-    <div class='header-cap-top cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    <div class='fauxborder-left header-fauxborder-left'>
-    <div class='fauxborder-right header-fauxborder-right'/>
+
     <div class='region-inner header-inner'>
       <b:section class='header' id='header' maxwidgets='3' name='Header' showaddelement='yes'>
-        <b:widget id='HTML1' locked='false' title='SiteHeaderAndSearch' type='HTML'>
+        <b:widget id='HTML1' locked='false' title='PlanthroHeader' type='HTML'>
           <b:widget-settings>
             <b:widget-setting name='content'>&lt;table width=100%&gt;
   &lt;tr&gt;
@@ -970,38 +890,12 @@ head.appendChild(script);
 </b:includable>
         </b:widget>
       </b:section>
-    </div>
-    </div>
-    <div class='header-cap-bottom cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
+
     </div>
     </header>
 
-    <div class='tabs-outer'>
-    <div class='tabs-cap-top cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    <div class='fauxborder-left tabs-fauxborder-left'>
-    <div class='fauxborder-right tabs-fauxborder-right'/>
-    <div class='region-inner tabs-inner'>
-      <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'/>
-      <b:section class='tabs' id='crosscol-overflow' name='Cross-Column 2' showaddelement='no'/>
-    </div>
-    </div>
-    <div class='tabs-cap-bottom cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-
     <div class='main-outer'>
-    <div class='main-cap-top cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
+
 
     <div class='fauxborder-left main-fauxborder-left'>
     <div class='fauxborder-right main-fauxborder-right'/>
@@ -1996,160 +1890,9 @@ head.appendChild(script);
   </div>
 </b:includable>
             </b:widget>
-          </b:section>
-        </div>
-        </div>
-
-        <div class='column-left-outer'>
-        <div class='column-left-inner'>
-          <aside>
-          <macro:include id='main-column-left-sections' name='sections'>
-            <macro:param default='0' name='num' value='0'/>
-            <macro:param default='sidebar-left' name='idPrefix'/>
-            <macro:param default='sidebar' name='class'/>
-            <macro:param default='true' name='includeBottom'/>
-          </macro:include>
-          </aside>
-        </div>
-        </div>
-
-        <div class='column-right-outer'>
-        <div class='column-right-inner'>
-          <aside>
-          <macro:include id='main-column-right-sections' name='sections'>
-            <macro:param default='2' name='num' value='0'/>
-            <macro:param default='sidebar-right' name='idPrefix'/>
-            <macro:param default='sidebar' name='class'/>
-            <macro:param default='true' name='includeBottom'/>
-          </macro:include>
-          </aside>
-        </div>
-        </div>
-
-        </div>
-
-        <div style='clear: both'/>
-      <!-- columns -->
-      </div>
-
-    <!-- main -->
-    </div>
-    </div>
-    <div class='main-cap-bottom cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-
-    <footer>
-    <div class='footer-outer'>
-    <div class='footer-cap-top cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    <div class='fauxborder-left footer-fauxborder-left'>
-    <div class='fauxborder-right footer-fauxborder-right'/>
-    <div class='region-inner footer-inner'>
-      <macro:include id='footer-sections' name='sections'>
-        <macro:param default='2' name='num' value='2'/>
-        <macro:param default='footer' name='idPrefix'/>
-        <macro:param default='foot' name='class'/>
-        <macro:param default='false' name='includeBottom'/>
-      </macro:include>
-      <!-- outside of the include in order to lock Attribution widget -->
-      <b:section class='foot' id='footer-3' maxwidgets='3' name='Footer' showaddelement='yes'>
-        <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
-          <b:widget-settings>
-            <b:widget-setting name='copyright'/>
-          </b:widget-settings>
-          <b:includable id='main'>
-    <div class='widget-content' style='text-align: center;'>
-      <b:if cond='data:attribution != &quot;&quot;'>
-       <data:attribution/>
-      </b:if>
-    </div>
-
-    <b:include name='quickedit'/>
-  </b:includable>
-        </b:widget>
-      </b:section>
-    </div>
-    </div>
-    <div class='footer-cap-bottom cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-    </footer>
-
-  <!-- content -->
-  </div>
-  </div>
-  <div class='content-cap-bottom cap-bottom'>
-    <div class='cap-left'/>
-    <div class='cap-right'/>
-  </div>
-  </div>
-  </div>
-
-  <script type='text/javascript'>
-    window.setTimeout(function() {
-        document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
-      }, 10);
-  </script>
-
-
-
-
-
-
-
-</body>
-
-<macro:includable id='sections' var='col'>
-  <macro:if cond='data:col.num == 0'>
-  <macro:else/>
-    <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
-
-    <macro:if cond='data:col.num &gt;= 2'>
-      <table border='0' cellpadding='0' cellspacing='0' mexpr:class='&quot;section-columns columns-&quot; + data:col.num'>
-      <tbody>
-      <tr>
-        <td class='first columns-cell'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-1&quot;'/>
-        </td>
-
-        <td class='columns-cell'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-2&quot;'/>
-        </td>
-
-        <macro:if cond='data:col.num &gt;= 3'>
-          <td class='columns-cell'>
-            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-3&quot;'/>
-          </td>
-        </macro:if>
-
-        <macro:if cond='data:col.num &gt;= 4'>
-          <td class='columns-cell'>
-            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-4&quot;'/>
-          </td>
-        </macro:if>
-      </tr>
-      </tbody>
-      </table>
-
-      <macro:if cond='data:col.includeBottom'>
-        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
-      </macro:if>
-    </macro:if>
-  </macro:if>
-</macro:includable>
-
-
-<b:section-contents id='footer-1'>
-  <b:widget id='HTML2' locked='false' title='FloatingSidebar' type='HTML'>
-    <b:widget-settings>
-      <b:widget-setting name='content'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
+            <b:widget id='HTML2' locked='false' title='FloatingSidebar' type='HTML'>
+              <b:widget-settings>
+                <b:widget-setting name='content'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
 
 &lt;style&gt;
   #navigate {
@@ -2384,8 +2127,8 @@ margin: -5px;
         &lt;/nav&gt;
         &lt;/div&gt;
 &lt;/div&gt;</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
+              </b:widget-settings>
+              <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
     <h2 class='title'><data:title/></h2>
@@ -2396,8 +2139,156 @@ margin: -5px;
 
   <b:include name='quickedit'/>
 </b:includable>
-  </b:widget>
-  <b:widget id='HTML3' locked='false' title='SiteFooter' type='HTML' version='1'>
+            </b:widget>
+          </b:section>
+        </div>
+        </div>
+
+        <div class='column-left-outer'>
+        <div class='column-left-inner'>
+          <aside>
+          <macro:include id='main-column-left-sections' name='sections'>
+            <macro:param default='0' name='num' value='0'/>
+            <macro:param default='sidebar-left' name='idPrefix'/>
+            <macro:param default='sidebar' name='class'/>
+            <macro:param default='true' name='includeBottom'/>
+          </macro:include>
+          </aside>
+        </div>
+        </div>
+
+        <div class='column-right-outer'>
+        <div class='column-right-inner'>
+          <aside>
+          <macro:include id='main-column-right-sections' name='sections'>
+            <macro:param default='2' name='num' value='0'/>
+            <macro:param default='sidebar-right' name='idPrefix'/>
+            <macro:param default='sidebar' name='class'/>
+            <macro:param default='true' name='includeBottom'/>
+          </macro:include>
+          </aside>
+        </div>
+        </div>
+
+        </div>
+
+        <div style='clear: both'/>
+      <!-- columns -->
+      </div>
+
+    <!-- main -->
+    </div>
+    </div>
+    <div class='main-cap-bottom cap-bottom'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    </div>
+
+    <footer>
+    <div class='footer-outer'>
+
+    <div class='fauxborder-left footer-fauxborder-left'>
+    <div class='fauxborder-right footer-fauxborder-right'/>
+    <div class='region-inner footer-inner'>
+      <macro:include id='footer-sections' name='sections'>
+        <macro:param default='2' name='num' value='2'/>
+        <macro:param default='footer' name='idPrefix'/>
+        <macro:param default='foot' name='class'/>
+        <macro:param default='false' name='includeBottom'/>
+      </macro:include>
+      <!-- outside of the include in order to lock Attribution widget -->
+      <b:section class='foot' id='footer-3' maxwidgets='3' name='Footer' showaddelement='yes'>
+        <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
+          <b:widget-settings>
+            <b:widget-setting name='copyright'/>
+          </b:widget-settings>
+          <b:includable id='main'>
+    <div class='widget-content' style='text-align: center;'>
+      <b:if cond='data:attribution != &quot;&quot;'>
+       <data:attribution/>
+      </b:if>
+    </div>
+
+    <b:include name='quickedit'/>
+  </b:includable>
+        </b:widget>
+      </b:section>
+    </div>
+    </div>
+
+    </div>
+    </footer>
+
+  <!-- content -->
+  </div>
+  </div>
+  <div class='content-cap-bottom cap-bottom'>
+    <div class='cap-left'/>
+    <div class='cap-right'/>
+  </div>
+  </div>
+  </div>
+
+  <script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
+      }, 10);
+  </script>
+
+
+
+
+</body>
+
+<macro:includable id='sections' var='col'>
+  <macro:if cond='data:col.num == 0'>
+  <macro:else/>
+    <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
+
+    <macro:if cond='data:col.num &gt;= 2'>
+      <table border='0' cellpadding='0' cellspacing='0' mexpr:class='&quot;section-columns columns-&quot; + data:col.num'>
+      <tbody>
+      <tr>
+        <td class='first columns-cell'>
+          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-1&quot;'/>
+        </td>
+
+        <td class='columns-cell'>
+          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-2&quot;'/>
+        </td>
+
+        <macro:if cond='data:col.num &gt;= 3'>
+          <td class='columns-cell'>
+            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-3&quot;'/>
+          </td>
+        </macro:if>
+
+        <macro:if cond='data:col.num &gt;= 4'>
+          <td class='columns-cell'>
+            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-4&quot;'/>
+          </td>
+        </macro:if>
+      </tr>
+      </tbody>
+      </table>
+
+      <macro:if cond='data:col.includeBottom'>
+        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
+      </macro:if>
+    </macro:if>
+  </macro:if>
+</macro:includable>
+
+
+
+
+
+
+
+
+<b:section-contents id='footer-1'>
+  <b:widget id='HTML3' locked='false' title='PlanthroFooter' type='HTML' version='1'>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 
@@ -2843,7 +2734,10 @@ $(&quot;#floating_sidebar&quot;).show();
           width:180px; <!--This determines how far left the right-bar menu is when inactive (not hovered)-->
           }
 		</style>
-      </b:if>.status-msg-body.status-msg-body
+      </b:if>
+
+
+
 
   </div>
 
