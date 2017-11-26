@@ -798,52 +798,6 @@ display:none;
       <b:include cond='not data:view.isPreview' data='{                          image: data:skin.vars.body_background.image,                          selector: &quot;body&quot;                        }' name='responsiveImageStyle'/>
     </b:if>
 
-    <b:include data='blog' name='google-analytics'/>
-
-
-
-<script type='text/javascript'>
-// Custom Toolbar for Blogger (helplogger.blogspot.com)
-//<![CDATA[
-var toolbar_blogger = new Array();
-var toolbar_clear = new Array();
-function toolbarFloat(toolb) {
-toolbar_blogger[toolbar_blogger.length] = this;
-var ftrpointer = eval(toolbar_blogger.length-1);
-this.pagetop = 0;
-this.cmode = (document.compatMode && document.compatMode!="BackCompat") ? document.documentElement : document.body;
-this.toolbsrc = document.all? document.all[toolb] : document.getElementById(toolb);
-this.toolbsrc.height = this.toolbsrc.offsetHeight;
-this.toolbheight = this.cmode.clientHeight;
-this.toolboffset = toolbGetOffsetY(toolbar_blogger[toolbpointer]);
-var toolbbar = 'toolbar_clear['+toolbpointer+'] = setInterval("toolbarFloatInit(toolbar_blogger['+toolbpointer+'])",1);';
-toolbbar = toolbbar;
-eval(toolbbar);
-}
-
-function toolbGetOffsetY(toolb) {
-var toolbTotOffset = parseInt(toolb.mtasrc.offsetTop);
-var parentOffset = toolb.toolbsrc.offsetParent;
-while ( parentOffset != null ) {
-toolbTotOffset += parentOffset.offsetTop;
-parentOffset = parentOffset.offsetParent;
-}
-return toolbTotOffset;
-}
-function toolbarFloatInit(toolb) {
-toolb.pagetop = toolb.cmode.scrollTop;
-toolb.toolbsrc.style.top = toolb.pagetop - toolb.mtaoffset + "px";
-}
-function closeTopAds() {
-document.getElementById("custom-toolbar").style.visibility = "hidden";
-}
-//]]>
-</script>
-
-
-
-
-
 
   </head>
 
