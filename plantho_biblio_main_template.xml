@@ -7,7 +7,6 @@
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
 
-
 <b:skin><![CDATA[
 
     /* Variable definitions
@@ -20,7 +19,7 @@
          <Variable name="body.text.color" description="Text Color" type="color" default="#222222" value="#cccccc"/>
        </Group>
 
-       <Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+       <Group description="Backgrounds">
          <Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd" value="#000000"/>
          <Variable name="content.background.color" description="Main Background" type="color" default="#ffffff" value="rgba(0, 0, 0, 0)"/>
          <Variable name="header.background.color" description="Header Background" type="color" default="transparent" value="rgba(0, 0, 0, 0)"/>
@@ -198,19 +197,14 @@
       color: $(link.hover.color);
     }
 
-    .body-fauxcolumn-outer .fauxcolumn-inner {
-      background: transparent $(body.background.gradient.tile) repeat scroll top left;
-      _background-image: none;
-    }
-
-    .body-fauxcolumn-outer .cap-top {
+    .cap-top {
       position: absolute;
       z-index: 1;
       height: 400px;
       width: 100%;
     }
 
-    .body-fauxcolumn-outer .cap-top .cap-left {
+    .cap-top .cap-left {
       width: 100%;
       background: transparent $(body.background.gradient.cap) repeat-x scroll top left;
       _background-image: none;
@@ -538,10 +532,6 @@
     display:none;
     }
 
-    .fauxborder-left footer-fauxborder-left{
-    display:none;
-    }
-
     .post-timestamp{
     float:right;
     }
@@ -572,7 +562,7 @@
         min-width: $(content.width);
       }
 
-      .content-outer, .content-fauxcolumn-outer, .region-inner {
+      .content-outer, .region-inner {
         min-width: $(content.width);
         max-width: $(content.width);
         _width: $(content.width);
@@ -583,7 +573,7 @@
         padding-right: $(main.column.right.width);
       }
 
-      .main-inner .fauxcolumn-center-outer {
+      .main-inner {
         left: $(main.column.left.width);
         right: $(main.column.right.width);
         /* IE6 does not respect left and right together */
@@ -592,11 +582,11 @@
             parseInt("$(main.column.right.width)") + 'px');
       }
 
-      .main-inner .fauxcolumn-left-outer {
+      .main-inner {
         width: $(main.column.left.width);
       }
 
-      .main-inner .fauxcolumn-right-outer {
+      .main-inner {
         width: $(main.column.right.width);
       }
 
@@ -640,7 +630,7 @@
   <body>
   <div class='content'>
   <div class='content-outer'>
-  <div class='fauxborder-left content-fauxborder-left'>
+
   <div class='content-inner'>
 
     <header>
@@ -690,10 +680,10 @@
     <div class='main-outer'>
 
 
-    <div class='fauxborder-left main-fauxborder-left'>
+
     <div class='region-inner main-inner'>
 
-      <div class='columns fauxcolumns'>
+      
 
 
 
@@ -1630,13 +1620,6 @@
   </div>
 </b:includable>
             </b:widget>
-
-
-
-
-
-
-
             <b:widget id='HTML2' locked='false' title='FloatingSidebar' type='HTML' version='1'>
               <b:widget-settings>
                 <b:widget-setting name='content'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
@@ -1886,13 +1869,6 @@ margin: -5px;
 
 </b:includable>
             </b:widget>
-
-
-
-
-
-
-
           </b:section>
         </div>
         </div>
@@ -1901,15 +1877,15 @@ margin: -5px;
         </div>
 
       <!-- columns -->
-      </div>
+      
 
     <!-- main -->
     </div>
-    </div>
+
     </div>
 
   <!-- content -->
-  </div>
+
   </div>
 
   </div>
