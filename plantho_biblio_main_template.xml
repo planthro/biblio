@@ -3,7 +3,7 @@
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
     <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
-<style type='text/css'>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);</style>
+    <style type='text/css'>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);</style>
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
 
@@ -278,20 +278,6 @@
       text-decoration: none;
     }
 
-    /* Columns
-    ----------------------------------------------- */
-    .main-outer {
-      border-top: $(main.border.width) solid $(body.rule.color);
-    }
-
-    .fauxcolumn-left-outer .fauxcolumn-inner {
-      border-right: 1px solid $(body.rule.color);
-    }
-
-    .fauxcolumn-right-outer .fauxcolumn-inner {
-      border-left: 1px solid $(body.rule.color);
-    }
-
     /* Headings
     ----------------------------------------------- */
     div.widget > h2,
@@ -436,25 +422,27 @@
 
     #navbar {display:none;}
 
-    #header {position:fixed; z-index:100000;}
-    #header {margin:0px; padding:0px; background:#000000; opacity: 0.95; margin-top:-50px;}
-    #header a {font-family:"Open Sans", "serif"; font-size:2.5em; font-weight:100; color: #1693A5; text-decoration: none !important;}
     #header {
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);  
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
     @font-face {
-       font-family: 'Open Sans';
-       font-style: normal;
-       font-weight: 300;
-       src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
-    }
-    #header {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
+    position:fixed; 
+    z-index:100000;
+    margin:0px;
+    padding:0px;
+    background:#000000;
+    opacity: 0.95;
+    margin-top:-50px;
     overflow: none;
     height: auto;
     width: 100%;
     right:0;
     }
+    #header a {font-family:"Open Sans", "serif"; font-size:2.5em; font-weight:100; color: #1693A5; text-decoration: none !important;}
     #header {
     top: 2%;
     left: 2%
@@ -466,10 +454,8 @@
     #Attribution1{display:none !important;}
     #cookieChoiceInfo{display:none !important;}
 
-
     .home-link { display: none; }
     a, a:visited, a:hover {color: #1693A5; text-decoration: none !important;}
-
 
 
     #custom-toolbar {
@@ -484,8 +470,7 @@
     }
 
 
-
-    Header h1 { text-shadow: none; } 
+    header h1 { text-shadow: none; } 
     .post-body img, .post-body .tr-caption-container, .Profile img, .Image img, .BlogList .item-thumbnail img { -webkit-box-shadow: none; box-shadow: none; } 
     .content-outer { -webkit-box-shadow: none; box-shadow: none; }
 
@@ -766,12 +751,6 @@
           <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
         </div>
 
-        <!-- Ad -->
-        <b:if cond='data:post.includeAd'>
-          <div class='inline-ad'>
-            <data:adCode/>
-          </div>
-        </b:if>
       </b:loop>
       <b:if cond='data:numPosts != 0'>
         &lt;/div&gt;&lt;/div&gt;
@@ -1651,7 +1630,14 @@
   </div>
 </b:includable>
             </b:widget>
-            <b:widget id='HTML2' locked='false' title='FloatingSidebar' type='HTML'>
+
+
+
+
+
+
+
+            <b:widget id='HTML2' locked='false' title='FloatingSidebar' type='HTML' version='1'>
               <b:widget-settings>
                 <b:widget-setting name='content'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
 
@@ -1898,52 +1884,27 @@ margin: -5px;
     <data:content/>
   </div>
 
-  <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
-              <b:widget-settings>
-                <b:widget-setting name='copyright'/>
-              </b:widget-settings>
-              <b:includable id='main'>
-    <div class='widget-content' style='text-align: center;'>
-      <b:if cond='data:attribution != &quot;&quot;'>
-       <data:attribution/>
-      </b:if>
-    </div>
 
-    <b:include name='quickedit'/>
-  </b:includable>
-            </b:widget>
+
+
+
+
+
+
           </b:section>
         </div>
         </div>
 
-        <div class='column-left-outer'>
-        <div class='column-left-inner'>
-          <aside>
-          <macro:include id='main-column-left-sections' name='sections'>
-            <macro:param default='0' name='num' value='0'/>
-            <macro:param default='sidebar-left' name='idPrefix'/>
-            <macro:param default='sidebar' name='class'/>
-            <macro:param default='true' name='includeBottom'/>
-          </macro:include>
-          </aside>
-        </div>
-        </div>
 
         </div>
 
-        <div style='clear: both'/>
       <!-- columns -->
       </div>
 
     <!-- main -->
     </div>
-    </div>
-    <div class='main-cap-bottom cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
     </div>
     </div>
 
@@ -1956,45 +1917,6 @@ margin: -5px;
 
 
 </body>
-
-<macro:includable id='sections' var='col'>
-  <macro:if cond='data:col.num == 0'>
-  <macro:else/>
-    <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
-
-    <macro:if cond='data:col.num &gt;= 2'>
-      <table border='0' cellpadding='0' cellspacing='0' mexpr:class='&quot;section-columns columns-&quot; + data:col.num'>
-      <tbody>
-      <tr>
-        <td class='first columns-cell'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-1&quot;'/>
-        </td>
-
-        <td class='columns-cell'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-2&quot;'/>
-        </td>
-
-        <macro:if cond='data:col.num &gt;= 3'>
-          <td class='columns-cell'>
-            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-3&quot;'/>
-          </td>
-        </macro:if>
-
-        <macro:if cond='data:col.num &gt;= 4'>
-          <td class='columns-cell'>
-            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-4&quot;'/>
-          </td>
-        </macro:if>
-      </tr>
-      </tbody>
-      </table>
-
-      <macro:if cond='data:col.includeBottom'>
-        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
-      </macro:if>
-    </macro:if>
-  </macro:if>
-</macro:includable>
 
 
 
@@ -2014,9 +1936,6 @@ margin: -5px;
     }
     return true;
 }
-
-
-
 
 (function (factory) {
     // Making your jQuery plugin work better with npm tools
