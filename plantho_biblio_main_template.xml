@@ -495,6 +495,10 @@
     margin-top:15%;
     }
 
+    #HTML1.widget.html{
+    margin: 0 0 0 0;
+    }
+
 ]]></b:skin>
         <b:template-skin>
             <b:variable default='960px' name='content.width' type='length' value='1080px'/>
@@ -567,11 +571,10 @@
       ]]></b:template-skin>
     </head>
     <body>
-
-                        <b:section class='header' id='header' maxwidgets='3' name='Header' showaddelement='yes'>
-                          <b:widget id='HTML1' locked='false' title='PlanthroHeader' type='HTML' version='1'>
-                            <b:widget-settings>
-                              <b:widget-setting name='content'>&lt;table width=100%&gt;
+      <b:section class='header' id='header' maxwidgets='3' name='Header' showaddelement='yes'>
+        <b:widget id='HTML1' locked='false' title='PlanthroHeader' type='HTML' version='1'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>&lt;table width=100%&gt;
   &lt;tr&gt;
     &lt;td width=80%&gt;
       &lt;p align=left text-align:left; line-height:normal&#39;&gt;
@@ -613,8 +616,6 @@
 
             <div class='content-outer'>
                 <div class='content-inner'>
-
-                        <div class='region-inner main-inner'>
                                         <b:section class='main' id='main' name='Main' showaddelement='no'>
                                           <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
                                             <b:widget-settings>
@@ -2005,8 +2006,6 @@ margin: -5px;
                                           </b:widget>
                                         </b:section>
                             <!-- main -->
-                        </div>
-
                     <!-- content -->
                 </div>
             </div>
