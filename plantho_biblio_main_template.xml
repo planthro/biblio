@@ -615,7 +615,7 @@
 
             <div class='content-outer'>
                 <div class='content-inner'>
-                    <div class='main-outer'>
+
                         <div class='region-inner main-inner'>
                                         <b:section class='main' id='main' name='Main' showaddelement='no'>
                                           <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
@@ -2008,7 +2008,7 @@ margin: -5px;
                                         </b:section>
                             <!-- main -->
                         </div>
-                    </div>
+
                     <!-- content -->
                 </div>
             </div>
