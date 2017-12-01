@@ -567,8 +567,7 @@
       ]]></b:template-skin>
     </head>
     <body>
-        <div class='content'>
-                    <header>
+
                         <b:section class='header' id='header' maxwidgets='3' name='Header' showaddelement='yes'>
                           <b:widget id='HTML1' locked='false' title='PlanthroHeader' type='HTML' version='1'>
                             <b:widget-settings>
@@ -611,7 +610,6 @@
                                 </b:includable>
                           </b:widget>
                         </b:section>
-                    </header>
 
             <div class='content-outer'>
                 <div class='content-inner'>
@@ -2012,7 +2010,7 @@ margin: -5px;
                     <!-- content -->
                 </div>
             </div>
-        </div>
+
     </body>
     <b:section id='PlanthroFooter'>
       <b:widget id='HTML3' locked='false' title='PlanthroFooter' type='HTML' version='1'>
