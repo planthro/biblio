@@ -491,6 +491,10 @@
     display:none;
     }
 
+    #main.section{
+    margin-top:15%;
+    }
+
 ]]></b:skin>
         <b:template-skin>
             <b:variable default='960px' name='content.width' type='length' value='1080px'/>
@@ -613,10 +617,6 @@
                 <div class='content-inner'>
                     <div class='main-outer'>
                         <div class='region-inner main-inner'>
-                            <!-- corrects IE6 width calculation -->
-                            <div class='columns-inner'>
-                                <div class='column-center-outer'>
-                                    <div class='column-center-inner'>
                                         <b:section class='main' id='main' name='Main' showaddelement='no'>
                                           <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
                                             <b:widget-settings>
@@ -2006,10 +2006,6 @@ margin: -5px;
   </b:includable>
                                           </b:widget>
                                         </b:section>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- columns -->
                             <!-- main -->
                         </div>
                     </div>
