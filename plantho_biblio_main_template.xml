@@ -509,9 +509,9 @@
       }
 
       .content-outer, .region-inner {
-        min-width: $(content.width);
-        max-width: $(content.width);
-        _width: $(content.width);
+        min-width: 75%;
+        max-width: 75%;
+        _width: 75%;
       }
 
       .main-inner .columns {
