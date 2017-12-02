@@ -380,7 +380,7 @@
     }
     #header a {font-family:"Open Sans", "serif"; font-size:2.5em; font-weight:100; color: #1693A5; text-decoration: none !important;}
     #header {
-    top: 2%;
+    top: 3%;
     left: 2%
     }
 
@@ -1745,23 +1745,18 @@
                                               <b:widget-setting name='content'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
 
 &lt;style&gt;
-  #navigate {
+  #navigateleft {
     position: fixed;
     top:20%;
     height:60%;
-    right: 2px;
-    float: right;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    left: 0%;
+    float: left;
     background-color: transparent;
     padding:0 0 0px 0;
     z-index:10;
-    font-size: 18px;
     }
-  #navigate .nbutton {float:right; clear:both; margin:0px 0px 0 0px;}
-  #navigate .nbutton a {color: #1693A5; text-decoration: none !important;}
+  #navigateleft .nbutton {float:right; clear:both; margin:0px 0px 0 0px;}
+  #navigateleft .nbutton a {color: #1693A5; text-decoration: none !important;}
   
   .fa-2x {
 font-size: 2em;
@@ -1876,7 +1871,7 @@ color:#cccccc;
 background-color:transparent;
 }
 
-#navigate li {
+#navigateleft li {
 padding: 0;
 margin: -5px;
 }
@@ -1884,7 +1879,7 @@ margin: -5px;
 &lt;/style&gt;
 
 &lt;div id=&quot;floating_sidebar&quot;&gt;
-&lt;div id=&quot;navigate&quot;&gt;
+&lt;div id=&quot;navigateleft&quot;&gt;
 &lt;nav class=&quot;main-menu&quot;&gt;
             &lt;ul&gt;
                 &lt;li&gt;
