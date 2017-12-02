@@ -1029,17 +1029,7 @@
                                                                     <a expr:name='data:post.id'/>
                                                                     <b:if cond='data:post.title'>
                                                                         <h3 class='post-title entry-title' itemprop='name'>
-                                                                            <b:if cond='data:post.link'>
-                                                                                <a expr:href='data:post.link' target='_blank'>
                                                                                     <data:post.title/>
-                                                                                </a>
-                                                                                <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
-                                                                                <a expr:href='data:post.url' target='_blank'>
-                                                                                    <data:post.title/>
-                                                                                </a>
-                                                                                <b:else/>
-                                                                                <data:post.title/>
-                                                                            </b:if>
                                                                         </h3>
                                                                     </b:if>
                                                                     <div class='post-header'>
@@ -1149,13 +1139,7 @@
                                                         <a expr:name='data:post.id'/>
                                                         <b:if cond='data:post.title'>
                                                             <h3 class='post-title entry-title' itemprop='name'>
-                                                                <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
-                                                                    <a expr:href='data:post.link ? data:post.link : data:post.url' target='_blank'>
                                                                         <data:post.title/>
-                                                                    </a>
-                                                                    <b:else/>
-                                                                    <data:post.title/>
-                                                                </b:if>
                                                             </h3>
                                                         </b:if>
                                                         <div class='post-header'>
