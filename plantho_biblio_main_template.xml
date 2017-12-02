@@ -378,7 +378,7 @@
     width: 100%;
     right:0;
     }
-    #header a {font-family:"Open Sans", "serif"; font-size:2.5em; font-weight:100; color: #1693A5; text-decoration: none !important;}
+    #header a {font-family:"Open Sans", "serif"; font-size:2.25em; font-weight:100; color: #1693A5; text-decoration: none !important;}
     #header {
     top: 3%;
     left: 2%
@@ -584,7 +584,7 @@
           &lt;/a&gt;
         &lt;/span&gt;
         &lt;br /&gt;
-          &lt;span style=&#39;font-size:12pt;font-family:&#39;ubuntu&#39;, sans-serif;color:#CCCCCC&#39;&gt;
+          &lt;span style=&#39;font-size:1.125em;font-family:&#39;ubuntu&#39;, sans-serif;color:#CCCCCC&#39;&gt;
             Understanding Human-Earth Interaction
           &lt;/span&gt;
       &lt;/p&gt;
