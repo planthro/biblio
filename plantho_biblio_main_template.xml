@@ -1724,7 +1724,7 @@
                                                     </div>
                                                 </b:includable>
                                           </b:widget>
-                                          <b:widget id='HTML2' locked='false' title='FloatingSidebar' type='HTML' version='1'>
+                                          <b:widget id='HTML2' locked='false' title='SidebarLeft' type='HTML' version='1'>
                                             <b:widget-settings>
                                               <b:widget-setting name='content'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
 
@@ -1968,6 +1968,254 @@ margin: -5px;
                                                         <data:content/>
                                                     </div>
                                                 </b:includable>
+                                          </b:widget>
+                                          <b:widget id='HTML4' locked='false' title='SidebarRight' type='HTML'>
+                                            <b:widget-settings>
+                                              <b:widget-setting name='content'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
+
+&lt;style&gt;
+  #NavigateRight {
+    position: fixed;
+    top:20%;
+    height:60%;
+    right: 2px;
+    float: right;
+    background-color: transparent;
+    z-index:10;
+    }
+  #NavigateRight .nbutton {float:right; clear:both; margin:0px 0px 0 0px;}
+  #NavigateRight .nbutton a {color: #1693A5; text-decoration: none !important;}
+  
+  .fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 70px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:180px;
+overflow:hidden;
+/*transition duration slow*/
+ -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-timing-function: linear, ease-in;
+}
+
+.main-menu {
+background:transparent;
+float:right;
+top:20%;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+/*transition duration slow*/
+ -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-timing-function: linear, ease-in;
+}
+
+.main-menu&gt;ul {
+margin:16px 0;
+}
+
+.main-menu li {
+margin:0px 0;
+position:relative;
+display:block;
+width:180px;
+}
+
+.main-menu li&gt;a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#1693A5;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:180px;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:hidden;
+overflow:hidden;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+
+.main-menu li:hover&gt;a,nav.main-menu li.active&gt;a,.dropdown-menu&gt;li&gt;a:hover,.dropdown-menu&gt;li&gt;a:focus,.dropdown-menu&gt;.active&gt;a,.dropdown-menu&gt;.active&gt;a:hover,.dropdown-menu&gt;.active&gt;a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#cccccc;
+background-color:transparent;
+}
+
+#NavigateRight li {
+padding: 0;
+margin: -5px;
+}
+
+&lt;/style&gt;
+
+&lt;div id=&quot;floating_sidebar&quot;&gt;
+&lt;div id=&quot;NavigateRight&quot;&gt;
+&lt;nav class=&quot;main-menu&quot;&gt;
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;a&gt;
+                    &lt;i class=&quot;fa fa-fire fa-2x&quot;&gt;&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                          Trending
+                      &lt;/span&gt;
+                  &lt;/a&gt;    
+                &lt;/li&gt;
+              &lt;/ul&gt;
+             &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=oceans|oceans&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;01&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        Oceans
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=human+impact&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;02&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        Human Impact
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=technology&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;03&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        Technology
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=arctic&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;04&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        Arctic
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=sustainable|sustainability&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;05&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        Sustainability
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=urban|city|cities&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;06&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        Cities
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=species&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;07&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        Species
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=COP23|COP&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;08&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        COP23
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=agriculture&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;09&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        Agriculture
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=co2|greenhouse&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x&quot;&gt;10&lt;/i&gt;
+                      &lt;span class=&quot;nav-text&quot;&gt;
+                        CO2
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;/div&gt;
+&lt;/div&gt;</b:widget-setting>
+                                            </b:widget-settings>
+                                            <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
                                           </b:widget>
                                           <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
                                             <b:widget-settings>
