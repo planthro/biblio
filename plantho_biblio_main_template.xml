@@ -249,7 +249,7 @@
     }
 
     .main-inner .column-center-inner .section {
-      margin: 0 $(main.section.margin);
+      margin: 0 0 0 0;
     }
 
     .post {
@@ -429,7 +429,7 @@
       margin: 0 0 0 0;
     }.status-msg-wrap{
     width: 100%;
-    margin: 0 0 0 0;
+    margin: 18% 0 0 0;
     }
 
     .status-msg-body{
@@ -491,10 +491,17 @@
 
     #main.section{
     margin-top:15%;
+    margin-left:0;
+    margin-right:0;
     }
 
     #HTML1.widget.html{
     margin: 0 0 0 0;
+    }
+
+    .datetime{
+    float:right;
+    pointer-events: none;
     }
 
 ]]></b:skin>
@@ -507,9 +514,9 @@
       }
 
       .content-outer, .region-inner {
-        min-width: 75%;
-        max-width: 75%;
-        _width: 75%;
+        min-width: 72%;
+        max-width: 72%;
+        _width: 72%;
       }
 
       .main-inner .columns {
@@ -572,18 +579,16 @@
       <b:section class='header' id='header' maxwidgets='3' name='Header' showaddelement='yes'>
         <b:widget id='HTML1' locked='false' title='PlanthroHeader' type='HTML' version='1'>
           <b:widget-settings>
-            <b:widget-setting name='content'>
-
-&lt;table width="100%"&gt;
+            <b:widget-setting name='content'>&lt;table width=&quot;100%&quot;&gt;
  &lt;tr&gt;
-  &lt;td rowspan="2" width="2%"&gt;&lt;/td&gt;
-  &lt;td style="white-space: nowrap;"&gt;
-   &lt;a href="../../../"&gt;Platform anthropocene &lt;span style="color:#FFA500; font-size:0.9em;"&gt;BIBLIO&lt;/span&gt;&lt;/a&gt;
+  &lt;td rowspan=&quot;2&quot; width=&quot;2%&quot;&gt;&lt;/td&gt;
+  &lt;td style=&quot;white-space: nowrap;&quot;&gt;
+   &lt;a href=&quot;../../../&quot;&gt;Platform anthropocene &lt;span style=&quot;color:#FFA500; font-size:0.9em;&quot;&gt;BIBLIO&lt;/span&gt;&lt;/a&gt;
   &lt;/td&gt;
 
-  &lt;td rowspan="2"&gt;
+  &lt;td rowspan=&quot;2&quot;&gt;
     &lt;span&gt;
-      &lt;style type="text/css"&gt;
+      &lt;style type=&quot;text/css&quot;&gt;
      	input::-webkit-input-placeholder {color:#cccccc;}
 		input::-moz-placeholder {color:#cccccc;}
 		input:-ms-input-placeholder {color:#cccccc;}
@@ -593,10 +598,10 @@
         input:focus:-moz-placeholder{color:transparent}
         input:focus::-moz-placeholder{color:transparent}
 
-        #searchbox input[type="text"]{
+        #searchbox input[type=&quot;text&quot;]{
         background:url(http://2.bp.blogspot.com/-xpzxYc77ack/VDpdOE5tzMI/AAAAAAAAAeQ/TyXhIfEIUy4/s1600/search-dark.png) no-repeat 10px 13px #000000;
         border:2px solid #1693a5;
-        font:light 1em 'Ubuntu', sans-serif;
+        font:light 1em &#39;Ubuntu&#39;, sans-serif;
         color:#cccccc;
         width:80%;
         padding:14px 17px 12px 30px;
@@ -608,35 +613,32 @@
         -o-transition:all 0.7s ease 0s;
         transition:all 0.7s ease 0s;
         }
-        #searchbox input[type="text"]:focus{
+        #searchbox input[type=&quot;text&quot;]:focus{
         background:#000000;
         border:2px solid #1693a5;
         padding-left:10px
         }
       &lt;/style&gt;
 
-      &lt;form id="searchbox" method="get" action="/search" autocomplete="off"&gt;
-       &lt;input required="" name="q" type="text" size="15" placeholder="Search BIBLIO..."&gt;
+      &lt;form id=&quot;searchbox&quot; method=&quot;get&quot; action=&quot;/search&quot; autocomplete=&quot;off&quot;&gt;
+       &lt;input required=&quot;&quot; name=&quot;q&quot; type=&quot;text&quot; size=&quot;15&quot; placeholder=&quot;Search BIBLIO...&quot; /&gt;
       &lt;/form&gt;
       
      &lt;/span&gt;
   &lt;/td&gt;
 
-&lt;td rowspan="2" width="10%" style="color:#1693a5"&gt;Apps&lt;/td&gt;
-<!-- &lt;td  style="white-space: nowrap;" rowspan="2"&gt;Sign-in&lt;/td&gt; -->
+&lt;td rowspan=&quot;2&quot; width=&quot;10%&quot; style=&quot;color:#FFA500&quot;&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td width="40%"&gt;
-  &lt;span style="font-size:1.125em; font-family:'Ubuntu', sans-serif; color:#cccccc"&gt;
+&lt;td width=&quot;40%&quot;&gt;
+  &lt;span style=&quot;font-size:1.125em; font-family:&#39;Ubuntu&#39;, sans-serif; color:#cccccc&quot;&gt;
     Understanding Human-Earth Interaction
   &lt;/span&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 
-&lt;/table&gt;
-
-
-</b:widget-setting>
+&lt;/table&gt;</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
                                     <!-- only display title if it's non-empty -->
@@ -1765,9 +1767,7 @@
                                           </b:widget>
                                           <b:widget id='HTML2' locked='false' title='SidebarLeft' type='HTML' version='1'>
                                             <b:widget-settings>
-                                              <b:widget-setting name='content'>
-
-&lt;style&gt;
+                                              <b:widget-setting name='content'>&lt;style&gt;
   #navigateleft {
     position: fixed;
     top:20%;
@@ -2010,9 +2010,7 @@ margin: -5px;
                                           </b:widget>
                                           <b:widget id='HTML4' locked='false' title='SidebarRight' type='HTML'>
                                             <b:widget-settings>
-                                              <b:widget-setting name='content'>
-
-&lt;style&gt;
+                                              <b:widget-setting name='content'>&lt;style&gt;
   #NavigateRight {
     position: fixed;
     top:20%;
