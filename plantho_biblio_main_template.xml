@@ -3,6 +3,7 @@
     <head>
         <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
         <style type='text/css'>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);</style>
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
         <b:include data='blog' name='all-head-content'/>
         <title>
             <data:blog.pageTitle/>
@@ -377,12 +378,9 @@
     height: auto;
     width: 100%;
     right:0;
+    top: 4%;
     }
     #header a {font-family:"Open Sans", "serif"; font-size:2.25em; font-weight:100; color: #1693A5; text-decoration: none !important;}
-    #header {
-    top: 3%;
-    left: 2%
-    }
 
     .content-inner {padding: 0px;}
     .main-outer {margin-top:99px; padding:0px;}
@@ -501,7 +499,7 @@
 
 ]]></b:skin>
         <b:template-skin>
-            <b:variable default='960px' name='content.width' type='length' value='1080px'/>
+            <b:variable default='960px' name='content.width' type='length' value='640px'/>
             <b:variable default='0' name='main.column.left.width' type='length' value='0px'/>
             <b:variable default='310px' name='main.column.right.width' type='length' value='0px'/><![CDATA[
       body {
@@ -574,30 +572,43 @@
       <b:section class='header' id='header' maxwidgets='3' name='Header' showaddelement='yes'>
         <b:widget id='HTML1' locked='false' title='PlanthroHeader' type='HTML' version='1'>
           <b:widget-settings>
-            <b:widget-setting name='content'>&lt;table width=100%&gt;
-  &lt;tr&gt;
-    &lt;td width=80%&gt;
-      &lt;p align=left text-align:left; line-height:normal&#39;&gt;
-        &lt;span&gt;    
-          &lt;a href=&#39;../../../&#39;&gt;
-              Platform anthropocene &lt;span style=&quot;color:#FFA500; font-size:0.9em;&quot; &gt;BIBLIO&lt;/span&gt; 
-          &lt;/a&gt;
-        &lt;/span&gt;
-        &lt;br /&gt;
-          &lt;span style=&#39;font-size:1.125em;font-family:&#39;ubuntu&#39;, sans-serif;color:#CCCCCC&#39;&gt;
-            Understanding Human-Earth Interaction
-          &lt;/span&gt;
-      &lt;/p&gt;
-    &lt;/td&gt;
- 
-    &lt;td width=20%&gt;
-        &lt;span style=&#39;font-size:12pt;font-family:&#39;ubuntu&#39;, sans-serif; color:#CCCCCC; line-height:normal&#39;&gt;
+            <b:widget-setting name='content'>
 
-&lt;style type=&quot;text/css&quot;&gt;
-#searchbox{width:240px}#searchbox input{outline:none}input:focus::-webkit-input-placeholder{color:transparent}input:focus:-moz-placeholder{color:transparent}input:focus::-moz-placeholder{color:transparent}#searchbox input[type=&quot;text&quot;]{background:url(http://2.bp.blogspot.com/-xpzxYc77ack/VDpdOE5tzMI/AAAAAAAAAeQ/TyXhIfEIUy4/s1600/search-dark.png) no-repeat 10px 13px #f2f2f2;border:2px solid #f2f2f2;font:light 12px &#39;Ubuntu&#39;, sans-serif;color:#6A6F75;width:160px;padding:14px 17px 12px 30px;-webkit-border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;border-radius:5px 5px 5px 5px;text-shadow:0 2px 3px #fff;-webkit-transition:all 0.7s ease 0s;-moz-transition:all 0.7s ease 0s;-o-transition:all 0.7s ease 0s;transition:all 0.7s ease 0s;}#searchbox input[type=&quot;text&quot;]:focus{background:#f7f7f7;border:2px solid #f7f7f7;width:200px;padding-left:10px}#button-submit{background:url(http://4.bp.blogspot.com/-slkXXLUcxqg/VEQI-sJKfZI/AAAAAAAAAlA/9UtEyStfDHw/s1600/slider-arrow-right.png) no-repeat;margin-left:-40px;border-width:0;width:43px;height:45px}
-&lt;/style&gt;
-&lt;form id=&quot;searchbox&quot; method=&quot;get&quot; action=&quot;/search&quot; autocomplete=&quot;off&quot;&gt;&lt;input required name=&quot;q&quot; type=&quot;text&quot; size=&quot;15&quot; placeholder=&quot;Search...&quot; /&gt;
-&lt;/form&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</b:widget-setting>
+&lt;table width="100%"&gt;
+ &lt;tr&gt;
+  &lt;td rowspan="2" width="2%"&gt;&lt;/td&gt;
+  &lt;td style="white-space: nowrap;"&gt;
+   &lt;a href="../../../"&gt;Platform anthropocene &lt;span style="color:#FFA500; font-size:0.9em;"&gt;BIBLIO&lt;/span&gt;&lt;/a&gt;
+  &lt;/td&gt;
+
+  &lt;td rowspan="2"&gt;
+    &lt;span&gt;
+      &lt;style type="text/css"&gt;
+        input:focus::-webkit-input-placeholder{color:transparent}
+        input:focus:-moz-placeholder{color:transparent}
+        input:focus::-moz-placeholder{color:transparent}
+        #searchbox input[type="text"]{background:url(http://2.bp.blogspot.com/-xpzxYc77ack/VDpdOE5tzMI/AAAAAAAAAeQ/TyXhIfEIUy4/s1600/search-dark.png) no-repeat 10px 13px #f2f2f2;border:2px solid #f2f2f2;font:light 12px 'Ubuntu', sans-serif;color:#000000;width:80%;padding:14px 17px 12px 30px;-webkit-border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;border-radius:5px 5px 5px 5px;text-shadow:0 2px 3px #fff;-webkit-transition:all 0.7s ease 0s;-moz-transition:all 0.7s ease 0s;-o-transition:all 0.7s ease 0s;transition:all 0.7s ease 0s;}
+        #searchbox input[type="text"]:focus{background:#f7f7f7;border:2px solid #f7f7f7;padding-left:10px}
+      &lt;/style&gt;
+      &lt;form id="searchbox" method="get" action="/search" autocomplete="off"&gt;&lt;input required="" name="q" type="text" size="15" placeholder="Search BIBLIO..."&gt;&lt;/form&gt;
+      &lt;/span&gt;
+  &lt;/td&gt;
+
+&lt;td rowspan="2" width="10%" style="color:#1693a5"&gt;Apps&lt;/td&gt;
+<!-- &lt;td  style="white-space: nowrap;" rowspan="2"&gt;Sign-in&lt;/td&gt; -->
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="40%"&gt;
+  &lt;span style="font-size:1.125em; font-family:'Ubuntu', sans-serif; color:#cccccc"&gt;
+    Understanding Human-Earth Interaction
+  &lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+
+</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
                                     <!-- only display title if it's non-empty -->
@@ -1726,7 +1737,7 @@
                                           </b:widget>
                                           <b:widget id='HTML2' locked='false' title='SidebarLeft' type='HTML' version='1'>
                                             <b:widget-settings>
-                                              <b:widget-setting name='content'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
+                                              <b:widget-setting name='content'>
 
 &lt;style&gt;
   #navigateleft {
@@ -1867,7 +1878,7 @@ margin: -5px;
 &lt;nav class=&quot;main-menu&quot;&gt;
             &lt;ul&gt;
                 &lt;li&gt;
-                    &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&#39;../../&#39;&gt;
+                    &lt;a &gt;
                         &lt;i class=&quot;fa fa-asterisk fa-2x&quot;&gt;&lt;/i&gt;
                         &lt;span class=&quot;nav-text&quot;&gt;
                             Explore
@@ -1971,7 +1982,7 @@ margin: -5px;
                                           </b:widget>
                                           <b:widget id='HTML4' locked='false' title='SidebarRight' type='HTML'>
                                             <b:widget-settings>
-                                              <b:widget-setting name='content'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
+                                              <b:widget-setting name='content'>
 
 &lt;style&gt;
   #NavigateRight {
