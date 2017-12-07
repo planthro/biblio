@@ -427,22 +427,21 @@
 
     .post {
       margin: 0 0 0 0;
-    }.status-msg-wrap{
+    }
+
+    .status-msg-wrap{
     width: 100%;
-    margin: 18% 0 0 0;
+    margin: 0 0 0 0;
     }
 
-    .status-msg-body{
+    .status-msg-body {
     z-index:0;
-    top: -60px;
     text-align: -webkit-left;
-    width: 98%;
-    margin-left: 1%;
+    width: 100%;
+    padding: 0 0 0 0;
+    position: relative;
     }
 
-
-    .footer-cap-bottom cap-bottom{  height: 2px;
-    }
 
     .foot section{  height: 2px;padding-top: 0px;
         padding-bottom: 0px;
@@ -453,10 +452,6 @@
 
     #footer-1{ padding-top: 0px;
         padding-bottom: 0px; height: 2px;}
-
-    .footer-cap-bottom cap-bottom{
-    display: none;
-    }
 
     .region-inner footer-inner{
     display:none;
