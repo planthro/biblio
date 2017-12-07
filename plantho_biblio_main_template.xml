@@ -73,7 +73,7 @@
        </Group>
 
        <Group description="Post Footer" selector=".post-footer">
-         <Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666" value="#aaaaaa"/>
+         <Variable name="post.footer.text.color" description="Text Color" type="color" default="#cccccc" value="#cccccc"/>
          <Variable name="post.footer.background.color" description="Background Color" type="color"
              default="#f9f9f9" value="rgba(0, 0, 0, 0)"/>
          <Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee" value="rgba(0, 0, 0, 0)"/>
@@ -300,21 +300,22 @@
 
     .post-header {
       margin: 0 0 1.5em;
-
       line-height: 1.6;
       font-size: 90%;
     }
 
     .post-footer {
-      margin: 20px -2px 0;
-      padding: 5px 10px;
-
       color: $(post.footer.text.color);
       background-color: $(post.footer.background.color);
       border-bottom: 1px solid $(post.footer.border.color);
-
       line-height: 1.6;
-      font-size: 90%;
+      font-size: 0.9em;
+      margin: 0.5% 0% 4% 0%;
+      padding: 0% 0% 0% 0%;
+    }
+
+    .post-footer abbr {
+      text-decoration: none;
     }
 
     #comments .comment-author {
@@ -460,11 +461,6 @@
     float:right;
     }
 
-    .post-footer{
-    margin: 0.5% 0% 4% 0%;
-    padding: 0% 0% 0% 0%;
-    }
-
     .post-author.vcard{
     display:none;
     }
@@ -483,9 +479,10 @@
     margin: 0 0 0 0;
     }
 
-    .datetime{
+    .datetime a {
     float:right;
     pointer-events: none;
+    color: $(post.footer.text.color);
     }
 
 ]]></b:skin>
