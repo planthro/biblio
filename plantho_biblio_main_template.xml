@@ -440,16 +440,6 @@
     margin-left: 1%;
     }
 
-    .status-msg-border{
-    margin-top: 60px;
-    margin-bottom: -60px;
-    }
-
-
-    .status-msg-bg{
-    top: -60px;
-    height: 77px;
-    }
 
     .footer-cap-bottom cap-bottom{  height: 2px;
     }
@@ -1383,13 +1373,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>The transdisciplinary character of the anthropocene has mobilized research and engagement across sectors. Academics from the Earth and Social Sciences, but also inventors, entrepreneurs, politicians, explorers and visual artists have taken keen interest in the field. Here is a growing list of individuals who actively research and engage in the anthropocene and related subjects.</div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
@@ -1398,13 +1388,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>A fast-growing number of research projects, research groups, and research institutions have been created around the world that are dedicated to the trans-disciplinary subject of the anthropocene. Here is a constantly expanding catalog of selected research projects, webpages, groups and institutions focusing on the anthropocene and related fields.</div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
@@ -1413,13 +1403,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>Here is an ongoing listing of institutions, foundations, commissions and NGOs working on the anthropocene, human-impact and sustainability. Some of them work towards the formal definition of the anthropocene, others aim at designing effective solutions for the Earth system, as well as supporting the definition of effective policies for sustainable growth.</div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
@@ -1428,13 +1418,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>A vast community of Earth scientists, social scientists, subject matter experts, politicians and creative practitioners engage in communicating the effects of human impact on the Earth system, and derived potential risks. This page lists inspiring talks by people working towards sustainable futures, conveying the urgency for action in the anthropocene. </div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
@@ -1443,13 +1433,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>What are the scientific proofs of human impact on planet Earth? Can we reverse current trends of climate change? What are the tenets of sustainability? This page points to courses designed and offered for distant learning as well as e-modules on sustainability, greening procedures, all of it focused on critical thought towards the anthropocene. </div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
@@ -1458,13 +1448,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>The documentaries listed present a range of conceptual, philosophical and disciplinary positions, discussing the anthropocene and related fields. The majority of the selected films are informed statistical and research narratives, addressing its viewers towards awareness and the need to take forward action, others are data-supported interpretations of possible futures. </div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
@@ -1473,13 +1463,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>This page is an ongoing compilation of published books and book series on the science, politics and philosophy of the anthropocene and related fields of knowledge. These works propose analytical, descriptive, educational and narrative accounts of the present and future of planet Earth as affected by human impact, as well as propositions towards sustainable futures. </div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
@@ -1488,13 +1478,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>This is a list of scientific journals fully dedicated to the anthropocene. They feature peer-reviewed works addressing human impact on the Earth system, the essence of the anthropocene, as well as more technical issues related to its chronological definition and implications for policy-making, international relations, and global justice.</div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
@@ -1503,13 +1493,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>While the discourse on anthropocene emerges in the mainstream now, it has been supported by decades of background data, research publications, analyses and reports. This page is an ongoing compilation of academic and scientific reports, articles and press releases addressing the science, ethics and politics of the anthropocene.</div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
@@ -1518,13 +1508,13 @@
                                                         <b:if cond='data:navMessage'>
                                                             <div class='status-msg-wrap'>
                                                                 <div class='status-msg-body'>This section is an expanding list of scientific reports published on anthropocene and related issues. It articulates scientific data related to human impact on Earth systems, augmenting a reasoned analysis for immediate action. Written by experts, these reports are aimed primarily at governments and global governance organizations in support of decision-making on such issues as climate change, energetic transitions, pollution, and global justice.</div>
-                                                                <div class='status-msg-border'>
-                                                                    <div class='status-msg-bg'>
+                                                                
+                                                                    
                                                                         <div class='status-msg-hidden'>
                                                                             <data:navMessage/>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
+                                                                    
+                                                                
                                                             </div>
                                                             <div style='clear: both;'/>
                                                         </b:if>
