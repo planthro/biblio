@@ -433,10 +433,11 @@
     z-index:0;
     text-align: -webkit-left;
     width: 100%;
-    padding: 0 0 0 0;
+    padding: 1% 1% 1% 1%;
     position: relative;
     line-height: 1.4;
     font-size: 1.1em;
+    border: 1px dashed #1693a5;
     }
 
 
@@ -582,7 +583,7 @@
 
         #searchbox input[type=&quot;text&quot;]{
         background:url(http://2.bp.blogspot.com/-xpzxYc77ack/VDpdOE5tzMI/AAAAAAAAAeQ/TyXhIfEIUy4/s1600/search-dark.png) no-repeat 10px 13px #000000;
-        border:2px solid #1693a5;
+        border:1px solid #1693a5;
         font:light 1em &#39;Ubuntu&#39;, sans-serif;
         color:#cccccc;
         width:80%;
