@@ -331,6 +331,7 @@
 
     .avatar-image-container {
       margin: .2em 0 0;
+      display: none;
     }
 
     #comments .avatar-image-container img {
