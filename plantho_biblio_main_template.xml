@@ -92,7 +92,7 @@
          <Variable name="image.text.color" description="Caption Text Color" type="color" default="$(body.text.color)" value="rgba(0, 0, 0, 0)"/>
        </Group>
 
-       <Group description="Accents" selector=".content-inner">
+       <Group description="Accents" selector=".content-outer">
          <Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee" value="rgba(0, 0, 0, 0)"/>
          <Variable name="tabs.border.color" description="Tabs Border Color" type="color" default="$(body.rule.color)" value="rgba(0, 0, 0, 0)"/>
        </Group>
@@ -106,7 +106,7 @@
        <Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
            default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/body_gradient_tile_light.png)" value="none"/>
 
-       <Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner" value=".content-inner"/>
+       <Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-outer" value=".content-outer"/>
        <Variable name="content.padding" description="Content Padding" type="length" default="10px" min="0" max="100px" value="10px"/>
        <Variable name="content.padding.horizontal" description="Content Horizontal Padding" type="length" default="$(content.padding)" min="0" max="100px" value="10px"/>
        <Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="40px" min="0" max="100px" value="40px"/>
@@ -205,10 +205,6 @@
       box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
 
       margin-bottom: 1px;
-    }
-
-    .content-inner {
-      padding: $(content.padding) $(content.padding.horizontal);
     }
 
     $(content.background.color.selector) {
@@ -384,7 +380,6 @@
     }
     #header a {font-family:"Open Sans", "serif"; font-size:2.25em; font-weight:100; color: #1693A5; text-decoration: none !important;}
 
-    .content-inner {padding: 0px;}
     .main-outer {margin-top:99px; padding:0px;}
 
     #Attribution1{display:none !important;}
@@ -637,7 +632,7 @@
       </b:section>
 
             <div class='content-outer'>
-                <div class='content-inner'>
+                
                                         <b:section class='main' id='main' name='Main' showaddelement='no'>
                                           <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
                                             <b:widget-settings>
@@ -645,7 +640,7 @@
                                               <b:widget-setting name='style.textcolor'>#cccccc</b:widget-setting>
                                               <b:widget-setting name='showShareButtons'>false</b:widget-setting>
                                               <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                                              <b:widget-setting name='style.urlcolor'>#aaaaaa</b:widget-setting>
+                                              <b:widget-setting name='style.urlcolor'>#cccccc</b:widget-setting>
                                               <b:widget-setting name='showAuthor'>false</b:widget-setting>
                                               <b:widget-setting name='style.linkcolor'>#1693a5</b:widget-setting>
                                               <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
@@ -2252,7 +2247,7 @@ margin: -5px;
                                         </b:section>
                             <!-- main -->
                     <!-- content -->
-                </div>
+                
             </div>
 
     </body>
