@@ -2607,11 +2607,12 @@ $(&quot;#floating_sidebar&quot;).show();
 --&gt;
 
 &lt;div id=&#39;custom-toolbar&#39;&gt;
-&lt;table align=&#39;right&#39; border=&#39;0&#39; cellpadding=&#39;0&#39; style=&#39;font-size:14px&#39; valign=&#39;middle&#39;&gt;
+&lt;table align=&#39;right&#39; border=&#39;0&#39; cellpadding=&#39;0&#39; style=&#39;font-size:1.0em&#39; valign=&#39;middle&#39;&gt;
 &lt;tr&gt;
   &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;../../p/about.html&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot; title=&quot;About&quot;&gt;About&lt;/a&gt;&lt;/td&gt;                    &lt;td&gt;|&lt;/td&gt;
   &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;../../p/endorsements.html&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot; title=&quot;Endorsements&quot;&gt;  Endorsements&lt;/a&gt;&lt;/td&gt;              &lt;td&gt;|&lt;/td&gt;
-  &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;../../p/participation.html&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot;  alt=&quot;Donate,  Participate, Submit Link&quot;&gt;Participate&lt;/a&gt;&lt;/td&gt;  &lt;td&gt;|&lt;/td&gt;
+            &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;https://support.planthro.org&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot;  alt=&quot;Donate, Submit Link&quot;&gt;Donate&lt;/a&gt;&lt;/td&gt;  &lt;td&gt;|&lt;/td&gt;
+  &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;../../p/participation.html&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot;  alt=&quot;Participate, Submit Link&quot;&gt;Participate&lt;/a&gt;&lt;/td&gt;  &lt;td&gt;|&lt;/td&gt;
   &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;../../p/legal.html&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot; title=&quot;Disclosure&quot;&gt;     Disclosure &lt;/a&gt;&lt;/td&gt;
         
 &lt;/tr&gt;
