@@ -1741,21 +1741,35 @@
                                                     </div>
                                                 </b:includable>
                                           </b:widget>
+                                          <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
+                                            <b:widget-settings>
+                                              <b:widget-setting name='copyright'/>
+                                            </b:widget-settings>
+                                            <b:includable id='main'>
+    <div class='widget-content' style='text-align: center;'>
+      <b:if cond='data:attribution != &quot;&quot;'>
+       <data:attribution/>
+      </b:if>
+    </div>
+
+    <b:include name='quickedit'/>
+  </b:includable>
+                                          </b:widget>
                                           <b:widget id='HTML2' locked='false' title='SidebarLeft' type='HTML' version='1'>
                                             <b:widget-settings>
                                               <b:widget-setting name='content'>&lt;style&gt;
-  #navigateleft {
+  #NavigateLeft {
     position: fixed;
     top:20%;
     height:60%;
-    left: 0%;
-    float: left;
+    right: 100%; /*distance from right side (100%=left side)*/
+    margin-right:-105px; /*distance from left side (larger negative = further right)*/
+    float: right;
     background-color: transparent;
-    padding:0 0 0px 0;
     z-index:10;
     }
-  #navigateleft .nbutton {float:right; clear:both; margin:0px 0px 0 0px;}
-  #navigateleft .nbutton a {color: #1693A5; text-decoration: none !important;}
+  #NavigateLeft .nbutton {float:right; clear:both; margin:220px 220px 220 220px;}
+  #NavigateLeft .nbutton a {color: #1693A5; text-decoration: none !important;}
   
   .fa-2x {
 font-size: 2em;
@@ -1763,7 +1777,7 @@ font-size: 2em;
 .fa {
 position: relative;
 display: table-cell;
-width: 70px;
+width: 70px; /*distance from left*/
 height: 36px;
 text-align: center;
 vertical-align: middle;
@@ -1771,8 +1785,8 @@ font-size:20px;
 }
 
 
-.main-menu:hover,nav.main-menu.expanded {
-width:180px;
+.main-menu-left:hover,nav-left.main-menu-left.expanded {
+width:140px; #amount of right movement
 overflow:hidden;
 /*transition duration slow*/
  -webkit-transition-duration: 0.5s;
@@ -1781,15 +1795,15 @@ overflow:hidden;
     -moz-transition-timing-function: linear, ease-in;
 }
 
-.main-menu {
+.main-menu-left {
 background:transparent;
 float:right;
 top:20%;
 bottom:0;
 height:100%;
 left:0;
-width:60px;
-overflow:hidden;
+width:280px;
+/*overflow:hidden;*/
 -webkit-transition:width .05s linear;
 transition:width .05s linear;
 -webkit-transform:translateZ(0) scale(1,1);
@@ -1801,18 +1815,18 @@ z-index:1000;
     -moz-transition-timing-function: linear, ease-in;
 }
 
-.main-menu&gt;ul {
+.main-menu-left&gt;ul {
 margin:16px 0;
 }
 
-.main-menu li {
+.main-menu-left li {
 margin:0px 0;
 position:relative;
 display:block;
-width:180px;
+width:220px;
 }
 
-.main-menu li&gt;a {
+.main-menu-left li&gt;a {
 position:relative;
 display:table;
 border-collapse:collapse;
@@ -1826,7 +1840,7 @@ transition:all .1s linear;
   
 }
 
-.main-menu .nav-icon {
+.main-menu-left .nav-icon-left {
 position:relative;
 display:table-cell;
 width:60px;
@@ -1836,11 +1850,12 @@ vertical-align:middle;
 font-size:18px;
 }
 
-.main-menu .nav-text {
+.main-menu-left .nav-text-left {
 position:relative;
 display:table-cell;
 vertical-align:middle;
-width:180px;
+text-align: right;
+width:145px;
 }
 
 .no-touch .scrollable.hover {
@@ -1856,7 +1871,7 @@ a:hover,a:focus {
 text-decoration:none;
 }
 
-nav {
+nav-left {
 -webkit-user-select:none;
 -moz-user-select:none;
 -ms-user-select:none;
@@ -1865,110 +1880,110 @@ user-select:none;
 }
 
 
-.main-menu li:hover&gt;a,nav.main-menu li.active&gt;a,.dropdown-menu&gt;li&gt;a:hover,.dropdown-menu&gt;li&gt;a:focus,.dropdown-menu&gt;.active&gt;a,.dropdown-menu&gt;.active&gt;a:hover,.dropdown-menu&gt;.active&gt;a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+.main-menu-left li:hover&gt;a,nav-left.main-menu-left li.active&gt;a,.dropdown-menu&gt;li&gt;a:hover,.dropdown-menu&gt;li&gt;a:focus,.dropdown-menu&gt;.active&gt;a,.dropdown-menu&gt;.active&gt;a:hover,.dropdown-menu&gt;.active&gt;a:focus,.no-touch .dashboard-page nav-left.dashboard-menu ul li:hover a,.dashboard-page nav-left.dashboard-menu ul li.active a {
 color:#cccccc;
 background-color:transparent;
 }
 
-#navigateleft li {
+#NavigateLeft li {
 padding: 0;
 margin: -5px;
 }
 
 &lt;/style&gt;
 
-&lt;div id=&quot;floating_sidebar&quot;&gt;
+&lt;div id=&quot;floating_sidebar_left&quot;&gt;
 &lt;div id=&quot;navigateleft&quot;&gt;
-&lt;nav class=&quot;main-menu&quot;&gt;
+&lt;nav-left class=&quot;main-menu-left&quot;&gt;
             &lt;ul&gt;
                 &lt;li&gt;
                     &lt;a &gt;
-                        &lt;i class=&quot;fa fa-asterisk fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             Explore
                         &lt;/span&gt;
+                        &lt;i class=&quot;fa fa-asterisk fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt;    
                 &lt;/li&gt;
             &lt;/ul&gt;
             &lt;ul&gt;
                 &lt;li&gt;
                     &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&quot;../../search/label/talks?max-results=150&quot;&gt;
-                        &lt;i class=&quot;fa fa-commenting-o fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             Talks
                         &lt;/span&gt;
+                        &lt;i class=&quot;fa fa-commenting-o fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
                     &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&quot;../../search/label/courses?max-results=150&quot;&gt;
-                        &lt;i class=&quot;fa fa-newspaper-o fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             Courses
                         &lt;/span&gt;
+                        &lt;i class=&quot;fa fa-newspaper-o fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
                    &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&quot;../../search/label/documentaries?max-results=150&quot;&gt;
-                       &lt;i class=&quot;fa fa-video-camera fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             Documentaries
                         &lt;/span&gt;
+                       &lt;i class=&quot;fa fa-video-camera fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
             &lt;ul&gt;
                 &lt;li class=&quot;has-subnav&quot;&gt;
                     &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&#39;../../search/label/people?max-results=150&#39;&gt;
-                        &lt;i class=&quot;fa fa-users fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             People
                         &lt;/span&gt;
+                        &lt;i class=&quot;fa fa-users fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li class=&quot;has-subnav&quot;&gt;
                     &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&quot;../../search/label/research?max-results=150&quot;&gt;
-                       &lt;i class=&quot;fa fa-area-chart fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             Research
                         &lt;/span&gt;
+                       &lt;i class=&quot;fa fa-area-chart fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt; 
                 &lt;/li&gt;
                 &lt;li class=&quot;has-subnav&quot;&gt;
                     &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&quot;../../search/label/institutions?max-results=150&quot;&gt;
-                       &lt;i class=&quot;fa fa-university fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             Institutions
                         &lt;/span&gt;
+                       &lt;i class=&quot;fa fa-university fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
             &lt;ul&gt;
                 &lt;li&gt;
                    &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&quot;../../search/label/books?max-results=150&quot;&gt;
-                        &lt;i class=&quot;fa fa-book fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             Books
                         &lt;/span&gt;
+                        &lt;i class=&quot;fa fa-book fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
                     &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&quot;../../search/label/journals?max-results=150&quot;&gt;
-                       &lt;i class=&quot;fa fa-copy fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             Journals
                         &lt;/span&gt;
+                       &lt;i class=&quot;fa fa-copy fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
                     &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot;href=&quot;../../search/label/articles?max-results=150&quot;&gt;
-                       &lt;i class=&quot;fa fa-pencil-square-o fa-2x&quot;&gt;&lt;/i&gt;
-                        &lt;span class=&quot;nav-text&quot;&gt;
+                        &lt;span class=&quot;nav-text-left&quot;&gt;
                             Articles
                         &lt;/span&gt;
+                       &lt;i class=&quot;fa fa-pencil-square-o fa-2x&quot;&gt;&lt;/i&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
-        &lt;/nav&gt;
+        &lt;/nav-left&gt;
         &lt;/div&gt;
 &lt;/div&gt;</b:widget-setting>
                                             </b:widget-settings>
@@ -1983,20 +1998,6 @@ margin: -5px;
                                                         <data:content/>
                                                     </div>
                                                 </b:includable>
-                                          </b:widget>
-                                          <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
-                                            <b:widget-settings>
-                                              <b:widget-setting name='copyright'/>
-                                            </b:widget-settings>
-                                            <b:includable id='main'>
-    <div class='widget-content' style='text-align: center;'>
-      <b:if cond='data:attribution != &quot;&quot;'>
-       <data:attribution/>
-      </b:if>
-    </div>
-
-    <b:include name='quickedit'/>
-  </b:includable>
                                           </b:widget>
                                           <b:widget id='HTML4' locked='false' title='SidebarRight' type='HTML'>
                                             <b:widget-settings>
@@ -2043,6 +2044,7 @@ float:right;
 top:20%;
 bottom:0;
 height:100%;
+width:60px; /*side-menu opening width*/
 left:0;
 overflow:hidden;
 -webkit-transition:width .05s linear;
@@ -2706,6 +2708,9 @@ $(&quot;#floating_sidebar&quot;).show();
                         <style>
           .main-menu {
           width:180px; <!--This determines how far left the right-bar menu is when inactive (not hovered)-->
+          }
+          .main-menu-left {
+          width:140px; <!--This determines how far right is the right-bar menu is when inactive (not hovered)-->
           }
     </style>
                     </b:if>
