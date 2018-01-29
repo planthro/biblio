@@ -1761,7 +1761,7 @@
   #NavigateLeft {
     position: fixed;
     top:20%;
-    height:60%;
+    height:80%;
     right: 100%; /*distance from right side (100%=left side)*/
     margin-right:-105px; /*distance from left side (larger negative = further right)*/
     float: right;
@@ -2004,8 +2004,8 @@ margin: -5px;
                                               <b:widget-setting name='content'>&lt;style&gt;
   #NavigateRight {
     position: fixed;
-    top:20%;
-    height:60%;
+    top:15%;
+    height:70%;
     right: 0px;
     float: right;
     background-color: transparent;
@@ -2162,82 +2162,122 @@ font-weight:700;
               &lt;/ul&gt;
              &lt;ul&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=oceans|oceans&quot;&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=climate&quot;&gt;
                     &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;01&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
-                        Oceans
+                        Climate
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=human+impact&quot;&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=water&quot;&gt;
                     &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;02&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
-                        Human Impact
+                        Water
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=technology&quot;&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=energy&quot;&gt;
                     &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;03&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
-                        Technology
+                        Energy
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=arctic&quot;&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=atmosphere&quot;&gt;
                     &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;04&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
-                        Arctic
+                        Atmosphere
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=sustainable|sustainability&quot;&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=population&quot;&gt;
                     &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;05&lt;/i&gt;
+                      &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
+                        Population
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=indigenous&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;06&lt;/i&gt;
+                      &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
+                        Indigenous
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=food&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;07&lt;/i&gt;
+                      &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
+                        Food
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=history&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;08&lt;/i&gt;
+                      &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
+                        History
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=resilience&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;09&lt;/i&gt;
+                      &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
+                        Resilience
+                      &lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=sustainability&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;10&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
                         Sustainability
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=urban|city|cities&quot;&gt;
-                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;06&lt;/i&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=conservation&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;11&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
-                        Cities
+                        Conservation
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=species&quot;&gt;
-                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;07&lt;/i&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=future&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;12&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
-                        Species
+                        Future
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=COP23|COP&quot;&gt;
-                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;08&lt;/i&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=governance&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;13&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
-                        COP23
+                        Governance
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=agriculture&quot;&gt;
-                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;09&lt;/i&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=resources&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;14&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
-                        Agriculture
+                        Resources
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=co2|greenhouse&quot;&gt;
-                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;10&lt;/i&gt;
+                  &lt;a rel=&quot;nofollow&quot; rel=&quot;noreferrer&quot; href=&quot;../../search?q=security&quot;&gt;
+                    &lt;i class=&quot;fa fa-2x NavRightNumberFont&quot;&gt;15&lt;/i&gt;
                       &lt;span class=&quot;nav-text NavRightKeywordFont&quot;&gt;
-                        CO2
+                        Security
                       &lt;/span&gt;
                   &lt;/a&gt;
                 &lt;/li&gt;
