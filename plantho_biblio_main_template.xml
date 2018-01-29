@@ -1761,7 +1761,7 @@
   #NavigateLeft {
     position: fixed;
     top:20%;
-    height:80%;
+    height:60%;
     right: 100%; /*distance from right side (100%=left side)*/
     margin-right:-105px; /*distance from left side (larger negative = further right)*/
     float: right;
