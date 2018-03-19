@@ -371,7 +371,7 @@
     padding:0px;
     background:#000000;
     opacity: 0.95;
-    margin-top:-50px;
+    margin-top:-30px;
     overflow: none;
     height: auto;
     width: 100%;
@@ -465,7 +465,7 @@
     }
 
     #main.section{
-    margin-top:15%;
+    margin-top:05%;
     margin-left:0;
     margin-right:0;
     }
@@ -1761,7 +1761,7 @@
   #NavigateLeft {
     position: fixed;
     top:20%;
-    height:60%;
+    height:80%;
     right: 100%; /*distance from right side (100%=left side)*/
     margin-right:-105px; /*distance from left side (larger negative = further right)*/
     float: right;
