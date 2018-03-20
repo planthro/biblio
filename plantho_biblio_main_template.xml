@@ -1349,58 +1349,35 @@
                                                     </b:if>
                                                 </b:includable>
                                             <b:includable id='status-message'>
-                                                    <b:if cond='data:blog.searchQuery'>
-                                                        <style type='text/css'>
-                                                            <div/>
-                                                            <div style='clear: both;'/>
-                                                        </style>
-                                                    </b:if>
-                                                    <b:if cond='data:blog.searchLabel == &quot;people&quot;'>
-                                                        <b:if cond='data:navMessage'>
-                                                            
-                                                                <div class='status-msg-body'>The transdisciplinary character of the anthropocene has mobilized research and engagement across sectors. Academics from the Earth and Social Sciences, but also inventors, entrepreneurs, politicians, explorers and visual artists have taken keen interest in the field. Here is a growing list of individuals who actively research and engage in the anthropocene and related subjects.</div>
-                                                                
-                                                                    
-                                                                        <div class='status-msg-hidden'>
-                                                                            <data:navMessage/>
-                                                                        </div>
-                                                                    
-                                                                
-                                                            
-                                                            <div style='clear: both;'/>
-                                                        </b:if>
-                                                    </b:if>
-                                                    <b:if cond='data:blog.searchLabel == &quot;research&quot;'>
-                                                        <b:if cond='data:navMessage'>
-                                                            
-                                                                <div class='status-msg-body'>A growing number of research projects, research groups, and research institutions, dedicated to the trans-disciplinary subject of the anthropocene, are coming into being around the world. Here is an expanding catalog of selected research projects, webpages, groups and institutions focusing on the anthropocene and related fields.</div>
-                                                                
-                                                                    
-                                                                        <div class='status-msg-hidden'>
-                                                                            <data:navMessage/>
-                                                                        </div>
-                                                                    
-                                                                
-                                                            
-                                                            <div style='clear: both;'/>
-                                                        </b:if>
-                                                    </b:if>
-                                                    <b:if cond='data:blog.searchLabel == &quot;institutions&quot;'>
-                                                        <b:if cond='data:navMessage'>
-                                                            
-                                                                <div class='status-msg-body'>Here is an ongoing listing of institutions, foundations, commissions and NGOs working on the anthropocene, human-impact and sustainability. Some of them work towards the formal definition of the anthropocene, others aim at designing effective solutions for the Earth system, as well as supporting the definition of effective policies for sustainable growth.</div>
-                                                                
-                                                                    
-                                                                        <div class='status-msg-hidden'>
-                                                                            <data:navMessage/>
-                                                                        </div>
-                                                                    
-                                                                
-                                                            
-                                                            <div style='clear: both;'/>
-                                                        </b:if>
-                                                    </b:if>
-                                                    <b:if cond='data:blog.searchLabel == &quot;talks&quot;'>
+                                              <b:if cond='data:blog.searchQuery'>
+                                               <b:if cond='data:navMessage'>                                                   
+                                                <div class='status-msg-body'>Listing available references for topic <i><data:blog.searchQuery/></i>.</div>
+                                                <div class='status-msg-hidden'><data:navMessage/></div> <div style='clear: both;'/>
+                                               </b:if>
+                                              </b:if>
+                                                    
+                                              <b:if cond='data:blog.searchLabel == &quot;people&quot;'>
+                                               <b:if cond='data:navMessage'>
+                                                <div class='status-msg-body'>The transdisciplinary character of the anthropocene has mobilized research and engagement across sectors. Academics from the Earth and Social Sciences, but also inventors, entrepreneurs, politicians, explorers and visual artists have taken keen interest in the field. Here is a growing list of individuals who actively research and engage in the anthropocene and related subjects.</div>
+                                                <div class='status-msg-hidden'><data:navMessage/></div><div style='clear: both;'/>
+                                               </b:if>
+                                              </b:if>
+                                              
+                                              <b:if cond='data:blog.searchLabel == &quot;research&quot;'>
+                                               <b:if cond='data:navMessage'>
+                                                <div class='status-msg-body'>A growing number of research projects, research groups, and research institutions, dedicated to the trans-disciplinary subject of the anthropocene, are coming into being around the world. Here is an expanding catalog of selected research projects, webpages, groups and institutions focusing on the anthropocene and related fields.</div>
+                                                <div class='status-msg-hidden'><data:navMessage/></div><div style='clear: both;'/>
+                                               </b:if>
+                                              </b:if>
+                                              
+                                              <b:if cond='data:blog.searchLabel == &quot;institutions&quot;'>
+                                               <b:if cond='data:navMessage'>
+                                                <div class='status-msg-body'>Here is an ongoing listing of institutions, foundations, commissions and NGOs working on the anthropocene, human-impact and sustainability. Some of them work towards the formal definition of the anthropocene, others aim at designing effective solutions for the Earth system, as well as supporting the definition of effective policies for sustainable growth.</div>
+                                                 <div class='status-msg-hidden'><data:navMessage/></div><div style='clear: both;'/>
+                                               </b:if>
+                                              </b:if>
+                                              
+                                              <b:if cond='data:blog.searchLabel == &quot;talks&quot;'>
                                                         <b:if cond='data:navMessage'>
                                                             
                                                                 <div class='status-msg-body'>Earth scientists, social scientists, subject matter experts, politicians and creative practitioners have been communicating the effects of human impact on the Earth system, and derived potential risks. This page lists talks by people working towards sustainable futures, conveying the need for action in the anthropocene. </div>
