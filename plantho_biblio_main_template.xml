@@ -2721,7 +2721,7 @@ $(&quot;#floating_sidebar&quot;).show();
                 </b:if>
                 <div class='widget-content'>
                     <data:content/>
-                    <b:if cond='data:blog.url == &quot;http://beta.planthro.org/p/mainpage.html&quot;'>
+                    <b:if cond='data:blog.url == &quot;https://beta.planthro.org/p/mainpage.html&quot;'>
                         <style>
           .main-menu {
           width:180px; <!--This determines how far left the right-bar menu is when inactive (not hovered)-->
