@@ -490,9 +490,9 @@
       }
 
       .content-outer, .region-inner {
-        min-width: 72%;
-        max-width: 72%;
-        _width: 72%;
+        min-width: 60%;
+        max-width: 60%;
+        _width: 60%;
       }
 
       .main-inner .columns {
