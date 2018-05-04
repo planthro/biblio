@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
     <head>
-        <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
+		<meta content='width=1000' id='Viewport' name='viewport'/>
         <style type='text/css'>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);</style>
         &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
+		&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js&quot;&gt;&lt;/script&gt;
         <b:include data='blog' name='all-head-content'/>
         <title>
             <data:blog.pageTitle/>
@@ -580,7 +581,7 @@
         font:light 1em &#39;Ubuntu&#39;, sans-serif;
         color:#cccccc;
         width:80%;
-        padding:14px 17px 12px 30px;
+        padding:14px 0px 12px 30px;
         -webkit-border-radius:5px 5px 5px 5px;
         -moz-border-radius:5px 5px 5px 5px;
         border-radius:5px 5px 5px 5px;
@@ -608,7 +609,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td width=&quot;40%&quot;&gt;
-  &lt;span style=&quot;font-size:1.125em; font-family:&#39;Ubuntu&#39;, sans-serif; color:#cccccc&quot;&gt;
+  &lt;span class=&quot;sub-heading1&quot; style=&quot;font-family:&#39;Ubuntu&#39;, sans-serif; color:#cccccc&quot;&gt;
     Understanding Human-Earth Interaction
   &lt;/span&gt;
 &lt;/td&gt;
@@ -989,7 +990,7 @@
                                                     <!-- posts -->
                                                     <div class='blog-posts hfeed'>
                                                         <b:include data='top' name='status-message'/>
-                                                        <b:if cond='data:blog.pageType == &quot;index&quot;'>
+                                                        <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
                                                             <b:loop values='data:posts' var='post'>
                                                                 <b:include data='post' name='mobile-index-post'/>
                                                             </b:loop>
@@ -1737,7 +1738,7 @@
                                               <b:widget-setting name='content'>&lt;style&gt;
   #NavigateLeft {
     position: fixed;
-    top:20%;
+    top:26%;
     height:80%;
     right: 100%; /*distance from right side (100%=left side)*/
     margin-right:-105px; /*distance from left side (larger negative = further right)*/
@@ -1982,7 +1983,7 @@ margin: -5px;
   #NavigateRight {
     position: fixed;
     top:15%;
-    height:70%;
+    height:80%;
     right: 0px;
     float: right;
     background-color: transparent;
@@ -2036,7 +2037,7 @@ z-index:1000;
 }
 
 .main-menu&gt;ul {
-margin:16px 0;
+margin:10px 0;
 }
 
 .main-menu li {
@@ -2285,9 +2286,7 @@ font-weight:700;
     <b:section id='PlanthroFooter'>
       <b:widget id='HTML3' locked='false' title='PlanthroFooter' type='HTML' version='1'>
         <b:widget-settings>
-          <b:widget-setting name='content'>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-  &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+          <b:widget-setting name='content'>&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
  
  function loadIframe(iframeName, url) {
     var $iframe = $(&#39;#&#39; + iframeName);
@@ -2628,7 +2627,7 @@ $(&quot;#floating_sidebar&quot;).show();
 &lt;div id=&#39;custom-toolbar&#39;&gt;
 &lt;table align=&#39;right&#39; border=&#39;0&#39; cellpadding=&#39;0&#39; style=&#39;font-size:1.0em&#39; valign=&#39;middle&#39;&gt;
 &lt;tr&gt;
-  &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;../../p/about.html&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot; title=&quot;About&quot;&gt;About&lt;/a&gt;&lt;/td&gt;                    &lt;td&gt;|&lt;/td&gt;
+  &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;../../p/about.html&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot; title=&quot;Platform anthropocene Inc.&quot;&gt;Platform anthropocene Inc.&lt;/a&gt;&lt;/td&gt;                    &lt;td&gt;|&lt;/td&gt;
   &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;../../p/endorsements.html&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot; title=&quot;Endorsements&quot;&gt;  Endorsements&lt;/a&gt;&lt;/td&gt;              &lt;td&gt;|&lt;/td&gt;
             &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;https://support.planthro.org&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot;  alt=&quot;Donate, Submit Link&quot;&gt;Donate&lt;/a&gt;&lt;/td&gt;  &lt;td&gt;|&lt;/td&gt;
   &lt;td&gt;&lt;a id=&quot;modelpop&quot; rel=&quot;modal:open&quot; title=&quot;../../p/participation.html&quot; onclick=&quot;return loadIframe(&#39;ifrm&#39;, this.title);&quot; href=&quot;#ex1&quot;  alt=&quot;Participate, Submit Link&quot;&gt;Participate&lt;/a&gt;&lt;/td&gt;  &lt;td&gt;|&lt;/td&gt;
@@ -2710,7 +2709,13 @@ $(&quot;#floating_sidebar&quot;).show();
   ga(&#39;create&#39;, &#39;UA-1701128-22&#39;, &#39;auto&#39;);
   ga(&#39;send&#39;, &#39;pageview&#39;);
 
-&lt;/script&gt;</b:widget-setting>
+&lt;/script&gt;
+&lt;style&gt;
+#main.section{
+            //	margin-top: 12%;
+}
+.widget{ margin: 0px 0 0 0 !important; }
+&lt;/style&gt;</b:widget-setting>
         </b:widget-settings>
         <b:includable id='main'>
                 <!-- only display title if it's non-empty -->
