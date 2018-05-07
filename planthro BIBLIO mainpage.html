@@ -1,0 +1,279 @@
+<html>
+<head>
+
+<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css"></link>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript"></script>
+<style type="text/css">@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);</style>
+<style>
+  .post-title.entry-title{display: none;}
+  .post-title{display: none;}
+  .post-footer{display: none;}
+  #comments{display: none;}
+  #backlinks-container{display: none;}
+  #blog-pager{display: none;}
+  .blog-feeds{display: none;}
+  .slider_img > img { width: 99%; object-fit: contain;}
+  .slider{ border: none !important; }
+  .slick-slide:focus{ outline: none; }
+  #slickSlider{ width: 70%; margin: auto; max-height: 325px;}
+  .slider-intro-text{margin: auto; font-size: 1.1em; width: 100%;}
+  .slick-slide{max-height: 350px;}
+  .paoverride {font-family: "Open Sans", "serif"; font-weight: 300; text-transform: none;}
+</style>
+
+<script type="text/javascript"> 
+    //Resize, Adjust Slidebar and Sidebars. 
+
+        if(window.screen.availWidth < 768){
+            $(".slider-intro-text").width('100%');
+            $('.slider-intro-text').css({"font-size": "1.1em"});
+        }
+
+    function resizeAdjustElements(){
+        if(window.orientation == 90 || window.orientation == -90){
+            $('#slickSlider').width('100%');
+            $("#navigateleft").css("top", "18%");
+            $("#NavigateRight").css("top", "12%");
+            $("#main.section").css("margin-top", "5%");
+        }
+        else{
+        if(window.screen.availWidth < 768){
+            $('.slider-intro-text').css({"font-size": "1.1em"});
+            $('#slickSlider').width('100%');
+            //console.log("Set Width");
+            $("#navigateleft").css("top", "12%");
+            $("#NavigateRight").css("top", "8%");
+            $("#main.section").css("margin-top", "20%");
+            console.log("window.screen.availWidth < 768");
+        }
+        else if(window.screen.availWidth < 1200 && window.screen.availWidth > 768){
+            $('#slickSlider').width('80%');
+            $('.slider-intro-text').css({"font-size": "1.1em"});
+            console.log("window.screen.availWidth < 1200 && window.screen.availWidth > 768");
+        }
+        else if(window.screen.availWidth < 1920 && window.screen.availWidth > 1200){
+            $('#slickSlider').width('70%');
+            $('#slickSlider').css({"max-height": "310px"});
+            $('.slider-intro-text').css({"font-size": "1.1em"});
+            $("#navigateleft").css("top", "20%");
+            $("#NavigateRight").css("top", "10%");
+            $("#main.section").css("margin-top", "5%");
+            console.log("window.screen.availWidth < 1920 && window.screen.availWidth > 1200");
+        }
+        else if(window.screen.availWidth >= 1920){
+            $('#slickSlider').css({"max-height": "450px"});
+            $("#navigateleft").css("top", "20%");
+            $("#NavigateRight").css("top", "10%");
+            $("#main.section").css("margin-top", "5%");
+            $("#slickSlider .slick-slide").css({"max-height": "450px"});
+            console.log("window.screen.availWidth >= 1920");
+        }
+        }
+   }
+
+   $(document).ready(function(){
+       $('.slider').on('init', function(event, slick){
+           resizeAdjustElements();
+       });
+
+       $( window ).resize(function() {
+           resizeAdjustElements();
+       });
+
+       $.fn.randomize = function(selector){
+         var $elems = $(this).children(),//selector ? $(this).find(selector) : 
+             $parents = $elems.parent();
+       
+         $parents.each(function(){
+             $(this).children().sort(function(){
+                 return Math.round(Math.random()) - 0.5;
+             }).detach().appendTo(this);
+         });
+       
+         return this;
+       };
+       
+       $('.slider').randomize('.slider');
+       
+       $('.slider').slick({
+           accessibility: true,
+           autoplay: true,
+           arrows: false,
+           infinite: true,
+           lazyLoad: 'anticipated',
+           mobileFirst: true,
+           slidesToShow: 1,
+           slidesToScroll: 1
+       });
+       
+       var $carousel = $('.slider');
+       $(document).on('keydown', function(e) {
+           if(e.keyCode == 37) {
+               $carousel.slick('slickPrev');
+           }
+           if(e.keyCode == 39) {
+               $carousel.slick('slickNext');
+           }
+       });
+   });
+
+</script>
+
+</head>
+
+<body>
+<div class="slider-intro-text">
+  <span class='paoverride'><i>planthro</i> BIBLIO</span> is a digital library of human-Earth interactions...<br /><br />
+</div>
+<div class="slider" data-u="slides" id="slickSlider">
+
+      <div>
+<a class="slider_img" href="https://www.blogger.com/search?q=paleoecological+pleistocene+ellis+fuller+kaplan" target="_top"><img data-lazy="https://2.bp.blogspot.com/-EQyqoD0Pzb4/WiapHpHFYdI/AAAAAAAABIg/0J7XH0QqNGMESd4_IRrzvRMi7YIRJQEsgCLcBGAs/s640/ellis%2Bfuller%2Bkaplan.png" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=shift+barnosky+biosphere+bascompte+tipping" target="_top"><img data-lazy="https://2.bp.blogspot.com/-xQLocJAZoGw/WiapCeCu7MI/AAAAAAAABIc/ak5cXfOmDNM2upew4U74ILGBvl48s5TyQCLcBGAs/s640/barnosky.png" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=folke+reconnecting+biosphere+resilience+cascading" target="_top"><img data-lazy="https://2.bp.blogspot.com/-AxAufawzYxQ/WialqEH5gSI/AAAAAAAABIM/de5n2X95icIEpWkLdJ1_-tU9ZvhvMrvNQCLcBGAs/s640/folke.png" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=Bonn+COP23+conference+goals" target="_top"><img data-lazy="https://3.bp.blogspot.com/-bmUuEapcuOI/WgSVXU5WRVI/AAAAAAAABHE/WXay7i0pOfUBKglnnm2vZixTPAaJKQHJwCLcBGAs/s640/GSRupfq.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=climate+questions+answers+complex" target="_top"><img data-lazy="https://1.bp.blogspot.com/-c5Q6z-ZmdbU/WcKSqJ_RaOI/AAAAAAAAJCM/7YVYHM2tEIEEHAVPdmmC84UYLFcKmhdLQCLcBGAs/s640/Screen%2BShot%2B2017-09-20%2Bat%2B17.39.53.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=indigenous+peoples+navigator+rights" target="_top"><img data-lazy="https://4.bp.blogspot.com/-bDMCq02p0ao/WcIEXV0q_nI/AAAAAAAAJBE/9nXvWjcFTkEO03rhuClzv55yf0P0Z2RPQCLcBGAs/s640/Screen%2BShot%2B2017-09-20%2Bat%2B07.54.22.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=being+human+mythic+religious" target="_top"><img data-lazy="https://1.bp.blogspot.com/-nIoikxQ_kd0/Wb--vIfK2YI/AAAAAAAAI-g/aaSCuyXXQ-QMgfI-1bfhcbxx9wVAlwcuACLcBGAs/s640/Screen%2BShot%2B2017-09-18%2Bat%2B14.32.41.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=larsen+shelf+antarctic+iceberg" target="_top"><img data-lazy="https://2.bp.blogspot.com/-ITTRRM3hXtc/WWYxXsoGs7I/AAAAAAAAHwE/4Xm99g4yRGwL4WzUvEVjWbrs6Si7IO_0wCLcBGAs/s640/Screen%2BShot%2B2017-07-12%2Bat%2B16.20.55.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=ari+wallach+long+term+grandchildren" target="_top"><img data-lazy="https://2.bp.blogspot.com/-miBeY-CP0n8/WVT-IsKG3bI/AAAAAAAAHtM/378yZhCudmMUvU51LTu-Zs-o8kISZgUnwCEwYBhgL/s640/Screen%2BShot%2B2017-06-29%2Bat%2B15.14.26.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=atlas+migration+ionesco+gemenne" target="_top"><img data-lazy="https://4.bp.blogspot.com/-fBWLlrSR6hY/WS7VwRFpc_I/AAAAAAAAHl4/7t7n2KxXPHsCgyOQObCKu5x9GX4hvgaFgCLcB/s640/Photo%2Bon%2B31.05.17%2Bat%2B16.37.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=arctic+resilience+report+stockholm" target="_top"><img data-lazy="https://3.bp.blogspot.com/--FAg8ORyq4s/WRxegD5ttkI/AAAAAAAAHh4/Zo_uJu4spxEx6oCxKbgZ-YbI-9uNi1f4wCLcB/s640/Screen%2BShot%2B2017-05-17%2Bat%2B16.20.36.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=anthropocene+magazine+stockholm+journalism" target="_top"><img data-lazy="https://3.bp.blogspot.com/-cqliLEBNmu4/WRsHKQfqLnI/AAAAAAAAHf0/Prti4JowjSkP_RoN3s85NNF0K8GjkSX9ACLcB/s640/Screen%2BShot%2B2017-05-16%2Bat%2B15.53.36.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=seuil+anthropocene+series" target="_top"><img data-lazy="https://2.bp.blogspot.com/-NUkr_l_fRAQ/WR2-LT9iv0I/AAAAAAAAHik/Ahw5eC00V7oxGNTeU6t3qf5bKisaL2ufwCLcB/s640/Screen%2BShot%2B2017-05-18%2Bat%2B17.19.19.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=seuil+anthropocene+series" target="_top"><img data-lazy="https://1.bp.blogspot.com/-ZT9Xl3R5jho/WR2-LFUgL0I/AAAAAAAAHig/NC1ZP12xbqoITKLuzJTA5GXXfcCUE7OnQCLcB/s640/Screen%2BShot%2B2017-05-18%2Bat%2B17.19.42.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=extinction+edge+pretty" target="_top"><img data-lazy="https://3.bp.blogspot.com/-mEXzxX6k44Q/WRmcYIJ87OI/AAAAAAAAHfQ/_b7ERM7eF4sbo-RxAv5F11yzLm-KN_G8wCLcB/s640/Screen%2BShot%2B2017-05-10%2Bat%2B17.19.08.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=earth+lovelock+taschen" target="_top"><img data-lazy="https://1.bp.blogspot.com/-OHSMxwTUYJ8/WSVckNqqeKI/AAAAAAAAHjo/SB9EfixwcLQZ8AyIcVBZWmSxTvV6xd6agCLcB/s640/EarthBook1.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=dreams+endangered+cultures+wade" target="_top"><img data-lazy="https://3.bp.blogspot.com/-d6YIhxLgf9Y/WS6lJqC6-XI/AAAAAAAAHlY/Zutt0-IFxJkeULdE1_0wJ580UJwRT0goQCLcB/s640/Screen%2BShot%2B2017-05-31%2Bat%2B13.04.46.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=humanities+environment+research+observatories" target="_top"><img data-lazy="https://1.bp.blogspot.com/-gmkkkQfpG4E/WRxCDR_fsyI/AAAAAAAAHhc/vRzyFFb4yqsVwIRBazFX1kx4qIQMQbsbQCLcB/s640/Screen%2BShot%2B2017-05-17%2Bat%2B14.19.39.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=mobility+workshop+hamburg" target="_top"><img data-lazy="https://3.bp.blogspot.com/-QSEjxe9R9vo/WRw4lwiVVcI/AAAAAAAAHhE/KP5Bi4l10k0Q3x5SwfuGQBJMBvLnMwgEwCLcB/s640/Screen%2BShot%2B2017-05-17%2Bat%2B13.47.06.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=merchants+doubt+oreskes+conway+story" target="_top"><img data-lazy="https://3.bp.blogspot.com/-e3fWUJy1PZs/WRwZiP9AM2I/AAAAAAAAHgs/yXJukSHZJKUNSVsfOhMdqY7uc_bpbpnfQCLcB/s640/Screen%2BShot%2B2017-05-17%2Bat%2B11.34.33.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=ice+collapsing+antarctica+sea+cities" target="_top"><img data-lazy="https://1.bp.blogspot.com/-OqjY0qLbdXU/WR15gXfqXPI/AAAAAAAAHiM/5GvI1wOmhiQzA8vVxkqbNRt1sPS2M3fEgCLcB/s640/Screen%2BShot%2B2017-05-18%2Bat%2B12.31.11.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=oreskes+collapse+western+civilization+conway" target="_top"><img data-lazy="https://2.bp.blogspot.com/-FoZrl0-dALo/WRmcYS8CHOI/AAAAAAAAHfU/WcC37WzmZFEedsA_8SHD41NptMnU6eQWACLcB/s640/Screen%2BShot%2B2017-05-10%2Bat%2B18.56.01.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=oreskes+scientists+trust" target="_top"><img data-lazy="https://2.bp.blogspot.com/-FLINKZTDq4E/WRmcYZ0K77I/AAAAAAAAHfY/lPy9JwA8-GIv9bCAJltZyDcqWzYNNu5jwCLcB/s640/Screen%2BShot%2B2017-05-11%2Bat%2B15.56.01.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=worldclimaps+interactive+map" target="_top"><img data-lazy="https://2.bp.blogspot.com/-pwq1Rjks-ls/WOla25qSzlI/AAAAAAAAHQ0/8MltfrOhd5AYjvgpLrn7cEnT6QNcwQ7-gCLcB/s640/Screen%2BShot%2B2017-03-21%2Bat%2B17.02.52.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=ten+billion" target="_top"><img data-lazy="https://2.bp.blogspot.com/-MaBr4XehW4c/WOla2rqvd0I/AAAAAAAAHQw/G5esvXZ_Lr00I6FllmbDurY7FL4K-dYqwCLcB/s640/Screen%2BShot%2B2017-03-21%2Bat%2B17.06.38.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=2075" target="_top"><img data-lazy="https://3.bp.blogspot.com/-sG08HC3xx4k/WOla20khAEI/AAAAAAAAHQ4/5z9v_3ngL14fpMhSy_NTLcSPwKv3m-sHwCLcB/s640/Screen%2BShot%2B2017-03-21%2Bat%2B17.10.22.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=anthropocene+economist" target="_top"><img data-lazy="https://1.bp.blogspot.com/-345mFjmgBlI/WOlay_CQFwI/AAAAAAAAHQM/ZplAIF1NFNAJHt8gEvpNjF_ITqba_yzkgCLcB/s640/20110528_ldp001.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=after+nature" target="_top"><img data-lazy="https://2.bp.blogspot.com/-tWKPdmcGz2o/WOla0dgRqOI/AAAAAAAAHQQ/RWPent6z06YGnQBi6wLHezQYzd2KP4S3wCLcB/s640/9780674368224-lg.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=fight+desertification" target="_top"><img data-lazy="https://1.bp.blogspot.com/-FZ5siEAZZSQ/WOla6IjaGeI/AAAAAAAAHRU/by6y2ak3hv8YU0srli4d8L3KL5fkNx5lgCLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B12.54.54.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=great+acceleration" target="_top"><img data-lazy="https://2.bp.blogspot.com/-9YRn56ArUPU/WOlbCGxx9fI/AAAAAAAAHTU/JK4VbJPhCUYYhn7_iSQbW-kbFhf2fcbuwCLcB/s640/the_anthropocene_igbp_globaia1.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=monastersky+nature" target="_top"><img data-lazy="https://4.bp.blogspot.com/-lAtu6zJ3yi4/WOlbA8KI2tI/AAAAAAAAHTE/G5QkIE9iqYQZzFdPoAq7JxaY3iTue-QqgCLcB/s640/nature-anthropocene.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=archer+modeling+climate" target="_top"><img data-lazy="https://2.bp.blogspot.com/--lYgQj6SrW0/WP-XlGWhjuI/AAAAAAAABDI/5BRoSVlREm4_fbSJIPnkIzX2rvB_UbAeACLcB/s640/courses00010.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=balog+ice+loss" target="_top"><img data-lazy="https://4.bp.blogspot.com/-uJGVV81jYIY/WOla9jYdzGI/AAAAAAAAHSE/igLLsFZK-hcIQ5G0nDam8EEIWs8B6cRawCLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.12.43.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=bows+larkin+adapt" target="_top"><img data-lazy="https://3.bp.blogspot.com/-Va3vlAseblU/WOla9IlKQwI/AAAAAAAAHSA/HY_d9Wgx87oXau0nfULsg3iNKvPRLYsNwCLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.12.08.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=breakthrough+institute" target="_top"><img data-lazy="https://1.bp.blogspot.com/-9JsGUv17BOk/WOla3JkxCbI/AAAAAAAAHQ8/ohsJT_Xx2uwlNno9NwBd8bBaOtFOG19tACLcB/s640/Screen%2BShot%2B2017-03-22%2Bat%2B17.42.49.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=capitalocene+moore" target="_top"><img data-lazy="https://1.bp.blogspot.com/-D8S6Fj7CcFI/WOla0RjXZUI/AAAAAAAAHQU/55vlrfas66QLIn-YMTGqgKvQKrKLkuyMwCLcB/s640/1_anthropocene_captialsince_commons_cover_small_crop.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=carbon+democracy" target="_top"><img data-lazy="https://2.bp.blogspot.com/-t0UnBg0M2T8/WOla0a8UTYI/AAAAAAAAHQY/hCQeJJ3103QaSFIB7MX5H7bZGsotIt7SQCLcB/s640/9781781681169_Carbon_Democracy_PB-287bc43b1c5490620b6501b51514e343.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=climate+science+negotiations+sachs" target="_top"><img data-lazy="https://3.bp.blogspot.com/-DoZrVxn5f-M/WP-8In7ntQI/AAAAAAAABDY/ZeILZXm_eoAWpOVWnP8Hw0056NNVDxISwCLcB/s640/courses00004.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=record+paris+agreement" target="_top"><img data-lazy="https://1.bp.blogspot.com/-mXYOMrkmm3c/WOla_6zs71I/AAAAAAAAHSw/dEy4QhhPDHs199mqrY-vcVPHOYiGoGiTgCLcB/s640/cop211.png_1718483346.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=growing+coral+reefs" target="_top"><img data-lazy="https://4.bp.blogspot.com/-RD65dO3WFmM/WOla80bWBoI/AAAAAAAAHR4/cC80Ho4fzDYzQ4BMlFiEpcr-b31lq8KlwCLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.06.53.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=two+half+minutes+midnight" target="_top"><img data-lazy="https://3.bp.blogspot.com/-41dXEtABE_s/WOlbAq5KJgI/AAAAAAAAHTA/JEOLizu34s0M4kBVuTEAW07oocIhXcxUQCLcB/s640/maxresdefault.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=crops+survive+farrant" target="_top"><img data-lazy="https://4.bp.blogspot.com/-h0DHXhnn5us/WOla8wg1fAI/AAAAAAAAHR8/pXOmt55NKb8XlRVAAW4KjWg_pw0Jn6CrwCLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.10.42.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=future+earth+global+sustainability" target="_top"><img data-lazy="https://1.bp.blogspot.com/-9RpSx3AqlFE/WOlbAnhdKZI/AAAAAAAAHS8/8jTfIWImAqsr-tWnG4qUS45_Hikx17LnwCLcB/s640/future-earth.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=before+flood+dicaprio" target="_top"><img data-lazy="https://1.bp.blogspot.com/-rJwdefSv988/WOla_QR_38I/AAAAAAAAHSk/XUSV85rTwGc2-JvLIF8mi2OEV-4qIf8ZwCLcB/s640/before-the-flood.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=seed+protecting+future" target="_top"><img data-lazy="https://4.bp.blogspot.com/-AoabS50iRTc/WOla72BtJWI/AAAAAAAAHRo/y6PJI-X7yEwn5onrzhyF0VdJTm5YzHXQACLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.02.19.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=al+gore+thinking" target="_top"><img data-lazy="https://4.bp.blogspot.com/-Yb90IcYnSUE/WOla6leFwdI/AAAAAAAAHRg/aGh14f4I4LUUsTWU-c6myw8uEh1Z1upfACLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.00.51.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=limits+growth+club+rome" target="_top"><img data-lazy="https://1.bp.blogspot.com/-tcnwcHPiNbo/WOla3RRxqlI/AAAAAAAAHRA/F80Yfx2fABIQ5nqQixrQbj9dAR1gUmE6wCLcB/s640/Screen%2BShot%2B2017-03-22%2Bat%2B18.13.19.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=global+sustainability+institute" target="_top"><img data-lazy="https://3.bp.blogspot.com/-K7lLi6AbmmE/WOla309sFJI/AAAAAAAAHRE/HqsrGad-9HwQTl3OIpVroPPXoQURB8qEwCLcB/s640/Screen%2BShot%2B2017-03-22%2Bat%2B18.15.31.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=home+yann+breakers" target="_top"><img data-lazy="https://3.bp.blogspot.com/-H_RDWDE7lTs/WOlbAdOKF-I/AAAAAAAAHS4/JAkNc_ga5e8un3UNRT5-2ikcdvR57mD3wCLcB/s640/home-doc.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=laudato+sdsnedu+sachs" target="_top"><img data-lazy="https://1.bp.blogspot.com/-WVC0MHCML7w/WP-_WljvNJI/AAAAAAAABDk/5zYuHE1bZQ0znAUWDRQrIJl8YFig6-UngCLcB/s640/courses00006.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=stockholm+rockstr%C3%B6m+resilience+planetary" target="_top"><img data-lazy="https://3.bp.blogspot.com/-o0hdNbAfSRc/WOla1VKa19I/AAAAAAAAHQk/IwIZ6F2vTM8jbWFYjzqjY4dXL4tOYf6LQCLcB/s640/PB_CourseCard.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=planetary+boundaries+safe+operating+rockstr%C3%B6m" target="_top"><img data-lazy="https://1.bp.blogspot.com/-9TKnKyJ7ryE/WOla1-OAY5I/AAAAAAAAHQo/6Tp4Ojr2b8k5IL9Hb6kv4HhjSfVippMXQCLcB/s640/PB_FIG33_globaia%252B16%252BJan.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=doughnut+economics+oxfam" target="_top"><img data-lazy="https://3.bp.blogspot.com/-LHioAJHCycY/WOla9g1ioEI/AAAAAAAAHSM/QuRQKdfzj7Y9gOWQjTK6NM6Dn37KGMyLwCLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.16.15.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=resilience+shocks+disturbances" target="_top"><img data-lazy="https://4.bp.blogspot.com/-FnO2pkALnIk/WOla5ajCBWI/AAAAAAAAHRI/OV83RK30p3sxCoBjRJK6CyEV3jvVnOAwQCLcB/s640/Screen%2BShot%2B2017-03-29%2Bat%2B16.17.26.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=rees+cosmic+astrophysics" target="_top"><img data-lazy="https://3.bp.blogspot.com/-USBB4L2b_0Y/WOla5g3pbHI/AAAAAAAAHRM/pH7Nq8LFZsg9QYAsTGN_qNEVu0n8wf36QCLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B12.53.31.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=rockstr%C3%B6m+environment+guide+development" target="_top"><img data-lazy="https://2.bp.blogspot.com/-MGgrZ12DnZg/WOla-bFxbbI/AAAAAAAAHSQ/OJeW5Lhzj-okGVZa3DmrEDzr2NP8oio1ACLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.17.13.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=greening+lessons+scandinavia+iiiee" target="_top"><img data-lazy="https://1.bp.blogspot.com/-Z2iJgP2Kros/WP_BOmdbUBI/AAAAAAAABDw/VvYwn0Zu1jYYWWyZ4SYn9-NcZkJdzxpbwCLcB/s640/courses00019.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=sedlak+catastrophic+drought" target="_top"><img data-lazy="https://1.bp.blogspot.com/-_NZj1_9AE9w/WOla8XMYA5I/AAAAAAAAHR0/WSDd1J0EdnkXjPfRLld60IYofg8sVcIfwCLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.05.59.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=rosling+panic+population+migrations" target="_top"><img data-lazy="https://2.bp.blogspot.com/-wXk0uu8sCyc/WOla_4Z26TI/AAAAAAAAHSs/UbPm_hBGFqAVPgE0b4K4EyvGi_uZeDYmgCLcB/s640/dont%2Bpanic.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=burtynsky+manufactured+landscapes+photographs" target="_top"><img data-lazy="https://2.bp.blogspot.com/-IJ_efGpKy_s/WOla1WDEasI/AAAAAAAAHQg/eQCQCxXr2lA-oIhkR3cQZLOGwM02q4NeACLcB/s640/Manufactured-Landscape1.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=al+gore+inconvenient+truth+myths+misconceptions" target="_top"><img data-lazy="https://3.bp.blogspot.com/-jFS26ti7mJo/WOla_uhlkII/AAAAAAAAHSo/0vlUTtOGk4Adhn-vTgwnQNTsJWrbaM0AwCLcB/s640/cover_aninconvenienttruth.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=stern+raworth+alternative+economics" target="_top"><img data-lazy="https://4.bp.blogspot.com/-MTnr_0ou6gE/WOla9pHj1GI/AAAAAAAAHSI/A4AMyvupxFUuVNkwtNMfhWo2MDST3SP5ACLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.14.50.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=sachs+sustainable+framework+columbia" target="_top"><img data-lazy="https://4.bp.blogspot.com/-GJpN_g4VH9k/WOla1My0mII/AAAAAAAAHQc/ujtrSAReOfsho1Z3ooAw-rQac3VepduKgCLcB/s640/Cover_final1.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=sachs+columbia+sustainable+course" target="_top"><img data-lazy="https://4.bp.blogspot.com/-YuLNX6rNd90/WP_DnyEtz8I/AAAAAAAABD8/DUeRkV4kRGcJZOmcjrX_KW5oahpZtQejwCLcB/s640/courses00001.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=tong+kiribati+underwater+ted" target="_top"><img data-lazy="https://1.bp.blogspot.com/-ifzW7zBElEI/WOla77Sta-I/AAAAAAAAHRw/GfZz31rXOGgt9PS0uDLWwlk24YqMUDxywCLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.04.53.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=swan+pristine+antarctica+exploitation" target="_top"><img data-lazy="https://1.bp.blogspot.com/-9V0w7kOGsGw/WOla6RCFkuI/AAAAAAAAHRY/6ZhYMn-pFB0orbqiTSYbHzFJHQ3PJkcqACLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.00.05.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=winkler+mitigation+innovation+modeling" target="_top"><img data-lazy="https://1.bp.blogspot.com/-tJtIU2yL1U0/WP_EIYCZb9I/AAAAAAAABEE/NKJeJsE9BSUDCJkfZbic7TDuoEAGZgv5QCLcB/s640/courses00007.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=wascal+german+african" target="_top"><img data-lazy="https://2.bp.blogspot.com/-NdR_2oyqMTI/WOla-zAqmSI/AAAAAAAAHSY/-TXyarDTRM4Ve0YPIBZh2DgpMLo5-XBcgCLcB/s640/WASCAL_laender_2.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=br%C3%A9thaut+pflieger+water+mooc+geneva" target="_top"><img data-lazy="https://4.bp.blogspot.com/-yjfvnSHeTOA/WP_EeLPAu7I/AAAAAAAABEI/oSraXDH7_OARaOD-m0AYZZsJ_LiDT101QCLcB/s640/courses00009.jpg%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=forman+glaciers+icebergs+drawings" target="_top"><img data-lazy="https://1.bp.blogspot.com/-OZFYaxYCHn8/WOla6m_xRzI/AAAAAAAAHRc/KRcVJkNTGNQaAQ83cPQn7JiGa89brxOoACLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B12.59.04.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=bertrand+photographs+humanity+habitat" target="_top"><img data-lazy="https://4.bp.blogspot.com/-K1gYvA5sU_0/WOla7xNZgLI/AAAAAAAAHRs/yswwyRoCuXY9VApETCnyOpsoyi4d80hxACLcB/s640/Screen%2BShot%2B2017-03-31%2Bat%2B13.04.09.png%22" data-u="" image="" /></a></div>
+<div>
+<a class="slider_img" href="https://www.blogger.com/search?q=new+climate+normal+world+bank" target="_top"><img data-lazy="https://4.bp.blogspot.com/-CYHJr7AaLeI/WOla5h3E4DI/AAAAAAAAHRQ/35XVulQEJcUzDfs1i1qtGBBcnY4aoAZHQCLcB/s640/Screen%2BShot%2B2017-03-29%2Bat%2B15.39.42.png%22" data-u="" image="" /></a></div>
+</div>
+    <div class="slider-intro-text" style="float: right; text-align: right;"> <br /><br />
+        Access by media categories, trending topics, or tailored search.
+    </div>
+</body>
+</html>
