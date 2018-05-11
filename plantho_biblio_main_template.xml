@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
     <head>
-		<meta content='width=1000' id='Viewport' name='viewport'/>
+    <meta content='width=1000' id='Viewport' name='viewport'/>
         <style type='text/css'>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);</style>
         &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;
-		&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js&quot;&gt;&lt;/script&gt;
         <b:include data='blog' name='all-head-content'/>
         <title>
             <data:blog.pageTitle/>
@@ -216,10 +216,7 @@
     ----------------------------------------------- */
     div.widget > h2,
     div.widget h2.title {
-      margin: 0 0 1% 0;
-
-      font: $(widget.title.font);
-      color: $(widget.title.text.color);
+      margin: 0 0 0 0;
     }
 
     /* Posts
@@ -356,29 +353,22 @@
       border-top: 2px solid $(widget.alternate.text.color);
     }
 
-    #navbar {display:none;}
+    #navbar {display:none !important;}
 
     #header {
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
-    @font-face {
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 300;
-      src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-      }
-    position:fixed; 
-    z-index:100000;
-    margin:0px;
-    padding:0px;
+
+    font-family: 'Open Sans'; font-style: normal; font-weight: 300; 
     background:#000000;
-    opacity: 0.95;
-    margin-top:-30px;
-    overflow: none;
+    opacity: 0.80;
+    overflow: hidden;
+    width: 100vw;
     height: auto;
-    width: 100%;
-    right:0;
-    top: 4%;
+	position:fixed;
+	top: 0px;
+    z-index:10;
     }
+
+    #header.section {margin:0 0 0 0;}
     #header a {font-family:"Open Sans", "serif"; font-size:2.25em; font-weight:100; color: #1693A5; text-decoration: none !important;}
 
     .main-outer {margin-top:99px; padding:0px;}
@@ -466,9 +456,8 @@
     }
 
     #main.section{
-    margin-top:7.5%;
-    margin-left:0;
-    margin-right:0;
+    margin-top:10vmax;
+    margin-bottom:10vmax;
     }
 
     #HTML1.widget.html{
@@ -550,26 +539,27 @@
       body#layout div.add_widget a {
         margin-left: 32px;
       }
+      div.widget.h2.title {display: none !important;}
       ]]></b:template-skin>
     </head>
     <body>
       <b:section class='header' id='header' maxwidgets='3' name='Header' showaddelement='yes'>
-        <b:widget id='HTML1' locked='false' title='PlanthroHeader' type='HTML' version='1'>
+        <b:widget id='HTML1' locked='false' title='' type='HTML' version='1'>
           <b:widget-settings>
             <b:widget-setting name='content'>&lt;table width=&quot;100%&quot;&gt;
  &lt;tr&gt;
   &lt;td rowspan=&quot;2&quot; width=&quot;2%&quot;&gt;&lt;/td&gt;
   &lt;td style=&quot;white-space: nowrap;&quot;&gt;
-   &lt;a href=&quot;../../../&quot;&gt;planthro &lt;span style=&quot;color:#FFA500; font-size:0.9em;&quot;&gt;BIBLIO&lt;/span&gt;&lt;/a&gt;
+              &lt;a href=&quot;../../../&quot;&gt;&lt;i&gt;#planthro&lt;/i&gt; &lt;span style=&quot;color:#FFA500; font-size:0.9em;&quot;&gt;BIBLIO&lt;/span&gt;&lt;/a&gt;
   &lt;/td&gt;
 
   &lt;td rowspan=&quot;2&quot;&gt;
     &lt;span&gt;
       &lt;style type=&quot;text/css&quot;&gt;
-     	input::-webkit-input-placeholder {color:#cccccc;}
-		input::-moz-placeholder {color:#cccccc;}
-		input:-ms-input-placeholder {color:#cccccc;}
-		input:-moz-placeholder {color:#cccccc;}
+      input::-webkit-input-placeholder {color:#cccccc;}
+    input::-moz-placeholder {color:#cccccc;}
+    input:-ms-input-placeholder {color:#cccccc;}
+    input:-moz-placeholder {color:#cccccc;}
 
         input:focus::-webkit-input-placeholder{color:transparent}
         input:focus:-moz-placeholder{color:transparent}
@@ -598,7 +588,7 @@
       &lt;/style&gt;
 
       &lt;form id=&quot;searchbox&quot; method=&quot;get&quot; action=&quot;/search&quot; autocomplete=&quot;off&quot;&gt;
-       &lt;input required=&quot;&quot; name=&quot;q&quot; type=&quot;text&quot; size=&quot;15&quot; placeholder=&quot;Search BIBLIO...&quot; /&gt;
+       &lt;input required=&quot;&quot; name=&quot;q&quot; type=&quot;text&quot; size=&quot;15&quot; placeholder=&quot;Search for keywords...&quot; /&gt;
       &lt;/form&gt;
       
      &lt;/span&gt;
@@ -610,7 +600,7 @@
 &lt;tr&gt;
 &lt;td width=&quot;40%&quot;&gt;
   &lt;span class=&quot;sub-heading1&quot; style=&quot;font-family:&#39;Ubuntu&#39;, sans-serif; color:#cccccc&quot;&gt;
-    Bibliography of the anthropocene
+    References of anthropocene
   &lt;/span&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
@@ -1733,7 +1723,7 @@
     <b:include name='quickedit'/>
   </b:includable>
                                           </b:widget>
-                                          <b:widget id='HTML2' locked='false' title='SidebarLeft' type='HTML' version='1'>
+                                          <b:widget id='HTML2' locked='false' title='' type='HTML' version='1'>
                                             <b:widget-settings>
                                               <b:widget-setting name='content'>&lt;style&gt;
   #NavigateLeft {
@@ -1833,7 +1823,7 @@ position:relative;
 display:table-cell;
 vertical-align:middle;
 text-align: right;
-width:145px;
+width: 145px;
 }
 
 .no-touch .scrollable.hover {
@@ -1877,7 +1867,7 @@ margin: -5px;
                 &lt;li&gt;
                     
                         &lt;span class=&quot;nav-text-left&quot;&gt;
-                            Explore
+                            Categories
                         &lt;/span&gt;
                         &lt;i class=&quot;fa fa-asterisk fa-2x&quot;&gt;&lt;/i&gt;
                         
@@ -1977,7 +1967,7 @@ margin: -5px;
                                                     </div>
                                                 </b:includable>
                                           </b:widget>
-                                          <b:widget id='HTML4' locked='false' title='SidebarRight' type='HTML'>
+                                          <b:widget id='HTML4' locked='false' title='' type='HTML'>
                                             <b:widget-settings>
                                               <b:widget-setting name='content'>&lt;style&gt;
   #NavigateRight {
@@ -2284,7 +2274,7 @@ font-weight:700;
 
     </body>
     <b:section id='PlanthroFooter'>
-      <b:widget id='HTML3' locked='false' title='PlanthroFooter' type='HTML' version='1'>
+      <b:widget id='HTML3' locked='false' title='' type='HTML' version='1'>
         <b:widget-settings>
           <b:widget-setting name='content'>&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
  
@@ -2711,9 +2701,7 @@ $(&quot;#floating_sidebar&quot;).show();
 
 &lt;/script&gt;
 &lt;style&gt;
-#main.section{
-            //	margin-top: 12%;
-}
+
 .widget{ margin: 0px 0 0 0 !important; }
 &lt;/style&gt;</b:widget-setting>
         </b:widget-settings>
