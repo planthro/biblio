@@ -456,8 +456,8 @@
     }
 
     #main.section{
-    margin-top:10vmax;
-    margin-bottom:10vmax;
+    margin-top:15vh;
+    margin-bottom:15vh;
     }
 
     #HTML1.widget.html{
@@ -1800,7 +1800,6 @@ display:table;
 border-collapse:collapse;
 border-spacing:0;
 color:#1693A5;
-font-size: 14px;
 text-decoration:none;
 -webkit-transform:translateZ(0) scale(1,1);
 -webkit-transition:all .1s linear;
@@ -1823,7 +1822,8 @@ position:relative;
 display:table-cell;
 vertical-align:middle;
 text-align: right;
-width: 145px;
+width: 16vw;// 145px;
+font-size: calc(0.8vw + 0.8vh); //earlier inherited from .main-menu-left li>a
 }
 
 .no-touch .scrollable.hover {
@@ -2065,7 +2065,7 @@ font-size:18px;
 position:relative;
 display:table-cell;
 vertical-align:middle;
-width:180px;
+width: 16vw;// 180px;
 }
 
 .no-touch .scrollable.hover {
@@ -2103,19 +2103,19 @@ margin: -5px;
 
 .NavRightKeywordFont{
 font-family: Ubuntu;
-font-size: 1.0em;
+font-size: calc(0.8vw + 0.8vh); //1.0em;
 }
 
 .NavRightNumberFont{
 font-family: Ubuntu;
-font-size: 1.0em;
+font-size: calc(0.8vw + 0.8vh); //1.0em;
 font-weight:700;
 }
 
 
 &lt;/style&gt;
 
-&lt;div id=&quot;floating_sidebar&quot;&gt;
+
 &lt;div id=&quot;NavigateRight&quot;&gt;
 &lt;nav class=&quot;main-menu&quot;&gt;
               &lt;ul&gt;
@@ -2252,7 +2252,7 @@ font-weight:700;
             &lt;/ul&gt;
         &lt;/nav&gt;
         &lt;/div&gt;
-&lt;/div&gt;</b:widget-setting>
+</b:widget-setting>
                                             </b:widget-settings>
                                             <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2373,14 +2373,15 @@ font-weight:700;
                 }, this.options.fadeDuration * this.options.fadeDelay);
             } else {
                 this.show();
-$(&quot;#floating_sidebar&quot;).hide();
+$(&quot;#NavigateRight&quot;).hide();
             }
             $(document).off(&#39;keydown.modal&#39;).on(&#39;keydown.modal&#39;, function (event) {
                 var current = getCurrent();
                 if (event.which == 27 &amp;&amp; current.options.escapeClose)
 {
            current.close();
-           $(&quot;#floating_sidebar&quot;).show();
+           $(&quot;#NavigateRight&quot;).show();
+$(&quot;#NavigateLeft&quot;).show();
         }
             });
             if (this.options.clickClose)
@@ -2388,7 +2389,8 @@ $(&quot;#floating_sidebar&quot;).hide();
                     if (e.target == this)
                        {
                         $.modal.close();
-            $(&quot;#floating_sidebar&quot;).show();
+            $(&quot;#NavigateRight&quot;).show();
+$(&quot;#NavigateLeft&quot;).show();
           }
                 });
         },
@@ -2430,7 +2432,8 @@ $(&quot;#floating_sidebar&quot;).hide();
             if (this.options.showClose) {
                 this.closeButton = $(&#39;&lt;a href=&quot;#close-modal&quot; rel=&quot;modal:close&quot; class=&quot;close-modal &#39; + this.options.closeClass + &#39;&quot;&gt;&#39; + this.options.closeText + &#39;&lt;/a&gt;&#39;);
                
-$(&quot;#floating_sidebar&quot;).show();
+$(&quot;#NavigateRight&quot;).show();
+$(&quot;#NavigateLeft&quot;).show();
  this.$elm.append(this.closeButton);
             }
             this.$elm.addClass(this.options.modalClass).appendTo(this.$blocker);
@@ -2440,7 +2443,8 @@ $(&quot;#floating_sidebar&quot;).show();
                 this.$elm.show();
             }
             this.$elm.trigger($.modal.OPEN, [this._ctx()]);
-$(&quot;#floating_sidebar&quot;).show();
+$(&quot;#NavigateRight&quot;).show();
+$(&quot;#NavigateLeft&quot;).show();
         },
 
         hide: function () {
@@ -2482,7 +2486,8 @@ $(&quot;#floating_sidebar&quot;).show();
         if (event) event.preventDefault();
         var current = getCurrent();
         current.close();
-$(&quot;#floating_sidebar&quot;).show();
+$(&quot;#NavigateRight&quot;).show();
+$(&quot;#NavigateLeft&quot;).show();
         return current.$elm;
     };
 
