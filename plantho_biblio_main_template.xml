@@ -1728,8 +1728,8 @@
                                               <b:widget-setting name='content'>&lt;style&gt;
   #NavigateLeft {
     position: fixed;
-    top:26%;
-    height:80%;
+    top:15vh;
+    height:70vh;
     right: 100%; /*distance from right side (100%=left side)*/
     margin-right:-105px; /*distance from left side (larger negative = further right)*/
     float: right;
@@ -1860,7 +1860,7 @@ margin: -5px;
 
 &lt;/style&gt;
 
-&lt;div id=&quot;floating_sidebar_left&quot;&gt;
+
 &lt;div id=&quot;navigateleft&quot;&gt;
 &lt;nav-left class=&quot;main-menu-left&quot;&gt;
             &lt;ul&gt;
@@ -1953,7 +1953,7 @@ margin: -5px;
             &lt;/ul&gt;
         &lt;/nav-left&gt;
         &lt;/div&gt;
-&lt;/div&gt;</b:widget-setting>
+</b:widget-setting>
                                             </b:widget-settings>
                                             <b:includable id='main'>
                                                     <!-- only display title if it's non-empty -->
@@ -1972,8 +1972,8 @@ margin: -5px;
                                               <b:widget-setting name='content'>&lt;style&gt;
   #NavigateRight {
     position: fixed;
-    top:15%;
-    height:80%;
+    top:15vh;
+    height:70vh;
     right: 0px;
     float: right;
     background-color: transparent;
