@@ -725,7 +725,7 @@ div#topnav h2 {
         text-align: center;
         cursor: pointer;
         color: #aaa;
-        right: 15px;
+        right: 70px;
         top: 50%;
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
@@ -737,6 +737,7 @@ div#topnav h2 {
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
+		font-size: 20px;
       }
       .pi-navigation .search-box .icon-search .fa {
         line-height: 18px;
@@ -744,7 +745,7 @@ div#topnav h2 {
       .pi-navigation .search-box .icon-search.active, .pi-navigation .search-box .icon-search:hover {
         color: #7f957f;
       }
-      .pi-navigation .search-box .icon-search:before {
+      /*.pi-navigation .search-box .icon-search:before {
         content: &#39;&#39;;
         display: block;
         position: absolute;
@@ -755,7 +756,7 @@ div#topnav h2 {
         top: 0;
         bottom: 0;
         left: 0;
-      }
+      }*/
       .pi-navigation .share-box {
         position: absolute;
         top: 47%;
@@ -3446,6 +3447,14 @@ position: relative;
 
     </style>
 
+<style>
+.Header .description {
+	color: #ffffff;
+	font-family:&quot;Ubuntu&quot;, sans-serif !important;
+	font-size: calc(2.5vw + 2.5vh);
+}
+</style>
+
 
 
 <b:if cond='data:blog.pageType in {&quot;item&quot;, &quot;static_page&quot;}'>
@@ -4745,13 +4754,6 @@ a.more-link {
 
 </style>
 
-<style>
-.Header .description {
-	color: #ffffff;
-	font-family:&quot;Ubuntu&quot;, sans-serif !important;
-	font-size: 30px;
-}
-</style>
 
 
     </b:if>
@@ -5176,12 +5178,35 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 <script>
 $(document).ready(function(){
   $(window).scroll(function() {
-    $(this).scrollTop() ? $(&quot;.totop&quot;).fadeIn() : $(&quot;.totop&quot;).fadeOut()
+    if($(this).scrollTop()){
+		$(&quot;.totop&quot;).fadeIn(); 
+		$(&#39;.icon-apps&#39;).show(800);
+		$(&#39;#smallIconHeader&#39;).show(800);
+    }
+    else{
+    	$(&quot;.totop&quot;).fadeOut();
+		$(&#39;.icon-apps&#39;).hide(800);
+		$(&#39;#smallIconHeader&#39;).hide(800);
+    }
   }), $(&quot;.totop&quot;).click(function() {
     $(&quot;html,body&quot;).animate({
       scrollTop: 0
-    }, 500)
+    }, 500);
   });
+
+	$(document).keypress(function(e) {
+		console.log(&quot;In keypress event.. &quot;+ e);
+     	if (e.keyCode == 27) { // escape key maps to keycode `27`
+        	var appsOverlay = $(&#39;#appBox&#39;).css(&#39;display&#39;);
+			console.log(&quot;appsOverlay &quot;+ appsOverlay);
+            if(appsOverlay !== &#39;none&#39;){
+				document.getElementById(&#39;appBox&#39;).style.display=&#39;none&#39;;
+				document.getElementById(&#39;hideApp&#39;).style.display=&#39;none&#39;;
+				document.getElementById(&#39;show&#39;).style.display=&#39;block&#39;;
+            }
+    	}
+	});
+
   // When the user scrolls the page, execute myFunction 
   window.onscroll = function() {myFunction()};
 	
@@ -5206,30 +5231,7 @@ $(document).ready(function(){
 </script>
 
 <style>
-@media screen and (max-width: 737px){
-#box {
-    padding: 25px 0 0;
-}
-#search-wrapper {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-#search-wrap {
-    clear: both;
-    width: 90%;
-}
-#search-form {
-    padding: 0 20px 0 0;
-}
-.search-button, .search-button:hover {
-    width: auto;
-    text-align: right;
-    font-size: 20px;
-    right: 0;
-}
-}
-#box {
+#box, #appBox {
     margin: 0 auto;
     display: none;
     padding: 60px 0 0;
@@ -5250,7 +5252,13 @@ $(document).ready(function(){
     -o-transition: all ease-in-out .25s;
     transition: all ease-in-out .25s;
 }
-
+#box p {
+    font-size: 14px;
+    margin: 15% auto 70px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 #search-wrapper {
     width: 90%;
     margin: 0 auto;
@@ -5261,6 +5269,19 @@ $(document).ready(function(){
     -webkit-animation: shownow 0.3s ease-in-out;
     -moz-animation: shownow 0.3s ease-in-out;
     animation: shownow 0.3s ease-in-out;
+}
+#apps-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-animation: shownow 0.3s ease-in-out;
+    -moz-animation: shownow 0.3s ease-in-out;
+    animation: shownow 0.3s ease-in-out;
+	min-height: 350px;
+    height: auto;
 }
 #search-wrap {
     clear: both;
@@ -5309,6 +5330,160 @@ $(document).ready(function(){
     top: 5px;
     right: 10px;
     font-weight: 700;
+}
+#hide span.smallbutton, #hideApp span.smallbutton {
+    color: #fff;
+    font-weight: 700;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 33px;
+    border-radius: 99em;
+    border: 3px solid #fff;
+    float: right;
+    overflow: hidden;
+    display: block;
+}
+  .icon-apps{ display:none; }
+  .pi-navigation .apps-box .icon-apps {
+    /*display: block;*/
+    position: absolute;
+    width: 40px;
+
+    text-align: center;
+    cursor: pointer;
+    color: #aaa;
+    right: 15px;
+    top: 52%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	font-size: 20px;
+  }
+  .pi-navigation .apps-box .icon-apps .fa {
+    line-height: 18px;
+  }
+  .pi-navigation .apps-box .icon-apps.active, .pi-navigation .apps-box .icon-apps:hover {
+    color: #7f957f;
+  }
+  /*.pi-navigation .apps-box .icon-apps:before {
+    content: &#39;&#39;;
+    display: block;
+    position: absolute;
+    border-left: 1px solid #999;
+    height: 16px;
+    width: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }*/
+.icons-container{
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+.icon-row{
+  width: 100%;
+  float: left;
+  margin-top: 25%;
+}
+
+.icon-wrapper{
+  float: left;
+  width: 12%;
+  height: 100px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgba(0,0,0,0.14);
+}
+
+.icon-wrapper:hover{
+  border: 1px solid #ddd;
+}
+
+.icon-wrapper .icon{
+  width: 100%;
+  height: 50px;
+  float: left;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icon-wrapper .icon img{
+  width: 50px;
+  height: 50px;
+}
+
+.icon-wrapper .title{
+  width: 100%;
+  height: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  float:left;
+  text-align: center;
+}
+#smallIconHeader{
+	display: none;
+	height: 30px;
+    width: 180px;
+    position: absolute;
+    left: 45px;
+    top: 18px;
+}
+
+@media screen and (max-width: 737px){
+#box, #appBox {
+    padding: 25px 0 0;
+}
+#search-wrapper, #apps-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#search-wrap {
+    clear: both;
+    width: 90%;
+}
+#search-form {
+    padding: 0 20px 0 0;
+}
+.search-button, .search-button:hover {
+    width: auto;
+    text-align: right;
+    font-size: 20px;
+    right: 0;
+}
+#box p {
+    font-size: 14px;
+    margin: 8% auto 50px;
+}
+#apps-wrapper{
+    width: 90%;
+}
+.icons-container{
+	width: 100%;
+}
+.icon-wrapper{
+	width: 27%;
+	margin: 8px;
+}
+#smallIconHeader {
+    height: 25px;
+    width: 130px;
+	top: 22px;
+}
 }
 </style>
 
@@ -5419,7 +5594,6 @@ $(".container").fitVids();
 
 //]]></script>
 
-
   </head>
   <body>
 
@@ -5518,13 +5692,13 @@ $(".container").fitVids();
             <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
               <b:widget id='Header1' locked='true' title='devbiblio (Header)' type='Header' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='displayUrl'>http://4.bp.blogspot.com/-mcb29fdqJMc/WwNDQGTqAJI/AAAAAAAABQY/T8tyX521tqgh1W1djTsg1bFReJ1v1XrtgCK4BGAYYCw/s600/%2523planthro%2BBIBLIO%2Bbackground%2Btransparent.png</b:widget-setting>
-                  <b:widget-setting name='displayHeight'>141</b:widget-setting>
-                  <b:widget-setting name='sectionWidth'>600</b:widget-setting>
+                  <b:widget-setting name='displayUrl'>http://3.bp.blogspot.com/-rqpZZuf569c/WwSJCjheZoI/AAAAAAAABRI/I6yeq5xLrUkq-PVTZvIiMdaJVE3od1GJwCK4BGAYYCw/s1600/%2523planthro%2BBIBLIO%2Bbackground%2B%2523222222.png</b:widget-setting>
+                  <b:widget-setting name='displayHeight'>242</b:widget-setting>
+                  <b:widget-setting name='sectionWidth'>333</b:widget-setting>
                   <b:widget-setting name='useImage'>true</b:widget-setting>
-                  <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
-                  <b:widget-setting name='imagePlacement'>BEFORE_DESCRIPTION</b:widget-setting>
-                  <b:widget-setting name='displayWidth'>600</b:widget-setting>
+                  <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                  <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
+                  <b:widget-setting name='displayWidth'>1206</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
                   <b:if cond='data:useImage'>
@@ -5637,6 +5811,18 @@ $(".container").fitVids();
                 <script class='java' src='/feeds/posts/default?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
               </li>
             </ul>
+
+	<div id='smallIconHeader'>
+		<img alt='devbiblio' height='194px; ' id='Header1_headerimg' src='//1.bp.blogspot.com/-HI7tjGa084I/WwN3is1p5bI/AAAAAAAABQk/orRAww0ulCYJrDDhnJsJMVU25-xtUf0OACK4BGAYYCw/s1600/%2523planthro%2BBIBLIO%2Bbackground%2B%2523222222.png' style='display: block' width='1322px;'/>
+    </div>
+
+<div class='apps-box'>
+		<span class='icon-apps' onclick='document.getElementById(&apos;appBox&apos;).style.display=&apos;block&apos;;document.getElementById(&apos;hideApp&apos;).style.display=&apos;block&apos;;'>
+			<i aria-hidden='true' class='fa fa-th'/>
+      	</span>
+    </div>
+
+
  <div class='search-box'>
               <span class='icon-search' onclick='document.getElementById(&apos;box&apos;).style.display=&apos;block&apos;;document.getElementById(&apos;hide&apos;).style.display=&apos;block&apos;;'>
                 <i class='fa fa-search'/>
@@ -5645,7 +5831,9 @@ $(".container").fitVids();
                 <input name='q' type='search' value='Search and hit enter'/>
               </form>
             </div>
+
           </div>
+
         </nav>
 
       <!-- END / HEADER -->
@@ -5676,7 +5864,7 @@ $(".container").fitVids();
                     <b:widget-settings>
                       <b:widget-setting name='showDateHeader'>true</b:widget-setting>
                       <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-                      <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+                      <b:widget-setting name='showShareButtons'>false</b:widget-setting>
                       <b:widget-setting name='authorLabel'>By</b:widget-setting>
                       <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                       <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
@@ -6785,7 +6973,7 @@ $(".container").fitVids();
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d7094786136074537606\x26blogName\x3ddevbiblio\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://devbiblio.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://devbiblio.blogspot.com/\x26vt\x3d7633392008366148229&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d7094786136074537606\x26blogName\x3ddevbiblio\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://devbiblio.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://devbiblio.blogspot.com/\x26vt\x3d7633392008366148229&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -6801,347 +6989,6 @@ if (head) {
 head.appendChild(script);
 }})();
 &lt;/script&gt;
-</b:includable>
-                </b:widget>
-                <b:widget id='ContactForm1' locked='false' title='Contact Form' type='ContactForm' version='1'>
-                  <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='contact-form-widget'>
-    <div class='form'>
-      <form name='contact-form'>
-        <p/>
-        <data:contactFormNameMsg/>
-        <input class='contact-form-name' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' name='name' size='30' type='text' value=''/>
-        <p/>
-        <data:contactFormEmailMsg/> <span style='font-weight: bolder;'>*</span>
-        <input class='contact-form-email' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' name='email' size='30' type='text' value=''/>
-        <p/>
-        <data:contactFormMessageMsg/> <span style='font-weight: bolder;'>*</span>
-        <textarea class='contact-form-email-message' cols='25' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' name='email-message' rows='5'/>
-        <p/>
-        <input class='contact-form-button contact-form-button-submit' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/>
-        <p/>
-        <div style='text-align: center; max-width: 222px; width: 100%'>
-          <p class='contact-form-error-message' expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;'/>
-          <p class='contact-form-success-message' expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/>
-        </div>
-      </form>
-    </div>
-  </div>
-</b:includable>
-                </b:widget>
-                <b:widget id='PopularPosts100' locked='false' title='Most referred' type='PopularPosts' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
-                    <b:widget-setting name='showThumbnails'>true</b:widget-setting>
-                    <b:widget-setting name='showSnippets'>true</b:widget-setting>
-                    <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-  <b:if cond='data:title'><h2><data:title/></h2></b:if>
-  <div class='widget-content popular-posts'>
-    <ul>
-      <b:loop values='data:posts' var='post'>
-      <li>
-        <b:if cond='data:showThumbnails == &quot;false&quot;'>
-          <b:if cond='data:showSnippets == &quot;false&quot;'>
-            <!-- (1) No snippet/thumbnail -->
-            <a expr:href='data:post.href'><data:post.title/></a>
-          <b:else/>
-            <!-- (2) Show only snippets -->
-            <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
-            <div class='item-snippet'><data:post.snippet/></div>
-          </b:if>
-        <b:else/>
-          <b:if cond='data:showSnippets == &quot;false&quot;'>
-            <!-- (3) Show only thumbnails -->
-            <div class='item-thumbnail-only'>
-              <b:if cond='data:post.thumbnail'>
-                <div class='item-thumbnail'>
-                  <a expr:href='data:post.href' target='_blank'>
-                    <img alt='' border='0' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:width='data:thumbnailSize'/>
-                  </a>
-                </div>
-              </b:if>
-              <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
-            </div>
-            <div style='clear: both;'/>
-          <b:else/>
-            <!-- (4) Show snippets and thumbnails -->
-            <div class='item-content'>
-              <b:if cond='data:post.thumbnail'>
-                <div class='item-thumbnail'>
-                  <a expr:href='data:post.href' target='_blank'>
-                    <img alt='' border='0' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:width='data:thumbnailSize'/>
-                  </a>
-                </div>
-              </b:if>
-              <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
-              <div class='item-snippet'><data:post.snippet/></div>
-            </div>
-            <div style='clear: both;'/>
-          </b:if>
-        </b:if>
-      </li>
-      </b:loop>
-    </ul>
-  </div>
-</b:includable>
-                </b:widget>
-                <b:widget id='HTML90' locked='false' title='Footer Widget' type='HTML' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'>There is, one knows not what sweet mystery about this sea, whose gently awful stirrings seem to speak of some hidden soul beneath; like those fabled undulations of the Ephesian sod over the buried Evangelist St. John. And meet it is, that over these sea-pastures</b:widget-setting>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-                  <!-- only display title if it's non-empty -->
-                  <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'><data:title/></h2>
-                  </b:if>
-                  <div class='widget-content'>
-                    <data:content/>
-                  </div>
-                </b:includable>
-                </b:widget>
-                <b:widget id='HTML91' locked='false' title='' type='HTML' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'>&lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#39;https://www.facebook.com/naminakiky/&#39; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot; title=&#39;Follow our Facebook&#39;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;Facebook&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#39;#&#39; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot; title=&#39;Follow our Twitter&#39;&gt;&lt;i class=&quot;fa fa-twitter &quot;&gt;&lt;/i&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#39;https://plus.google.com/107823238194800930250&#39; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot; title=&#39;Follow our Google+&#39;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;Google +&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#39;#&#39; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot; title=&#39;Follow our Instagram&#39;&gt;&lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;Instagram&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#39;#&#39; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot; title=&#39;Follow our Pinterest&#39;&gt;&lt;i class=&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;Pinterest&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</b:widget-setting>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-                  <!-- only display title if it's non-empty -->
-                  <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'><data:title/></h2>
-                  </b:if>
-                  <div class='widget-content'>
-                    <data:content/>
-                  </div>
-       </b:includable>
-                </b:widget>
-                <b:widget id='LinkList210' locked='false' title='Menu' type='LinkList'>
-                  <b:includable id='main'>
-
-<b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
- <div class='widget-content'>
-   <ul>
-     <b:loop values='data:links' var='link'>
-       <li><a expr:href='data:link.target'><data:link.name/></a></li>
-     </b:loop>
-   </ul>
-   <b:include name='quickedit'/>
- </div>
-</b:includable>
-                </b:widget>
-                <b:widget id='FollowByEmail1' locked='false' title='Follow by Email' type='FollowByEmail' version='1'>
-                  <b:includable id='main'>
-                  <b:if cond='data:title != &quot;&quot;'><h2 class='title'><data:title/></h2></b:if>
-                  <div class='widget-content'>
-                    <div class='follow-by-email-inner'>
-                      <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
-                        <table width='100%'>
-                          <tr>
-                            <td>
-                              <input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
-                            </td>
-                            <td width='64px'>
-                              <input class='follow-by-email-submit' type='submit' value='Submit'/>
-                            </td>
-                          </tr>
-                        </table>
-                        <input expr:value='data:feedPath' name='uri' type='hidden'/>
-                        <input name='loc' type='hidden' value='en_US'/>
-                      </form>
-                    </div>
-                  </div>
-                  <span class='item-control blog-admin'>
-                  </span>
-                </b:includable>
-                </b:widget>
-                <b:widget id='HTML97' locked='false' title='' type='HTML' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'>&lt;div class=&#39;kotak_iklan3&#39;&gt;
-&lt;a href=&#39;http://www.naminakiky.com/&#39; target=&#39;_blank&#39; title=&#39;Visit Namina Blog&#39;&gt;&lt;img alt=&#39;Visit Namina Blog&#39; height=&#39;90&#39; src=&#39;https://4.bp.blogspot.com/-YZEIqjhyypc/Wn3-gndkXhI/AAAAAAAANvU/W9IG4S4BIj4wfkXPJR7J2Tf-K-bOsiXjwCLcBGAs/s1600/midbnn.png&#39; width=&#39;970&#39;/&gt;&lt;/a&gt;
-&lt;/div&gt;</b:widget-setting>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-                </b:widget>
-                <b:widget id='HTML10' locked='false' title='Category 3' type='HTML' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'/>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-                      <!-- only display title if it's non-empty -->
-                      <b:if cond='data:title != &quot;&quot;'>
-                        <h1 class='title' style='background:#72347d'>
-                          <data:title/>
-                        </h1>
-                      </b:if>
-                      <div class='widget-content'>
-                        <div class='news_pictures'>
-                          <ul class='news_pictures_list'>
-                            <script>
-                              document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?max-results=&quot;+numposts3+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=recentarticles7\&quot;&gt;&lt;\/script&gt;&quot;);
-                            </script>
-                          </ul>
-                        </div>
-                      </div>
-                    </b:includable>
-                </b:widget>
-                <b:widget id='HTML99' locked='false' title='' type='HTML' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'>&lt;div class=&#39;kotak_iklan3&#39;&gt;
-&lt;a href=&#39;http://www.naminakiky.com/&#39; target=&#39;_blank&#39; title=&#39;Visit Namina Blog&#39;&gt;&lt;img alt=&#39;Visit Namina Blog&#39; height=&#39;250&#39; src=&#39;https://3.bp.blogspot.com/-JpaYwOhOZcE/Wn3-gsb0ZvI/AAAAAAAANvY/D4_65vczXEstJ3IG_PILMAnOGf-YxwuRwCLcBGAs/s1600/sidebarbnn.png&#39; width=&#39;300&#39;/&gt;&lt;/a&gt;
-&lt;/div&gt;</b:widget-setting>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-                </b:widget>
-                <b:widget id='HTML13' locked='false' title='Carousel' type='HTML' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'/>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-              <!-- only display title if it's non-empty -->
-              <b:if cond='data:title != &quot;&quot;'/>
-              <div class='widget-content'>
-                <div id='previous_button'/>
-                <div id='next_button'/>
-                <div class='content'>
-                  <ul>
-                    <script>
-                      document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?max-results=&quot;+numposts5+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=recentarticles1\&quot;&gt;&lt;\/script&gt;&quot;);
-                    </script>
-                  </ul>
-                  <div class='clear'/>
-                </div>
-                <div class='clear'/>
-              </div>
-              <script type='text/javascript'>
-                (function($) { $(document).ready(function(){
-                  $(&quot;#carousel .content&quot;).jCarouselLite({
-                    auto:0,
-                    scroll: 1,
-                    speed: 400,	
-                    visible: 5,
-                    start: 0,
-                    circular: false,
-                    btnPrev: &quot;#previous_button&quot;,
-                    btnNext: &quot;#next_button&quot;
-                    });
-                })})(jQuery)	
-              </script>
-            </b:includable>
-                </b:widget>
-                <b:widget id='LinkList11' locked='false' title='Menu - Links' type='LinkList' version='1'>
-                  <b:includable id='main'>
-
-            <b:if cond='data:title'><!--<h2><data:title/></h2>--></b:if>
-              <div>
-                <ul>
-                 <b:loop values='data:links' var='link'>
-                   <li><a expr:href='data:link.target'><data:link.name/></a></li>
-                 </b:loop>
-               </ul>
-               <b:include name='quickedit'/>
-             </div>
-            </b:includable>
-                </b:widget>
-                <b:widget id='HTML7' locked='false' title='Category 6' type='HTML' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'/>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-                  <!-- only display title if it's non-empty -->
-                  <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title' style='margin-bottom:20px;background:#4f7ca1'>
-                      <data:title/>
-                    </h2>
-                  </b:if>
-                  <div class='widget-content'>
-                    <div class='block-grid-1'>
-                      <script>
-                        document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?max-results=&quot;+numposts5+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=recentarticles8\&quot;&gt;&lt;\/script&gt;&quot;);
-                      </script>
-                    </div>
-                  </div>
-                </b:includable>
-                </b:widget>
-                <b:widget id='HTML9' locked='false' title='Category 2' type='HTML' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'/>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-                        <!-- only display title if it's non-empty -->
-                        <b:if cond='data:title != &quot;&quot;'>
-                          <h1 class='title' style='background:#ff0000'>
-                            <data:title/>
-                          </h1>
-                        </b:if>
-                        <div class='widget-content'>
-                          <div class='mastoras1'>
-                            <script>
-                              document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?max-results=&quot;+numposts2+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=recentarticles2\&quot;&gt;&lt;\/script&gt;&quot;);
-                            </script>
-                          </div>
-                        </div>
-                      </b:includable>
-                </b:widget>
-                <b:widget id='HTML5' locked='false' title='About Us' type='HTML' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'/>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-  <b:if cond='data:title'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-   <!-- footer_blog_logo -->
-<div id='logo'>
-<a expr:href='data:blog.homepageUrl' expr:title='data:blog.title'>
-<img expr:alt='data:blog.title' height='80' src='https://3.bp.blogspot.com/-3-5iI9nCKwQ/VVTRm7DVg0I/AAAAAAAABSQ/NweOMHfso1Y/s1600/inspiro%2Blogo.png'/>
-</a>
-  <br/>
-
-<p>Inspiro is modern magazine blogger template which focuses on lifestyle news, health, and entertainment.</p>
-
-</div>
-
-  </div>
-</b:includable>
-                </b:widget>
-                <b:widget id='LinkList98' locked='false' title='Main Menu' type='LinkList'>
-                  <b:includable id='main'>
-
-<b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
- <div class='widget-content'>
-   <ul>
-     <b:loop values='data:links' var='link'>
-       <li><a expr:href='data:link.target'><data:link.name/></a></li>
-     </b:loop>
-   </ul>
-   <b:include name='quickedit'/>
- </div>
 </b:includable>
                 </b:widget>
               </b:section>
@@ -7270,7 +7117,34 @@ head.appendChild(script);
   </div>
 </b:includable>
                 </b:widget>
-                <b:widget id='HTML6' locked='false' title='' type='HTML'>
+                <b:widget id='HTML6' locked='false' title='Random Posts' type='HTML'>
+                  <b:widget-settings>
+                    <b:widget-setting name='content'>&lt;style&gt;
+#bo-random-posts img{height:70px;float:left;width:90px;}
+#bo-random-posts img:hover{opacity: 0.5;filter: alpha(opacity=50);}
+ul#bo-random-posts {list-style-type: none;background-image: url(&quot;#&quot;);background-repeat: no-repeat;}
+#bo-random-posts li {margin: 10px 0;}
+#bo-random-posts li a{padding: 5px 0;text-decoration: none;}
+.bo-random-summary {display: block;}
+&lt;/style&gt;
+&lt;ul id=&#39;bo-random-posts&#39;&gt;
+&lt;script&gt;
+var borp_number = 3;
+var borp_details = &#39;yes&#39;;
+var borp_chars = 20;
+var borp_details2 = &#39;no&#39;;
+var borp_comments = &#39;Comments&#39;;
+var borp_commentsd = &#39;Comments Disabled&#39;;
+var borp_current = [];
+var total_randomposts = 0;
+var borp_current = new Array(borp_number);
+function randomposts(json) { total_randomposts = json.feed.openSearch$totalResults.$t}
+document.write(&#39;&lt;script type=\&quot;text/javascript\&quot; src=\&quot;/feeds/posts/default?alt=json-in-script&amp;max-results=0&amp;callback=randomposts\&quot;&gt;&lt;\/script&gt;&#39;);
+function getvalue(){for(var r=0;r&lt;borp_number;r++){for(var n=!1,o=get_random(),t=0;t&lt;borp_current.length;t++)if(borp_current[t]==o){n=!0;break}n?r--:borp_current[r]=o}}function get_random(){return 1+Math.round(Math.random()*(total_randomposts-1))}
+&lt;/script&gt;
+&lt;script&gt;function random_posts(t){for(var e=0;e&lt;borp_number;e++){var r=t.feed.entry[e],s=r.title.$t;if(&quot;content&quot;in r)i=r.content.$t;else if(&quot;summary&quot;in r)i=r.summary.$t;else var i=&quot;&quot;;if((i=i.replace(/&lt;[^&gt;]*&gt;/g,&quot;&quot;)).length&lt;borp_chars)var a=i;else{var n=(i=i.substring(0,borp_chars)).lastIndexOf(&quot; &quot;);a=i.substring(0,n)+&quot;&amp;#133;&quot;}for(var o=0;o&lt;r.link.length;o++){if(&quot;thr$total&quot;in r)var l=r.thr$total.$t+&quot; &quot;+borp_comments;else l=borp_commentsd;if(&quot;alternate&quot;==r.link[o].rel){var m=r.link[o].href,c=r.published.$t;if(&quot;media$thumbnail&quot;in r)var u=r.media$thumbnail.url;else u=&quot;https://4.bp.blogspot.com/-atF9AaH_YEI/WXc5HKoFZmI/AAAAAAAAAGE/LoIPxdwBHecNVesXy9J0AQJwdIuWFYu0QCLcBGAs/s1600/no_thumb.png&quot;}}document.write(&quot;&lt;li style=&#39;clear: both;padding: 15px 0px;&#39;&gt;&quot;),document.write(&#39;&lt;img alt=&quot;&#39;+s+&#39;&quot; src=&quot;&#39;+u+&#39;&quot;/&gt;&#39;),document.write(&#39;&lt;div style=&quot;float: left;width: 270px;height: 50px;    margin-left: 10px;&quot;&gt;&lt;a href=&quot;&#39;+m+&#39;&quot; rel=&quot;nofollow&quot; style=&quot;padding: 0px;&quot;&gt;&#39;+s+&quot;&lt;/a&gt;&lt;/div&gt;&quot;),&quot;yes&quot;==borp_details&amp;&amp;document.write(&quot;&lt;span style=&#39;float: left; margin-left: 10px;&#39;&gt;&quot;+c.substring(8,10)+&quot;.&quot;+c.substring(5,7)+&quot;.&quot;+c.substring(0,4)),&quot;yes&quot;==borp_details2&amp;&amp;document.write(&#39;&lt;span class=&quot;random-summary&quot;&gt;&#39;+a),document.write(&#39;&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;&lt;/li&gt;&#39;)}}getvalue();for(var i=0;i&lt;borp_number;i++)document.write(&#39;&lt;script type=&quot;text/javascript&quot; src=&quot;/feeds/posts/default?alt=json-in-script&amp;start-index=&#39;+borp_current[i]+&#39;&amp;max-results=1&amp;callback=random_posts&quot;&gt;&lt;\/script&gt;&#39;);&lt;/script&gt;
+&lt;/ul&gt;</b:widget-setting>
+                  </b:widget-settings>
                   <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -7498,6 +7372,80 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                           <button class='search-button' title='Search' type='submit'><i aria-hidden='true' class='fa fa-search'/></button>
                       </form>
                   </div>
+              </div>
+          </div>
+      </div>
+
+      <div id='appBox' style='display: none;'>
+          <div class='apps-wrapper' id='apps-wrapper'>
+              <div id='hideApp' style='display: none;'><span class='smallbutton' href='javascript:void(0)' onclick='document.getElementById(&apos;appBox&apos;).style.display=&apos;none&apos;;document.getElementById(&apos;hideApp&apos;).style.display=&apos;none&apos;;document.getElementById(&apos;show&apos;).style.display=&apos;block&apos;'><i aria-hidden='true' class='fa fa-times'/></span></div>
+              <!-- <div id='search-wrap'>-->
+                  <!-- <p>Start typing and press Enter to search</p> -->
+                  <!-- <div id='search'> -->
+					
+                    <div class='icons-container'>
+                      <div class='icon-row'>
+                        <div class='icon-wrapper'>
+                          <span class='icon'>
+                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
+                          </span>
+                          <span class='title'>
+                            Title
+                          </span>
+                        </div>
+                        <div class='icon-wrapper'>
+                          <span class='icon'>
+                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
+                          </span>
+                          <span class='title'>
+                            Title
+                          </span>
+                        </div>
+                        <div class='icon-wrapper'>
+                          <span class='icon'>
+                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
+                          </span>
+                          <span class='title'>
+                            Title
+                          </span>
+                        </div>
+						<div class='icon-wrapper'>
+                          <span class='icon'>
+                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
+                          </span>
+                          <span class='title'>
+                            Title
+                          </span>
+                        </div>
+						<div class='icon-wrapper'>
+                          <span class='icon'>
+                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
+                          </span>
+                          <span class='title'>
+                            Title
+                          </span>
+                        </div>
+						<div class='icon-wrapper'>
+                          <span class='icon'>
+                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
+                          </span>
+                          <span class='title'>
+                            Title
+                          </span>
+                        </div>
+						<div class='icon-wrapper'>
+                          <span class='icon'>
+                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
+                          </span>
+                          <span class='title'>
+                            Title
+                          </span>
+                        </div>
+                      </div>
+                    <!--</div>-->
+
+
+                  <!-- </div>-->
               </div>
           </div>
       </div>
