@@ -1978,9 +1978,9 @@ a:hover .zoom-insta {top:0%; opacity: 1;}
       /* Footer
       ----------------------------------------------- */
       #footer {
-          background-color: #202020; <!--AB #fff; -->
-  padding-top: 20px;
-color: #484848;
+        background-color: #222222; <!--AB #fff; -->
+        padding-top: 20px;
+        color: #484848;
       }
 
 #footer .container {
@@ -2074,12 +2074,12 @@ color: #484848;
         background-color: #7f957f;
       }
       .copyright {
-           margin-top: 20px;
-    padding: 15px 0 12px;
-    background-color: RGBA(0,0,0,0.2); <!--AB #f6f6f6; -->
-    font-size: 13px;
-    color: #484848;
-    font-family: &#39;Lato&#39;;
+       margin-top: 20px;
+       padding: 15px 0 12px;
+       background-color: RGBA(17,17,17,0.99); <!--AB #f6f6f6; -->
+       font-size: 13px;
+       color: #484848;
+       font-family: &#39;Lato&#39;;
       }
       .copyright p {
         margin: 0;
