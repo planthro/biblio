@@ -743,7 +743,8 @@ div#topnav h2 {
     font-size: 11px;
     letter-spacing: 2px;
     font-weight: 500;
-
+	height: 100%;
+    width: 100%;
 }
       .pi-navigation .search-box .icon-search {
         display: block;
@@ -5269,9 +5270,9 @@ $(document).ready(function(){
     transition: all ease-in-out .25s;
 }
 #search-popup, #appBox, #categories-popup, #topics-popup{
-	padding: 60px 0 0;
+	padding: 60px 0 20px 0;
     width: 90%;
-    height: 100%;
+    /*height: 100%;*/
 	margin: auto;
 	z-index: 999999;
     -webkit-transform: translateZ(0);
@@ -5285,6 +5286,19 @@ $(document).ready(function(){
     -o-transition: all ease-in-out .25s;
     transition: all ease-in-out .25s;
 	position: relative;
+	top: 60px;
+}
+div.custom-popup::-webkit-scrollbar {
+    width: 0.2em;
+}
+ 
+div.custom-popup::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+div.custom-popup::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 #search-popup p {
     font-size: 14px;
@@ -5366,20 +5380,22 @@ $(document).ready(function(){
     font-weight: 700;
 }	
 #hide span.smallbutton, #hideApp span.smallbutton, #search-popup .mfp-close, #categories-popup .mfp-close, #topics-popup .mfp-close, #appBox .mfp-close {
-    color: #fff !important;
-    font-weight: 700 !important;
+    color: #C53307 !important;
+    /*font-weight: 100 !important;*/
     padding: 0 !important;
     text-align: center !important;
     cursor: pointer !important;
-    font-size: 30px !important;
-    height: 40px !important;
-    width: 40px !important;
+    font-size: 1px !important;
+    height: 30px !important;
+    width: 30px !important;
     line-height: 33px !important;
-    border-radius: 99em !important;
-    border: 3px solid #fff !important;
+    border-radius: 0 !important;
+    border: 0px !important;
     float: right !important;
     overflow: hidden !important;
     display: block !important;
+	background-image: url(https://png.icons8.com/ios/100/ff3a00/delete-sign.png);
+    background-size: contain;
 }
   .icon-apps{ display:none; }
 
@@ -5399,7 +5415,7 @@ $(document).ready(function(){
     /*margin-left: 5px;*/
     display: inline-block;
 	display: none;
-	height: 100%;
+	height: 30px;
 	width: 30px;
 	vertical-align: middle;
 }
@@ -5552,6 +5568,7 @@ $(document).ready(function(){
 }
 .custom-popup{
 	min-height: 80vh;
+	overflow: auto;
 }
 .custom-popup h2{
 	margin-bottom: 30px;
@@ -5564,8 +5581,27 @@ $(document).ready(function(){
     height: 90%;
     width: 25px
 }
-.mfp-container{
-	overflow: auto;
+.mfp-auto-cursor .mfp-content{
+	/*height: 100%;*/
+}
+#blog-pager{
+	display: none;
+}
+.totop-inner {
+    width: 60px;
+    height: 60px;
+	line-height: 55px;
+    background-color: #404040;
+	font-size: 35px;
+	bottom: 70px !important;
+	right: 20px;
+}
+.totop-inner:hover {
+	background-color: #404040;
+}
+.totop-inner .fa{
+	font-size: 45px;
+	color: #C53307;
 }
 @media screen and (max-width: 737px){
 #box, #appBox {
@@ -5618,13 +5654,15 @@ $(document).ready(function(){
 }
 .pi-navigation .navlist li img {
 	display:inline-block !important;
-	height: 100%;
-	width: 30px;
+	height: 25px;
+	width: 25px;
 	vertical-align: middle;
 }
 .custom-popup #custom-wid-labels-list{
 	width: 100%;
     margin: auto;
+	margin-bottom: 50px;
+    height: 100%;
 }
 /*.mfp-bg {
 	position: fixed !important;
@@ -5755,7 +5793,9 @@ $(".container").fitVids();
               close:function(){
 				$("body").css("overflow", "initial");
               }
-          }
+          },
+        fixedBgPos: true,
+        fixedContentPos: true
       });
 		$('#topics-popup-open').magnificPopup({
         items: {
@@ -5771,6 +5811,8 @@ $(".container").fitVids();
 				$("body").css("overflow", "initial");
               }
           },
+          fixedBgPos: true,
+          fixedContentPos: true
       });
 		$('#search-popup-open').magnificPopup({
           items: {
@@ -5794,7 +5836,9 @@ $(".container").fitVids();
 
               duration: 500, // duration of the effect, in milliseconds
               easing: 'ease-in-out', // CSS transition easing function
-          }
+          },
+          fixedBgPos: true,
+          fixedContentPos: true
       });
       $('#openApps').magnificPopup({
 		items: {
@@ -5815,7 +5859,9 @@ $(".container").fitVids();
               close:function(){
 				$("body").css("overflow", "initial");
               }
-          }
+          },
+        fixedBgPos: true,
+        fixedContentPos: true
 	  });
 		
     });
@@ -7077,52 +7123,6 @@ $(".container").fitVids();
   <b:include name='quickedit'/>
 </b:includable>
                 </b:widget>
-                <b:widget id='Label3' locked='false' title='Categories' type='Label'>
-                  <b:widget-settings>
-                    <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
-                    <b:widget-setting name='display'>CLOUD</b:widget-setting>
-                    <b:widget-setting name='selectedLabelsList'/>
-                    <b:widget-setting name='showType'>ALL</b:widget-setting>
-                    <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
-      <ul>
-        <b:loop values='data:labels' var='label'>
-          <li>
-            <b:if cond='data:blog.url == data:label.url'>
-              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-            <b:else/>
-              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-            </b:if>
-            <b:if cond='data:showFreqNumbers'>
-              <span dir='ltr'>(<data:label.count/>)</span>
-            </b:if>
-          </li>
-        </b:loop>
-      </ul>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
-          </b:if>
-        </span>
-      </b:loop>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-                </b:widget>
                 <b:widget id='HTML3' locked='false' title='' type='HTML'>
                   <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -7470,7 +7470,7 @@ var displayPageNum=3;
 var upPageWord ="<i class='fa fa-angle-left'></i>";
 var downPageWord ="<i class='fa fa-angle-right'></i>";
 
-function showpageCount(x){var C=home_page_url;var E=new Array();var y=1;var H=1;var v=0;var p=0;var G=0;var F="";var J="";var w="";for(var z=0,A;A=x.feed.entry[z];z++){var u=A.published.$t.substring(0,19)+A.published.$t.substring(23,29);timestamp=encodeURIComponent(u);var i=A.title.$t;if(i!=""){if(v==0||(v%pageCount==(pageCount-1))){if(C.indexOf(timestamp)!=-1){y=H}if(i!=""){H++}E[E.length]="/search?updated-max="+timestamp+"&max-results="+pageCount}}v++}for(var D=0;D<E.length;D++){if(D>=(y-displayPageNum-1)&&D<(y+displayPageNum)){if(p==0&&D==y-2){if(y==2){J='<span class="showpage"><a href="/">'+upPageWord+"</a></span>"}else{J='<span class="showpage"><a href="'+E[D]+'">'+upPageWord+"</a></span>"}p++}if(D==(y-1)){F+='<span class="showpagePoint">'+y+"</span>"}else{if(D==0){F+='<span class="showpageNum"><a href="/">1</a></span>'}else{F+='<span class="showpageNum"><a href="'+E[D]+'">'+(D+1)+"</a></span>"}}if(G==0&&D==y){w='<span class="showpage"> <a href="'+E[D]+'">'+downPageWord+"</a></span>";G++}}}if(y>1){F=""+J+" "+F+" "}F='<div class="showpageArea">'+F;if(y<(H-1)){F+=w}if(H==1){H++}F+="</div>";var I=document.getElementsByName("pageArea");var B=document.getElementById("blog-pager");if(H<=2){F=""}for(var D=0;D<I.length;D++){I[D].innerHTML=F}if(I&&I.length>0){F=""}if(B){B.innerHTML=F}}function showpageCount2(A){var F=home_page_url;var G=new Array();var J=F.indexOf("/search/label/")!=-1;var M=J?F.substr(F.indexOf("/search/label/")+14,F.length):"";M=M.indexOf("?")!=-1?M.substr(0,M.indexOf("?")):M;var B=1;var L=1;var y=0;var p=0;var K=0;var I="";var P="";var z="";var N='<span class="showpageNum"><a href="/search/label/'+M+"?&max-results="+pageCount+'">';var F=home_page_url;for(var C=0,D;D=A.feed.entry[C];C++){var x=D.published.$t.substring(0,19)+D.published.$t.substring(23,29);timestamp=encodeURIComponent(x);var i=D.title.$t;if(i!=""){if(y==0||(y%pageCount==(pageCount-1))){if(F.indexOf(timestamp)!=-1){B=L}if(i!=""){L++}G[G.length]="/search/label/"+M+"?updated-max="+timestamp+"&max-results="+pageCount}}y++}for(var H=0;H<G.length;H++){if(H>=(B-displayPageNum-1)&&H<(B+displayPageNum)){if(p==0&&H==B-2){if(B==2){P=N+upPageWord+"</a></span>"}else{P='<span class="showpage"><a href="'+G[H]+'">'+upPageWord+"</a></span>"}p++}if(H==(B-1)){I+='<span class="showpagePoint">'+B+"</span>"}else{if(H==0){I=N+"1</a></span>"}else{I+='<span class="showpageNum"><a href="'+G[H]+'">'+(H+1)+"</a></span>"}}if(K==0&&H==B){z='<span class="showpage"> <a href="'+G[H]+'">'+downPageWord+"</a></span>";K++}}}if(B>1){if(!J){I=""+P+" "+I+" "}else{I=""+P+" "+I+" "}}I='<div class="showpageArea">'+I;if(B<(L-1)){I+=z}if(L==1){L++}I+="</div>";var O=document.getElementsByName("pageArea");var E=document.getElementById("blog-pager");if(L<=2){I=""}for(var H=0;H<O.length;H++){O[H].innerHTML=I}if(O&&O.length>0){I=""}if(E){E.innerHTML=I}}var home_page_url=location.href;var thisUrl=home_page_url;if(thisUrl.indexOf("/search/label/")!=-1){if(thisUrl.indexOf("?updated-max")!=-1){var lblname1=thisUrl.substring(thisUrl.indexOf("/search/label/")+14,thisUrl.indexOf("?updated-max"))}else{var lblname1=thisUrl.substring(thisUrl.indexOf("/search/label/")+14,thisUrl.indexOf("?&max"))}}var home_page="/";if(thisUrl.indexOf("?q=")==-1){if(thisUrl.indexOf("/search/label/")==-1){document.write('<script src="'+home_page+'feeds/posts/summary?alt=json-in-script&callback=showpageCount&max-results=99999" ><\/script>')}else{document.write('<script src="'+home_page+"feeds/posts/full/-/"+lblname1+'?alt=json-in-script&callback=showpageCount2&max-results=99999" ><\/script>')}};
+function showpageCount(x){var C=home_page_url;var E=new Array();var y=1;var H=1;var v=0;var p=0;var G=0;var F="";var J="";var w="";for(var z=0,A;A=x.feed.entry[z];z++){var u=A.published.$t.substring(0,19)+A.published.$t.substring(23,29);timestamp=encodeURIComponent(u);var i=A.title.$t;if(i!=""){if(v==0||(v%pageCount==(pageCount-1))){if(C.indexOf(timestamp)!=-1){y=H}if(i!=""){H++}E[E.length]="/search?updated-max="+timestamp+"&max-results="+pageCount}}v++}for(var D=0;D<E.length;D++){if(D>=(y-displayPageNum-1)&&D<(y+displayPageNum)){if(p==0&&D==y-2){if(y==2){J='<span class="showpage"><a href="/">'+upPageWord+"</a></span>"}else{J='<span class="showpage"><a href="'+E[D]+'">'+upPageWord+"</a></span>"}p++}if(D==(y-1)){F+='<span class="showpagePoint">'+y+"</span>"}else{if(D==0){F+='<span class="showpageNum"><a href="/">1</a></span>'}else{F+='<span class="showpageNum"><a href="'+E[D]+'">'+(D+1)+"</a></span>"}}if(G==0&&D==y){w='<span class="showpage"> <a href="'+E[D]+'">'+downPageWord+"</a></span>";G++}}}if(y>1){F=""+J+" "+F+" "}F='<div class="showpageArea">'+F;if(y<(H-1)){F+=w}if(H==1){H++}F+="</div>";var I=document.getElementsByName("pageArea");var B=document.getElementById("blog-pager");if(H<=2){F=""}for(var D=0;D<I.length;D++){I[D].innerHTML=F}if(I&&I.length>0){F=""}if(B){B.innerHTML=F}document.getElementById("blog-pager").style.display="block";}function showpageCount2(A){var F=home_page_url;var G=new Array();var J=F.indexOf("/search/label/")!=-1;var M=J?F.substr(F.indexOf("/search/label/")+14,F.length):"";M=M.indexOf("?")!=-1?M.substr(0,M.indexOf("?")):M;var B=1;var L=1;var y=0;var p=0;var K=0;var I="";var P="";var z="";var N='<span class="showpageNum"><a href="/search/label/'+M+"?&max-results="+pageCount+'">';var F=home_page_url;for(var C=0,D;D=A.feed.entry[C];C++){var x=D.published.$t.substring(0,19)+D.published.$t.substring(23,29);timestamp=encodeURIComponent(x);var i=D.title.$t;if(i!=""){if(y==0||(y%pageCount==(pageCount-1))){if(F.indexOf(timestamp)!=-1){B=L}if(i!=""){L++}G[G.length]="/search/label/"+M+"?updated-max="+timestamp+"&max-results="+pageCount}}y++}for(var H=0;H<G.length;H++){if(H>=(B-displayPageNum-1)&&H<(B+displayPageNum)){if(p==0&&H==B-2){if(B==2){P=N+upPageWord+"</a></span>"}else{P='<span class="showpage"><a href="'+G[H]+'">'+upPageWord+"</a></span>"}p++}if(H==(B-1)){I+='<span class="showpagePoint">'+B+"</span>"}else{if(H==0){I=N+"1</a></span>"}else{I+='<span class="showpageNum"><a href="'+G[H]+'">'+(H+1)+"</a></span>"}}if(K==0&&H==B){z='<span class="showpage"> <a href="'+G[H]+'">'+downPageWord+"</a></span>";K++}}}if(B>1){if(!J){I=""+P+" "+I+" "}else{I=""+P+" "+I+" "}}I='<div class="showpageArea">'+I;if(B<(L-1)){I+=z}if(L==1){L++}I+="</div>";var O=document.getElementsByName("pageArea");var E=document.getElementById("blog-pager");if(L<=2){I=""}for(var H=0;H<O.length;H++){O[H].innerHTML=I}if(O&&O.length>0){I=""}if(E){E.innerHTML=I} document.getElementById("blog-pager").style.display="block";}var home_page_url=location.href;var thisUrl=home_page_url;if(thisUrl.indexOf("/search/label/")!=-1){if(thisUrl.indexOf("?updated-max")!=-1){var lblname1=thisUrl.substring(thisUrl.indexOf("/search/label/")+14,thisUrl.indexOf("?updated-max"))}else{var lblname1=thisUrl.substring(thisUrl.indexOf("/search/label/")+14,thisUrl.indexOf("?&max"))}}var home_page="/";if(thisUrl.indexOf("?q=")==-1){if(thisUrl.indexOf("/search/label/")==-1){document.write('<script src="'+home_page+'feeds/posts/summary?alt=json-in-script&callback=showpageCount&max-results=99999" ><\/script>');}else{document.write('<script src="'+home_page+"feeds/posts/full/-/"+lblname1+'?alt=json-in-script&callback=showpageCount2&max-results=99999" ><\/script>');}};
 	
 	//]]>
 </script>
@@ -7636,6 +7636,7 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                       <form action='/search' id='searchform'>
                         <input name='cof' type='hidden' value='FORID:10'/>
                         <input name='ie' type='hidden' value='ISO-8859-1'/>
+						<input name='max-results' type='hidden' value='9'/>
                           <input id='search-form' name='q' placeholder='Search here....' required='required' type='text'/>
                           <button class='search-button' title='Search' type='submit'><i aria-hidden='true' class='fa fa-search'/></button>
                       </form>
@@ -7653,6 +7654,7 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                       <form action='/search' id='searchform'>
                         <input name='cof' type='hidden' value='FORID:10'/>
                         <input name='ie' type='hidden' value='ISO-8859-1'/>
+						<input name='max-results' type='hidden' value='9'/>
                           <input id='search-form' name='q' placeholder='Search here....' required='required' type='text'/>
                           <button class='search-button' title='Search' type='submit'><i aria-hidden='true' class='fa fa-search'/></button>
                       </form>
@@ -7675,7 +7677,7 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                         return a.toLowerCase().localeCompare(b.toLowerCase());
                     });
                     for(i=0;i&lt;lst.length;i++){
-                        document.write(&#39;&lt;span class=&quot;label-size label-size-5&quot;&gt;&lt;a dir=&quot;ltr&quot; href=&quot;/search/label/&#39;+lst[i]+&#39;&quot;&gt;&#39;+lst[i]+&#39;&lt;/a&gt;&lt;/span&gt;&#39;);
+                        document.write(&#39;&lt;span class=&quot;label-size label-size-5&quot;&gt;&lt;a dir=&quot;ltr&quot; href=&quot;/search/label/&#39;+lst[i]+&#39;?&amp;max-results=9&quot;&gt;&#39;+lst[i]+&#39;&lt;/a&gt;&lt;/span&gt;&#39;);
                     }
                 }
               &lt;/script&gt;
@@ -7688,6 +7690,16 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
 		<h2>Topics</h2>
 		<div class='custom-wid-cloud-label' id='custom-wid-labels-list'>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      	
+
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      	
       	</div>
 	</div>
 
