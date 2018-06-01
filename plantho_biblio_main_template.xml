@@ -1823,7 +1823,7 @@ display:table-cell;
 vertical-align:middle;
 text-align: right;
 width: 16vw;// 145px;
-font-size: calc(0.8vw + 0.8vh); //earlier inherited from .main-menu-left li>a
+font-size: calc(0.8vw + 0.8vh); //earlier inherited from .main-menu-left li&gt;a
 }
 
 .no-touch .scrollable.hover {
@@ -1952,8 +1952,7 @@ margin: -5px;
                 &lt;/li&gt;
             &lt;/ul&gt;
         &lt;/nav-left&gt;
-        &lt;/div&gt;
-</b:widget-setting>
+        &lt;/div&gt;</b:widget-setting>
                                             </b:widget-settings>
                                             <b:includable id='main'>
                                                     <!-- only display title if it's non-empty -->
@@ -2251,8 +2250,7 @@ font-weight:700;
                 &lt;/li&gt;
             &lt;/ul&gt;
         &lt;/nav&gt;
-        &lt;/div&gt;
-</b:widget-setting>
+        &lt;/div&gt;</b:widget-setting>
                                             </b:widget-settings>
                                             <b:includable id='main'>
   <!-- only display title if it's non-empty -->
