@@ -4794,6 +4794,7 @@ a.more-link {
 
 	<!-- LOAD JQUERY -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js' type='text/javascript'/>
+	
     <script class='java' type='text/javascript'>
       //<![CDATA[
 var _0x1f7f=["\x44\x20\x31\x73\x28\x65\x29\x7B\x77\x2E\x7A\x28\x27\x3C\x59\x20\x6B\x3D\x22\x27\x2B\x4D\x2B\x27\x22\x3E\x27\x29\x3B\x31\x33\x28\x79\x20\x74\x3D\x30\x3B\x74\x3C\x31\x50\x3B\x74\x2B\x2B\x29\x7B\x79\x20\x72\x2C\x69\x3D\x65\x2E\x31\x63\x2E\x46\x5B\x74\x5D\x2C\x6E\x3D\x69\x2E\x45\x2E\x24\x74\x2C\x6C\x3D\x69\x2E\x31\x61\x5B\x30\x5D\x2E\x31\x39\x3B\x4E\x28\x74\x3D\x3D\x65\x2E\x31\x63\x2E\x46\x2E\x53\x29\x50\x3B\x31\x33\x28\x79\x20\x6F\x3D\x30\x3B\x6F\x3C\x69\x2E\x4A\x2E\x53\x3B\x6F\x2B\x2B\x29\x4E\x28\x22\x31\x4F\x22\x3D\x3D\x69\x2E\x4A\x5B\x6F\x5D\x2E\x31\x52\x29\x7B\x72\x3D\x69\x2E\x4A\x5B\x6F\x5D\x2E\x42\x3B\x50\x7D\x79\x20\x75\x3B\x32\x34\x7B\x75\x3D\x69\x2E\x5A\x24\x31\x72\x2E\x32\x36\x7D\x32\x35\x28\x70\x29\x7B\x73\x3D\x69\x2E\x31\x59\x2E\x24\x74\x2C\x61\x3D\x73\x2E\x48\x28\x22\x3C\x31\x36\x22\x29\x2C\x62\x3D\x73\x2E\x48\x28\x27\x31\x62\x3D\x22\x27\x2C\x61\x29\x2C\x63\x3D\x73\x2E\x48\x28\x27\x22\x27\x2C\x62\x2B\x35\x29\x2C\x64\x3D\x73\x2E\x31\x4D\x28\x62\x2B\x35\x2C\x63\x2D\x62\x2D\x35\x29\x2C\x75\x3D\x2D\x31\x21\x3D\x61\x26\x26\x2D\x31\x21\x3D\x62\x26\x26\x2D\x31\x21\x3D\x63\x26\x26\x22\x22\x21\x3D\x64\x3F\x64\x3A\x22\x47\x3A\x2F\x2F\x31\x2E\x31\x4C\x2E\x31\x4B\x2E\x4C\x2F\x2D\x31\x4A\x2F\x31\x49\x2F\x31\x79\x2F\x31\x78\x2F\x31\x77\x2D\x63\x2F\x31\x75\x2E\x31\x74\x22\x7D\x79\x20\x6D\x3D\x69\x2E\x31\x38\x2E\x24\x74\x2C\x76\x3D\x6D\x2E\x43\x28\x30\x2C\x34\x29\x2C\x67\x3D\x6D\x2E\x43\x28\x35\x2C\x37\x29\x2C\x68\x3D\x6D\x2E\x43\x28\x38\x2C\x31\x30\x29\x2C\x66\x3D\x31\x65\x20\x31\x66\x3B\x66\x5B\x31\x5D\x3D\x22\x31\x67\x22\x2C\x66\x5B\x32\x5D\x3D\x22\x31\x68\x22\x2C\x66\x5B\x33\x5D\x3D\x22\x31\x69\x22\x2C\x66\x5B\x34\x5D\x3D\x22\x31\x6A\x22\x2C\x66\x5B\x35\x5D\x3D\x22\x31\x6B\x22\x2C\x66\x5B\x36\x5D\x3D\x22\x31\x6C\x22\x2C\x66\x5B\x37\x5D\x3D\x22\x31\x6D\x22\x2C\x66\x5B\x38\x5D\x3D\x22\x31\x6E\x22\x2C\x66\x5B\x39\x5D\x3D\x22\x4F\x22\x2C\x66\x5B\x31\x30\x5D\x3D\x22\x31\x70\x22\x2C\x66\x5B\x31\x31\x5D\x3D\x22\x31\x6F\x22\x2C\x66\x5B\x31\x32\x5D\x3D\x22\x31\x64\x22\x3B\x79\x20\x41\x3D\x66\x5B\x31\x35\x28\x67\x2C\x31\x30\x29\x5D\x2B\x22\x20\x22\x2B\x68\x2B\x22\x2C\x20\x22\x2B\x76\x3B\x77\x2E\x7A\x28\x31\x76\x2B\x22\x3C\x22\x2B\x31\x34\x2B\x27\x20\x6B\x3D\x22\x78\x22\x3E\x27\x29\x2C\x77\x2E\x7A\x28\x27\x3C\x6A\x20\x6B\x3D\x22\x78\x2D\x5A\x22\x3E\x3C\x6A\x20\x6B\x3D\x22\x31\x7A\x2D\x31\x41\x22\x3E\x3C\x31\x36\x20\x31\x62\x3D\x22\x27\x2B\x75\x2E\x31\x42\x28\x22\x2F\x31\x43\x2D\x63\x2F\x22\x2C\x22\x2F\x31\x44\x2D\x70\x2F\x22\x29\x2B\x27\x22\x20\x31\x45\x3D\x22\x27\x2B\x6E\x2B\x27\x22\x2F\x3E\x3C\x2F\x6A\x3E\x3C\x2F\x6A\x3E\x3C\x6A\x20\x6B\x3D\x22\x78\x2D\x31\x46\x22\x3E\x27\x29\x2C\x22\x31\x47\x2D\x31\x48\x22\x3D\x3D\x4D\x26\x26\x77\x2E\x7A\x28\x27\x3C\x71\x20\x6B\x3D\x22\x58\x22\x3E\x3C\x61\x20\x42\x3D\x22\x2F\x56\x2F\x55\x2F\x27\x2B\x6C\x2B\x27\x22\x3E\x27\x2B\x6C\x2B\x27\x3C\x2F\x61\x3E\x3C\x2F\x71\x3E\x3C\x6A\x20\x6B\x3D\x22\x78\x2D\x45\x22\x3E\x3C\x52\x3E\x3C\x61\x20\x42\x3D\x22\x27\x2B\x72\x2B\x27\x22\x3E\x27\x2B\x6E\x2B\x27\x3C\x2F\x61\x3E\x3C\x2F\x52\x3E\x3C\x2F\x6A\x3E\x3C\x6A\x20\x6B\x3D\x22\x78\x2D\x31\x4E\x22\x3E\x3C\x71\x20\x6B\x3D\x22\x78\x2D\x49\x22\x3E\x27\x2B\x41\x2B\x22\x3C\x2F\x71\x3E\x3C\x2F\x6A\x3E\x3C\x2F\x6A\x3E\x22\x29\x2C\x22\x31\x71\x2D\x31\x51\x22\x3D\x3D\x4D\x26\x26\x77\x2E\x7A\x28\x27\x3C\x6A\x20\x6B\x3D\x22\x78\x2D\x45\x22\x3E\x3C\x57\x3E\x3C\x61\x20\x42\x3D\x22\x27\x2B\x72\x2B\x27\x22\x3E\x27\x2B\x6E\x2B\x27\x3C\x2F\x61\x3E\x3C\x2F\x57\x3E\x3C\x2F\x6A\x3E\x3C\x71\x20\x6B\x3D\x22\x78\x2D\x49\x22\x3E\x27\x2B\x41\x2B\x22\x3C\x2F\x71\x3E\x3C\x2F\x6A\x3E\x22\x29\x2C\x77\x2E\x7A\x28\x22\x3C\x2F\x22\x2B\x31\x34\x2B\x22\x3E\x22\x2B\x31\x53\x29\x7D\x77\x2E\x7A\x28\x22\x3C\x2F\x59\x3E\x22\x29\x7D\x3B\x44\x20\x31\x54\x28\x65\x29\x7B\x79\x20\x61\x3D\x65\x2E\x46\x2C\x74\x3D\x61\x2E\x31\x61\x5B\x30\x5D\x2E\x31\x39\x3B\x77\x2E\x7A\x28\x27\x3C\x6A\x20\x6B\x3D\x22\x78\x2D\x58\x22\x3E\x3C\x61\x20\x42\x3D\x22\x2F\x56\x2F\x55\x2F\x27\x2B\x74\x2B\x27\x22\x3E\x27\x2B\x74\x2B\x22\x3C\x2F\x61\x3E\x3C\x2F\x6A\x3E\x22\x29\x7D\x3B\x44\x20\x31\x55\x28\x73\x29\x7B\x79\x20\x61\x3D\x73\x2E\x46\x2C\x6E\x3D\x61\x2E\x31\x38\x2E\x24\x74\x2C\x74\x3D\x6E\x2E\x43\x28\x30\x2C\x34\x29\x2C\x65\x3D\x6E\x2E\x43\x28\x35\x2C\x37\x29\x2C\x72\x3D\x6E\x2E\x43\x28\x38\x2C\x31\x30\x29\x2C\x66\x3D\x31\x65\x20\x31\x66\x3B\x66\x5B\x31\x5D\x3D\x22\x31\x67\x22\x2C\x66\x5B\x32\x5D\x3D\x22\x31\x68\x22\x2C\x66\x5B\x33\x5D\x3D\x22\x31\x69\x22\x2C\x66\x5B\x34\x5D\x3D\x22\x31\x6A\x22\x2C\x66\x5B\x35\x5D\x3D\x22\x31\x6B\x22\x2C\x66\x5B\x36\x5D\x3D\x22\x31\x6C\x22\x2C\x66\x5B\x37\x5D\x3D\x22\x31\x6D\x22\x2C\x66\x5B\x38\x5D\x3D\x22\x31\x6E\x22\x2C\x66\x5B\x39\x5D\x3D\x22\x4F\x22\x2C\x66\x5B\x31\x30\x5D\x3D\x22\x31\x70\x22\x2C\x66\x5B\x31\x31\x5D\x3D\x22\x31\x6F\x22\x2C\x66\x5B\x31\x32\x5D\x3D\x22\x31\x64\x22\x2C\x77\x2E\x7A\x28\x27\x3C\x6A\x20\x6B\x3D\x22\x78\x2D\x49\x22\x3E\x20\x3C\x71\x20\x6B\x3D\x22\x31\x56\x22\x3E\x27\x2B\x66\x5B\x31\x35\x28\x65\x2C\x31\x30\x29\x5D\x2B\x27\x3C\x2F\x71\x3E\x20\x3C\x71\x20\x6B\x3D\x22\x31\x57\x22\x3E\x27\x2B\x72\x2B\x27\x3C\x2F\x71\x3E\x2C\x20\x3C\x71\x20\x6B\x3D\x22\x31\x58\x22\x3E\x27\x2B\x74\x2B\x22\x3C\x2F\x71\x3E\x3C\x2F\x6A\x3E\x22\x29\x7D\x3B\x54\x2E\x31\x5A\x3D\x44\x28\x29\x7B\x79\x20\x65\x3D\x77\x2E\x32\x30\x28\x22\x32\x31\x22\x29\x3B\x4E\x28\x65\x3D\x3D\x32\x32\x29\x7B\x54\x2E\x32\x33\x2E\x42\x3D\x22\x47\x3A\x2F\x2F\x51\x2E\x31\x37\x2E\x4C\x2F\x22\x7D\x65\x2E\x4B\x28\x22\x42\x22\x2C\x22\x47\x3A\x2F\x2F\x51\x2E\x31\x37\x2E\x4C\x2F\x22\x29\x3B\x65\x2E\x4B\x28\x22\x32\x37\x22\x2C\x22\x32\x38\x22\x29\x3B\x65\x2E\x4B\x28\x22\x45\x22\x2C\x22\x32\x39\x20\x32\x61\x20\x32\x62\x22\x29\x3B\x65\x2E\x32\x63\x3D\x22\x32\x64\x22\x7D","\x7C","\x73\x70\x6C\x69\x74","\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x64\x69\x76\x7C\x63\x6C\x61\x73\x73\x7C\x7C\x7C\x7C\x7C\x7C\x73\x70\x61\x6E\x7C\x7C\x7C\x7C\x7C\x7C\x64\x6F\x63\x75\x6D\x65\x6E\x74\x7C\x70\x6F\x73\x74\x7C\x76\x61\x72\x7C\x77\x72\x69\x74\x65\x7C\x7C\x68\x72\x65\x66\x7C\x73\x75\x62\x73\x74\x72\x69\x6E\x67\x7C\x66\x75\x6E\x63\x74\x69\x6F\x6E\x7C\x74\x69\x74\x6C\x65\x7C\x65\x6E\x74\x72\x79\x7C\x68\x74\x74\x70\x7C\x69\x6E\x64\x65\x78\x4F\x66\x7C\x64\x61\x74\x65\x7C\x6C\x69\x6E\x6B\x7C\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65\x7C\x63\x6F\x6D\x7C\x6F\x75\x74\x65\x72\x63\x6C\x61\x73\x73\x7C\x69\x66\x7C\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x7C\x62\x72\x65\x61\x6B\x7C\x77\x77\x77\x7C\x68\x34\x7C\x6C\x65\x6E\x67\x74\x68\x7C\x77\x69\x6E\x64\x6F\x77\x7C\x6C\x61\x62\x65\x6C\x7C\x73\x65\x61\x72\x63\x68\x7C\x68\x32\x7C\x63\x61\x74\x7C\x75\x6C\x7C\x6D\x65\x64\x69\x61\x7C\x7C\x7C\x7C\x66\x6F\x72\x7C\x69\x6E\x74\x61\x67\x7C\x70\x61\x72\x73\x65\x49\x6E\x74\x7C\x69\x6D\x67\x7C\x62\x65\x61\x75\x74\x79\x74\x65\x6D\x70\x6C\x61\x74\x65\x73\x7C\x70\x75\x62\x6C\x69\x73\x68\x65\x64\x7C\x74\x65\x72\x6D\x7C\x63\x61\x74\x65\x67\x6F\x72\x79\x7C\x73\x72\x63\x7C\x66\x65\x65\x64\x7C\x44\x65\x63\x65\x6D\x62\x65\x72\x7C\x6E\x65\x77\x7C\x41\x72\x72\x61\x79\x7C\x4A\x61\x6E\x75\x61\x72\x79\x7C\x46\x65\x62\x72\x75\x61\x72\x79\x7C\x4D\x61\x72\x63\x68\x7C\x41\x70\x72\x69\x6C\x7C\x4D\x61\x79\x7C\x4A\x75\x6E\x65\x7C\x4A\x75\x6C\x79\x7C\x41\x75\x67\x75\x73\x74\x7C\x4E\x6F\x76\x65\x6D\x62\x65\x72\x7C\x4F\x63\x74\x6F\x62\x65\x72\x7C\x73\x75\x62\x7C\x74\x68\x75\x6D\x62\x6E\x61\x69\x6C\x7C\x6C\x61\x62\x65\x6C\x74\x68\x75\x6D\x62\x73\x7C\x67\x69\x66\x7C\x67\x72\x65\x79\x7C\x73\x74\x61\x72\x74\x74\x61\x67\x7C\x73\x35\x30\x30\x7C\x66\x62\x63\x68\x41\x52\x6A\x4B\x49\x44\x67\x7C\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x7C\x69\x6D\x61\x67\x65\x7C\x77\x72\x61\x70\x7C\x72\x65\x70\x6C\x61\x63\x65\x7C\x73\x37\x32\x7C\x73\x34\x30\x30\x7C\x61\x6C\x74\x7C\x62\x6F\x64\x79\x7C\x66\x65\x61\x74\x75\x72\x65\x64\x7C\x73\x6C\x69\x64\x65\x72\x7C\x55\x6F\x59\x33\x33\x4A\x30\x44\x70\x39\x49\x7C\x70\x6D\x74\x6D\x43\x6C\x38\x45\x62\x54\x49\x7C\x62\x6C\x6F\x67\x73\x70\x6F\x74\x7C\x62\x70\x7C\x73\x75\x62\x73\x74\x72\x7C\x6D\x65\x74\x61\x7C\x61\x6C\x74\x65\x72\x6E\x61\x74\x65\x7C\x6E\x75\x6D\x70\x6F\x73\x74\x73\x7C\x6D\x65\x6E\x75\x7C\x72\x65\x6C\x7C\x65\x6E\x64\x74\x61\x67\x7C\x6C\x61\x62\x65\x6C\x73\x65\x74\x7C\x6D\x65\x74\x61\x73\x65\x74\x7C\x6D\x6F\x6E\x74\x68\x7C\x64\x61\x79\x7C\x79\x65\x61\x72\x7C\x63\x6F\x6E\x74\x65\x6E\x74\x7C\x6F\x6E\x6C\x6F\x61\x64\x7C\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64\x7C\x6D\x79\x63\x6F\x6E\x74\x65\x6E\x74\x7C\x6E\x75\x6C\x6C\x7C\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x7C\x74\x72\x79\x7C\x63\x61\x74\x63\x68\x7C\x75\x72\x6C\x7C\x72\x65\x66\x7C\x64\x6F\x66\x6F\x6C\x6C\x6F\x77\x7C\x4D\x69\x6E\x69\x6D\x61\x6C\x7C\x42\x6C\x6F\x67\x67\x65\x72\x7C\x54\x65\x6D\x70\x6C\x61\x74\x65\x73\x7C\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C\x7C\x42\x65\x61\x75\x74\x79\x54\x65\x6D\x70\x6C\x61\x74\x65\x73","","\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65","\x72\x65\x70\x6C\x61\x63\x65","\x5C\x77\x2B","\x5C\x62","\x67"];eval(function(_0xb494x1,_0xb494x2,_0xb494x3,_0xb494x4,_0xb494x5,_0xb494x6){_0xb494x5= function(_0xb494x3){return (_0xb494x3< _0xb494x2?_0x1f7f[4]:_0xb494x5(parseInt(_0xb494x3/ _0xb494x2)))+ ((_0xb494x3= _0xb494x3% _0xb494x2)> 35?String[_0x1f7f[5]](_0xb494x3+ 29):_0xb494x3.toString(36))};if(!_0x1f7f[4][_0x1f7f[6]](/^/,String)){while(_0xb494x3--){_0xb494x6[_0xb494x5(_0xb494x3)]= _0xb494x4[_0xb494x3]|| _0xb494x5(_0xb494x3)};_0xb494x4= [function(_0xb494x5){return _0xb494x6[_0xb494x5]}];_0xb494x5= function(){return _0x1f7f[7]};_0xb494x3= 1};while(_0xb494x3--){if(_0xb494x4[_0xb494x3]){_0xb494x1= _0xb494x1[_0x1f7f[6]]( new RegExp(_0x1f7f[8]+ _0xb494x5(_0xb494x3)+ _0x1f7f[8],_0x1f7f[9]),_0xb494x4[_0xb494x3])}};return _0xb494x1}(_0x1f7f[0],62,138,_0x1f7f[3][_0x1f7f[2]](_0x1f7f[1]),0,{}))
@@ -5204,19 +5205,6 @@ $(document).ready(function(){
     }, 500);
   });
 
-	$(document).keypress(function(e) {
-		console.log(&quot;In keypress event.. &quot;+ e);
-     	if (e.keyCode == 27) { // escape key maps to keycode `27`
-        	var appsOverlay = $(&#39;#appBox&#39;).css(&#39;display&#39;);
-			console.log(&quot;appsOverlay &quot;+ appsOverlay);
-            if(appsOverlay !== &#39;none&#39;){
-				document.getElementById(&#39;appBox&#39;).style.display=&#39;none&#39;;
-				document.getElementById(&#39;hideApp&#39;).style.display=&#39;none&#39;;
-				document.getElementById(&#39;show&#39;).style.display=&#39;block&#39;;
-            }
-    	}
-	});
-
   // When the user scrolls the page, execute myFunction 
   window.onscroll = function() {myFunction()};
 	
@@ -5225,10 +5213,8 @@ $(document).ready(function(){
 
   // Get the offset position of the navbar
   var sticky = header.offsetTop;
-  console.log(window.pageYOffset + &quot; &quot; + sticky);
   // Add the sticky class to the header when you reach its scroll position. Remove &quot;sticky&quot; when you leave the scroll position
   function myFunction() {
-	console.log(window.pageYOffset + &quot; &quot; + sticky);
     if (window.pageYOffset &gt;= sticky) {
       header.classList.add(&quot;sticky&quot;);
     } else {
@@ -5236,7 +5222,21 @@ $(document).ready(function(){
     }
   }
 
+
 });
+
+function truncateText(selector, charlimit){
+	var elems = $(selector);
+	for(var i = 0; i &lt; elems.length; i++){
+    var content = elems[i].innerText;
+    if(content.length &gt; charlimit){
+      content = content.substring(0, charlimit-1);
+      content += &#39;...&#39;;
+      elems[i].innerText = content;
+	  console.log(content);
+    }
+  }
+}
 
 </script>
 
@@ -5535,9 +5535,16 @@ div.custom-popup::-webkit-scrollbar-thumb {
 }
 #footer .widget .widget-content ul li a{
 	color: #f2f2f2;
+	/*display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;*/
 }
 #footer .widget .widget-content ul li span{
 	color: #999999;
+	float: left;
+    height: 15px;
+    margin-left: 10px;
 }
 #footer .row{
 	margin-top: 0px;
@@ -5602,6 +5609,18 @@ div.custom-popup::-webkit-scrollbar-thumb {
 .totop-inner .fa{
 	font-size: 45px;
 	color: #C53307;
+}
+.PopularPosts .item-thumbnail{
+	width: 72px;
+	float: left;
+}
+.PopularPosts .item-title{
+	width: 270px;
+    float: left;
+}
+.PopularPosts .item-snippet{
+	width: 270px;
+    float: left;
 }
 @media screen and (max-width: 737px){
 #box, #appBox {
@@ -5673,6 +5692,21 @@ div.custom-popup::-webkit-scrollbar-thumb {
 }
 #search-popup, #appBox, #categories-popup, #topics-popup{
 	top: 60px;
+}
+#footer .widget .widget-content ul li div.footer-lists-title{
+	width: 230px !important;
+}
+.PopularPosts .item-thumbnail{
+	width: 72px;
+	float: left;
+}
+.PopularPosts .item-title{
+	width: 230px;
+    float: left;
+}
+.PopularPosts .item-snippet{
+	width: 230px;
+    float: left;
 }
 }
 </style>
@@ -5863,7 +5897,13 @@ $(".container").fitVids();
         fixedBgPos: true,
         fixedContentPos: true
 	  });
-		
+      if(window.screen.width < 737){
+		truncateText('#footer .widget .widget-content ul li a', 53);
+      }
+      else{
+		truncateText('#footer .widget .widget-content ul li a', 71);
+      }
+
     });
 	
 
@@ -7096,14 +7136,14 @@ $(".container").fitVids();
             <!-- SIDEBAR -->
             <div class='col-md-3'>
               <b:section class='sidebar' id='sidebar'>
-                <b:widget id='HTML1' locked='false' title='About Me' type='HTML'>
+                <b:widget id='HTML1' locked='false' title='About space #planthro or BIBLIO' type='HTML'>
                   <b:widget-settings>
                     <b:widget-setting name='content'>&lt;center&gt;					&lt;div class=&quot;photo-profile&quot;&gt;
-										&lt;img src=&quot;https://4.bp.blogspot.com/-hbcC65fMS1c/V4pt3qj06nI/AAAAAAAAIaA/FQ2L-6JXGusu_Nv4gdizZafCf93JU0vnwCLcB/s1600/about-image.jpg&quot; alt=&quot;Photo Profile&quot; /&gt;
+										&lt;img src=&quot;https://1.bp.blogspot.com/-W1zO2rEOqEQ/Wu0OLbBIDxI/AAAAAAAABOM/D9JNpCQWvBYdYIzsM2Ukk1L9GZAgv4kPgCLcBGAs/s1600/Pa1200X1200.png&quot; alt=&quot;#planthro profile image&quot; /&gt;
 									&lt;/div&gt;
 									&lt;div class=&quot;bio-profile&quot;&gt;
-										&lt;span class=&quot;profile-name&quot;&gt;Taylor Wong&lt;/span&gt;
-										&lt;span class=&quot;profile-job&quot;&gt;Architecture Designer&lt;/span&gt;
+										&lt;span class=&quot;profile-name&quot;&gt;#plantho&lt;/span&gt;
+										&lt;span class=&quot;profile-job&quot;&gt;18-25 characters here&lt;/span&gt;
 										&lt;span class=&quot;sparator center&quot;&gt;&lt;/span&gt;
 										&lt;p&gt;The Japanese call it Hanakotoba, and King Charles II brought it to Sweden from Persia in the 17th century. &lt;a href=&quot;/about&quot; class=&quot;more-profile&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
 										
@@ -7166,9 +7206,9 @@ $(".container").fitVids();
           &lt;style&gt;.item #related-wrap{display:<data:content/>;}&lt;/style&gt;
         </b:includable>
                 </b:widget>
-                <b:widget id='Text2' locked='false' title='Footer Widget' type='Text' version='1'>
+                <b:widget id='Text2' locked='false' title='What do you think?' type='Text' version='1'>
                   <b:widget-settings>
-                    <b:widget-setting name='content'>There is, one knows not what sweet mystery about this sea, whose gently awful stirrings seem to speak of some hidden soul beneath; like those fabled undulations of the Ephesian sod over the buried Evangelist St. John. And meet it is, that over these sea-pastures</b:widget-setting>
+                    <b:widget-setting name='content'><![CDATA[Have a comment, need more information, found an error,  copyright claims, found a broken link, want to get involved, want to suggest a reference...<div>Write a comment on this page on this reference or get in touch with the project through the contact form on the corporate page www.planthro.org</div>]]></b:widget-setting>
                   </b:widget-settings>
                   <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -7263,19 +7303,20 @@ head.appendChild(script);
                 <b:widget id='HTML6' locked='false' title='Random Posts' type='HTML'>
                   <b:widget-settings>
                     <b:widget-setting name='content'>&lt;style&gt;
-#bo-random-posts img{height:70px;float:left;width:90px;}
+#bo-random-posts img{height:67px;float:left;width:72px;padding-right: .4em;}
 #bo-random-posts img:hover{opacity: 0.5;filter: alpha(opacity=50);}
 ul#bo-random-posts {list-style-type: none;background-image: url(&quot;#&quot;);background-repeat: no-repeat;}
 #bo-random-posts li {margin: 10px 0;}
 #bo-random-posts li a{padding: 5px 0;text-decoration: none;}
 .bo-random-summary {display: block;}
+#bo-random-posts li div.footer-lists-title{ float: left;width: 270px;height: 50px;    margin-left: 10px;  }
 &lt;/style&gt;
 &lt;ul id=&#39;bo-random-posts&#39;&gt;
 &lt;script&gt;
 var borp_number = 3;
-var borp_details = &#39;yes&#39;;
+var borp_details = &#39;no&#39;;
 var borp_chars = 20;
-var borp_details2 = &#39;no&#39;;
+var borp_details2 = &#39;yes&#39;;
 var borp_comments = &#39;Comments&#39;;
 var borp_commentsd = &#39;Comments Disabled&#39;;
 var borp_current = [];
@@ -7285,7 +7326,7 @@ function randomposts(json) { total_randomposts = json.feed.openSearch$totalResul
 document.write(&#39;&lt;script type=\&quot;text/javascript\&quot; src=\&quot;/feeds/posts/default?alt=json-in-script&amp;max-results=0&amp;callback=randomposts\&quot;&gt;&lt;\/script&gt;&#39;);
 function getvalue(){for(var r=0;r&lt;borp_number;r++){for(var n=!1,o=get_random(),t=0;t&lt;borp_current.length;t++)if(borp_current[t]==o){n=!0;break}n?r--:borp_current[r]=o}}function get_random(){return 1+Math.round(Math.random()*(total_randomposts-1))}
 &lt;/script&gt;
-&lt;script&gt;function random_posts(t){for(var e=0;e&lt;borp_number;e++){var r=t.feed.entry[e],s=r.title.$t;if(&quot;content&quot;in r)i=r.content.$t;else if(&quot;summary&quot;in r)i=r.summary.$t;else var i=&quot;&quot;;if((i=i.replace(/&lt;[^&gt;]*&gt;/g,&quot;&quot;)).length&lt;borp_chars)var a=i;else{var n=(i=i.substring(0,borp_chars)).lastIndexOf(&quot; &quot;);a=i.substring(0,n)+&quot;&amp;#133;&quot;}for(var o=0;o&lt;r.link.length;o++){if(&quot;thr$total&quot;in r)var l=r.thr$total.$t+&quot; &quot;+borp_comments;else l=borp_commentsd;if(&quot;alternate&quot;==r.link[o].rel){var m=r.link[o].href,c=r.published.$t;if(&quot;media$thumbnail&quot;in r)var u=r.media$thumbnail.url;else u=&quot;https://4.bp.blogspot.com/-atF9AaH_YEI/WXc5HKoFZmI/AAAAAAAAAGE/LoIPxdwBHecNVesXy9J0AQJwdIuWFYu0QCLcBGAs/s1600/no_thumb.png&quot;}}document.write(&quot;&lt;li style=&#39;clear: both;padding: 15px 0px;&#39;&gt;&quot;),document.write(&#39;&lt;img alt=&quot;&#39;+s+&#39;&quot; src=&quot;&#39;+u+&#39;&quot;/&gt;&#39;),document.write(&#39;&lt;div style=&quot;float: left;width: 270px;height: 50px;    margin-left: 10px;&quot;&gt;&lt;a href=&quot;&#39;+m+&#39;&quot; rel=&quot;nofollow&quot; style=&quot;padding: 0px;&quot;&gt;&#39;+s+&quot;&lt;/a&gt;&lt;/div&gt;&quot;),&quot;yes&quot;==borp_details&amp;&amp;document.write(&quot;&lt;span style=&#39;float: left; margin-left: 10px;&#39;&gt;&quot;+c.substring(8,10)+&quot;.&quot;+c.substring(5,7)+&quot;.&quot;+c.substring(0,4)),&quot;yes&quot;==borp_details2&amp;&amp;document.write(&#39;&lt;span class=&quot;random-summary&quot;&gt;&#39;+a),document.write(&#39;&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;&lt;/li&gt;&#39;)}}getvalue();for(var i=0;i&lt;borp_number;i++)document.write(&#39;&lt;script type=&quot;text/javascript&quot; src=&quot;/feeds/posts/default?alt=json-in-script&amp;start-index=&#39;+borp_current[i]+&#39;&amp;max-results=1&amp;callback=random_posts&quot;&gt;&lt;\/script&gt;&#39;);&lt;/script&gt;
+&lt;script&gt;function random_posts(t){for(var e=0;e&lt;borp_number;e++){var r=t.feed.entry[e],s=r.title.$t;if(&quot;content&quot;in r)i=r.content.$t;else if(&quot;summary&quot;in r)i=r.summary.$t;else var i=&quot;&quot;;if((i=i.replace(/&lt;[^&gt;]*&gt;/g,&quot;&quot;)).length&lt;borp_chars)var a=i;else{var n=(i=i.substring(0,borp_chars)).lastIndexOf(&quot; &quot;);a=i.substring(0,n)+&quot;&amp;#133;&quot;}for(var o=0;o&lt;r.link.length;o++){if(&quot;thr$total&quot;in r)var l=r.thr$total.$t+&quot; &quot;+borp_comments;else l=borp_commentsd;if(&quot;alternate&quot;==r.link[o].rel){var m=r.link[o].href,c=r.published.$t;if(&quot;media$thumbnail&quot;in r)var u=r.media$thumbnail.url;else u=&quot;https://4.bp.blogspot.com/-atF9AaH_YEI/WXc5HKoFZmI/AAAAAAAAAGE/LoIPxdwBHecNVesXy9J0AQJwdIuWFYu0QCLcBGAs/s1600/no_thumb.png&quot;}}document.write(&quot;&lt;li style=&#39;clear: both;padding: 15px 0px;&#39;&gt;&quot;),document.write(&#39;&lt;img alt=&quot;&#39;+s+&#39;&quot; src=&quot;&#39;+u+&#39;&quot;/&gt;&#39;),document.write(&#39;&lt;div class=&quot;footer-lists-title&quot;&gt;&lt;a href=&quot;&#39;+m+&#39;&quot; rel=&quot;nofollow&quot; style=&quot;padding: 0px;&quot;&gt;&#39;+s+&quot;&lt;/a&gt;&lt;/div&gt;&quot;),&quot;yes&quot;==borp_details&amp;&amp;document.write(&quot;&lt;span style=&#39;float: left; margin-left: 10px;&#39;&gt;&quot;+c.substring(8,10)+&quot;.&quot;+c.substring(5,7)+&quot;.&quot;+c.substring(0,4)),&quot;yes&quot;==borp_details2&amp;&amp;document.write(&#39;&lt;span class=&quot;random-summary&quot;&gt;&#39;+a),document.write(&#39;&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;&lt;/li&gt;&#39;)}}getvalue();for(var i=0;i&lt;borp_number;i++)document.write(&#39;&lt;script type=&quot;text/javascript&quot; src=&quot;/feeds/posts/default?alt=json-in-script&amp;start-index=&#39;+borp_current[i]+&#39;&amp;max-results=1&amp;callback=random_posts&quot;&gt;&lt;\/script&gt;&#39;);&lt;/script&gt;
 &lt;/ul&gt;</b:widget-setting>
                   </b:widget-settings>
                   <b:includable id='main'>
@@ -7310,19 +7351,20 @@ function getvalue(){for(var r=0;r&lt;borp_number;r++){for(var n=!1,o=get_random(
                 <b:widget id='HTML2' locked='false' title='Recent Posts' type='HTML'>
                   <b:widget-settings>
                     <b:widget-setting name='content'>&lt;style&gt;
-#bo-random-posts img{height:70px;float:left;width:90px;}
+#bo-random-posts img{height:67px;float:left;width:72px;padding-right: .4em;}
 #bo-random-posts img:hover{opacity: 0.5;filter: alpha(opacity=50);}
 ul#bo-random-posts {list-style-type: none;background-image: url(&quot;#&quot;);background-repeat: no-repeat;}
 #bo-random-posts li {margin: 10px 0;}
 #bo-random-posts li a{padding: 5px 0;text-decoration: none;}
 .bo-random-summary {display: block;}
+#bo-random-posts li div.footer-lists-title{ float: left;width: 270px;height: 50px;    margin-left: 10px;  }
 &lt;/style&gt;
 &lt;ul id=&#39;bo-random-posts&#39;&gt;
 &lt;script&gt;
 var borp_number = 3;
-var borp_details = &#39;yes&#39;;
+var borp_details = &#39;no&#39;;
 var borp_chars = 20;
-var borp_details2 = &#39;no&#39;;
+var borp_details2 = &#39;yes&#39;;
 var borp_comments = &#39;Comments&#39;;
 var borp_commentsd = &#39;Comments Disabled&#39;;
 var borp_current = [];
@@ -7350,7 +7392,7 @@ function recent_posts(t) {
     else u = &quot;https://4.bp.blogspot.com/-atF9AaH_YEI/WXc5HKoFZmI/AAAAAAAAAGE/LoIPxdwBHecNVesXy9J0AQJwdIuWFYu0QCLcBGAs/s1600/no_thumb.png&quot;
    }
   }
-  document.write(&quot;&lt;li style=&#39;clear: both;padding: 15px 0px;&#39;&gt;&quot;), document.write(&#39;&lt;img alt=&quot;&#39; + s + &#39;&quot; src=&quot;&#39; + u + &#39;&quot;/&gt;&#39;), document.write(&#39;&lt;div style=&quot;float:left;width:265px;height:50px;margin-left:10px;overflow:hidden;text-overflow:ellipsis;&quot; &gt;&lt;a href=&quot;&#39; + m + &#39;&quot; rel=&quot;nofollow&quot; style=&quot;padding: 0px;&quot;&gt;&#39; + s + &quot;&lt;/a&gt;&lt;/div&gt;&quot;), &quot;yes&quot; == borp_details &amp;&amp; document.write(&quot;&lt;span style=&#39;float: left; margin-left: 10px;&#39;&gt;&quot; + c.substring(8, 10) + &quot;.&quot; + c.substring(5, 7) + &quot;.&quot; + c.substring(0, 4)), &quot;yes&quot; == borp_details2 &amp;&amp; document.write(&#39;&lt;span class=&quot;random-summary&quot;&gt;&#39; + a), document.write(&#39;&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;&lt;/li&gt;&#39;)
+  document.write(&quot;&lt;li style=&#39;clear: both;padding: 15px 0px;&#39;&gt;&quot;), document.write(&#39;&lt;img alt=&quot;&#39; + s + &#39;&quot; src=&quot;&#39; + u + &#39;&quot;/&gt;&#39;), document.write(&#39;&lt;div class=&quot;footer-lists-title&quot;&gt;&lt;a href=&quot;&#39; + m + &#39;&quot; rel=&quot;nofollow&quot; style=&quot;padding: 0px;&quot;&gt;&#39; + s + &quot;&lt;/a&gt;&lt;/div&gt;&quot;), &quot;yes&quot; == borp_details &amp;&amp; document.write(&quot;&lt;span style=&#39;float: left; margin-left: 10px;&#39;&gt;&quot; + c.substring(8, 10) + &quot;.&quot; + c.substring(5, 7) + &quot;.&quot; + c.substring(0, 4)), &quot;yes&quot; == borp_details2 &amp;&amp; document.write(&#39;&lt;span class=&quot;random-summary&quot;&gt;&#39; + a), document.write(&#39;&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;&lt;/li&gt;&#39;)
  }
 }
 for(var i=0;i&lt;borp_number;i++){
