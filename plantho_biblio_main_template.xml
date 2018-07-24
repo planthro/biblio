@@ -76,17 +76,18 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'/>
 	<link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet'/>
+	<link href='https://use.fontawesome.com/releases/v5.0.12/css/all.css' rel='stylesheet'/>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.min.css' rel='stylesheet'/>
 	<link href='//fonts.googleapis.com/css?family=Muli:300,300italic,regular,italic&amp;subsets=latin&amp;subset=latin,latin-ext' media='all' type='text/css'/>
 <link href='//fonts.googleapis.com/css?family=Amiri%3A400%2C300%2C700%26subset%3Dall%7COpen+Sans%3A400%2C300%2C700%26subset%3Dall&amp;ver=1.0.0' id='infiner-fonts-css' media='all' rel='stylesheet' type='text/css'/>
 <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'/>
     <b:skin><![CDATA[/*
 -----------------------------------------------
-Blogger Template Style
-Name:     Minimalist Clean & Responsive Blogger Template
-Designer: BeautyTemplates
-URL:      http://www.BeautyTemplates.com
-Version:  Free Version
+#planthro BIBLIO v2 Template
+Name:     #planthro BIBLIO v2 Template
+Designer: #planthro BIBLIO v2 Template
+URL:      www.planthro.org
+Version:  Creative Commons
 ----------------------------------------------- 
     */
 
@@ -5606,7 +5607,7 @@ $(".container").fitVids();
             <b:section class='topnav' id='topnav' maxwidgets='1'>
               <b:widget id='PageList1' locked='false' title='Pages' type='PageList' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='pageListJson'><![CDATA[{'637310707547321956': {'href': 'https://devbiblio.blogspot.com/p/legal_21.html', 'title': 'legal', 'position': 0}}]]></b:widget-setting>
+                  <b:widget-setting name='pageListJson'>{}</b:widget-setting>
                   <b:widget-setting name='homeTitle'>Home</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
@@ -6447,7 +6448,7 @@ $(".container").fitVids();
                               <i class='fa fa-share-alt'/>
                             </span>
                             <div class='share'>
- <a expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.url' target='_blank'><i class='fa fa-facebook'/></a><a expr:href='&quot;http://twitter.com/share?url=&quot; + data:post.url' target='_blank'><i class='fa fa-twitter'/></a><a expr:href='&quot;http://www.tumblr.com/share/link?url=&quot;+ data:post.url' target='_blank'><i class='fa fa-tumblr'/></a><a expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' target='_blank'><i class='fa fa-google-plus'/></a><a expr:href='&quot;http://pinterest.com/pin/create/button/?source_url=&quot; + data:post.url' onclick='javascript:window.open(this.href, &apos;&apos;, &apos;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600&apos;);return false;' target='_blank'><i class='fa fa-pinterest'/></a>
+ <a expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.url' target='_blank'><i class='fab fa-facebook'/></a><a expr:href='&quot;http://twitter.com/share?url=&quot; + data:post.url' target='_blank'><i class='fab fa-twitter'/></a><a expr:href='&quot;http://www.tumblr.com/share/link?url=&quot;+ data:post.url' target='_blank'><i class='fab fa-tumblr'/></a><a expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' target='_blank'><i class='fab fa-google-plus'/></a><a expr:href='&quot;http://pinterest.com/pin/create/button/?source_url=&quot; + data:post.url' onclick='javascript:window.open(this.href, &apos;&apos;, &apos;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600&apos;);return false;' target='_blank'><i class='fab fa-pinterest'/></a>
                             </div>
                           </div>
                         </b:if>
@@ -6965,6 +6966,12 @@ head.appendChild(script);
       <!-- BLOG MAIN CONTENT -->
 
 <b:section id='Instagram' showaddelement='yes'/>
+
+
+
+
+
+
       <!-- FOOTER -->
       <footer class='footer' id='footer'>
         <div class='container'>
@@ -7154,25 +7161,31 @@ for(var i=0;i&lt;borp_number;i++){
         <div class='copyright text-center'>
  <div class='container'>
  <div class='footer-left'>
-           Copyright &#169; 2017 
-          <a expr:href='data:blog.homepageUrl'>
-            <data:blog.title/>
-          </a>
-         
-          </div>
+     Free content by <i class='resumeName' style='font-size:inherit; color:inherit;'>#planthro</i> under Creative Commons.         
+ </div>
 
-   <div class='footer-right'>
-          	<p>Created with <i class='fa fa-heart'/> <em>by</em> <a href='http://www.beautytemplates.com/' id='mycontent' ref='dofollow' style='visibility: visible;' title='Minimal Blogger Template'>BeautyTemplates</a> | Distributed By <a href='https://gooyaabitemplates.com/' rel='dofollow' target='_blank'>Gooyaabi Templates</a> </p>
+   <div class='footer-right' style='visibility: hidden'>
+   <!-- SOCIAL ICONS -->
+            <div style='visibility: visible;'>
+            <a href='https://www.facebook.com/planthro' target='_blank'><i class='fab fa-facebook'/></a>            
+            <a href='https://twitter.com/planthro' target='_blank'><i class='fab fa-twitter'/></a>
+            <a href='https://www.instagram.com/planthro/' target='_blank'><i class='fab fa-instagram'/></a>
+            <a href='https://www.youtube.com/channel/UCUhjA1tU_CCLxhSnEIw0CGQ/playlists' target='_blank'><i class='fab fa-youtube'/></a>
+            <a href='https://www.pinterest.com/planthro/' target='_blank'><i class='fab fa-pinterest'/></a>            
+            <a href='https://www.linkedin.com/company/platform-anthropecene-inc/' target='_blank'><i class='fab fa-linkedin'/></a>          
+            </div>
+
+          	<p>Created with <i class='fa fa-heart'/> <em>by</em> <a href='http://www.beautytemplates.com/' id='mycontent' ref='dofollow' style='visibility: hidden;' title='Minimal Blogger Template'>BeautyTemplates</a> | Distributed By <a href='https://gooyaabitemplates.com/' rel='dofollow' target='_blank'>Gooyaabi Templates</a> </p>
 				
           </div></div>
-        <div class='totop'>
-          <div class='totop-inner'>
-            <i class='fa fa-angle-up'/>
-          </div>
-        </div>
+
+        <div class='totop'><div class='totop-inner'><i class='fa fa-angle-up'/></div></div>
+        
         </div>
       </footer>
+
       <!-- END / FOOTER -->
+
     </div>
     <!-- END / PAGE WRAP -->
 
@@ -7569,13 +7582,13 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
           <div class='search-wrapper' id='search-wrapper'>
               <div id='hide' style='display: none;'><span class='smallbutton' href='javascript:void(0)' onclick='document.getElementById(&apos;box&apos;).style.display=&apos;none&apos;;document.getElementById(&apos;hide&apos;).style.display=&apos;none&apos;;document.getElementById(&apos;show&apos;).style.display=&apos;block&apos;'><i aria-hidden='true' class='fa fa-times'/></span></div>
               <div id='search-wrap'>
-                  <p>Start typing and press Enter to search</p>
+                  <h2>Search</h2>
                   <div id='search'>
                       <form action='/search' id='searchform'>
                         <input name='cof' type='hidden' value='FORID:10'/>
                         <input name='ie' type='hidden' value='ISO-8859-1'/>
 						<input name='max-results' type='hidden' value='9'/>
-                          <input id='search-form' name='q' placeholder='Search here....' required='required' type='text'/>
+                          <input id='search-form' name='q' placeholder='Keywords....' required='required' type='text'/>
                           <button class='search-button' title='Search' type='submit'><i aria-hidden='true' class='fa fa-search'/></button>
                       </form>
                   </div>
@@ -7587,13 +7600,13 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
           <div class='search-wrapper' id='search-wrapper'>
               <div id='hide' style='display: none;'><span class='smallbutton' href='javascript:void(0)' onclick='document.getElementById(&apos;box&apos;).style.display=&apos;none&apos;;document.getElementById(&apos;hide&apos;).style.display=&apos;none&apos;;document.getElementById(&apos;show&apos;).style.display=&apos;block&apos;'><i aria-hidden='true' class='fa fa-times'/></span></div>
               <div id='search-wrap'>
-                  <p>Start typing and press Enter to search</p>
+                  <h2>Search</h2>
                   <div id='search'>
                       <form action='/search' id='searchform'>
                         <input name='cof' type='hidden' value='FORID:10'/>
                         <input name='ie' type='hidden' value='ISO-8859-1'/>
 						<input name='max-results' type='hidden' value='9'/>
-                          <input id='search-form' name='q' placeholder='Search here....' required='required' type='text'/>
+                          <input id='search-form' name='q' placeholder='Keywords....' required='required' type='text'/>
                           <button class='search-button' title='Search' type='submit'><i aria-hidden='true' class='fa fa-search'/></button>
                       </form>
                   </div>
@@ -7625,24 +7638,34 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
 	</div>
   
   	<div class='custom-popup' id='topics-popup'>
-		<h2>Topics</h2>
-		<div class='custom-wid-cloud-label' id='custom-wid-labels-list'>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      	
-
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      	
+		<h2>Trending Topics</h2>
+		<div class='custom-wid-cloud-label' id='custom-wid-labels-list'>      	
+		 <span style='border: 1px solid #555;'><a href='../../search?q=climate&amp; max-results=9'>Climate</a></span>
+		 <span style='border: 1px solid #555;'><a href='../../search?q=water&amp; max-results=9'>Water</a></span>
+		 <span style='border: 1px solid #555;'><a href='../../search?q=energy&amp; max-results=9'>Energy</a></span>
+		 <br /><br />
+		 <span style='border: 1px solid #555;'><a href='../../search?q=atmosphere&amp; max-results=9'>Atmosphere</a></span>
+		 <span style='border: 1px solid #555;'><a href='../../search?q=population&amp; max-results=9'>Population</a></span>
+		 <span style='border: 1px solid #555;'><a href='../../search?q=Indigenous&amp; max-results=9'>Indigenous</a></span>
+		 <br /><br />
+		 <span style='border: 1px solid #555;'><a href='../../search?q=food&amp; max-results=9'>Food</a></span>   
+		 <span style='border: 1px solid #555;'><a href='../../search?q=history&amp; max-results=9'>History</a></span>
+		 <span style='border: 1px solid #555;'><a href='../../search?q=resilience&amp; max-results=9'>Resilience</a></span>
+		 <br /><br />
+		 <span style='border: 1px solid #555;'><a href='../../search?q=sustainability&amp; max-results=9'>Sustainability</a></span>
+		 <span style='border: 1px solid #555;'><a href='../../search?q=conservation&amp; max-results=9'>Conservation</a></span>
+		 <span style='border: 1px solid #555;'><a href='../../search?q=future&amp; max-results=9'>Future</a></span>
+		 <br /><br />
+		 <span style='border: 1px solid #555;'><a href='../../search?q=governance&amp; max-results=9'>Governance</a></span>
+		 <span style='border: 1px solid #555;'><a href='../../search?q=resources&amp; max-results=9'>Resources</a></span>
+		 <span style='border: 1px solid #555;'><a href='../../search?q=security&amp; max-results=9'>Security</a></span>
+		 <br /><br />
       	</div>
 	</div>
 
 
       <div class='custom-popup' id='appBox' style=''>
+      	<h2>#planthro projects</h2>
           <div class='apps-wrapper' id='apps-wrapper'>
               <!-- <div id='hideApp' style='display: none;'><span class='smallbutton' href='javascript:void(0)' ><i aria-hidden='true' class='fa fa-times'/></span></div> -->
               <!-- <div id='search-wrap'>-->
@@ -7652,60 +7675,34 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                     <div class='icons-container'>
                       <div class='icon-row'>
                         <div class='icon-wrapper'>
-                          <span class='icon'>
-                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
-                          </span>
-                          <span class='title'>
-                            Title
-                          </span>
+                          <span class='icon'><img src='https://png.icons8.com/ios/40/ffffff/magazine-filled.png'/></span>
+                          <span class='title'>BIBLIO</span>
                         </div>
                         <div class='icon-wrapper'>
-                          <span class='icon'>
-                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
-                          </span>
-                          <span class='title'>
-                            Title
-                          </span>
+                          <span class='icon'><img src="https://cdn.rawgit.com/planthro/701535663b02256e076e26735a667aa0/raw/fb8361548f0a7bbdf2c3c566c95f31571540b89e/planthroWIKI.svg" width="60" /></span>
+                          <span class='title'>WIKI</span>
                         </div>
                         <div class='icon-wrapper'>
-                          <span class='icon'>
-                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
-                          </span>
-                          <span class='title'>
-                            Title
-                          </span>
+                          <span class='icon'><img src='https://png.icons8.com/ios/40/ffffff/communication-filled.png'/></span>
+                          <span class='title'>EXCHANGE</span>
                         </div>
 						<div class='icon-wrapper'>
                           <span class='icon'>
-                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
+                           <img src='https://png.icons8.com/ios/40/ffffff/quote-left-filled.png'/>
                           </span>
-                          <span class='title'>
-                            Title
-                          </span>
+                          <span class='title'>OPINIONS</span>
                         </div>
 						<div class='icon-wrapper'>
-                          <span class='icon'>
-                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
-                          </span>
-                          <span class='title'>
-                            Title
-                          </span>
+                          <span class='icon'><img src='https://png.icons8.com/ios/40/ffffff/spaceship-earth-epcot-filled.png'/></span>
+                          <span class='title'>ANALYTICS</span>
                         </div>
 						<div class='icon-wrapper'>
-                          <span class='icon'>
-                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
-                          </span>
-                          <span class='title'>
-                            Title
-                          </span>
+                          <span class='icon'><img src='https://png.icons8.com/ios/40/ffffff/collect-filled.png'/></span>
+                          <span class='title'>EVENTS</span>
                         </div>
 						<div class='icon-wrapper'>
-                          <span class='icon'>
-                           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr8j3KGIIDHD9Orm8h5L4cmmCMHO43fvOy8BBZfO7IScu1-66'/>
-                          </span>
-                          <span class='title'>
-                            Title
-                          </span>
+                          <span class='icon'><img src='https://png.icons8.com/ios/40/ffffff/sales-channels-filled.png'/></span>
+                          <span class='title'>OUTREACH</span>
                         </div>
                       </div>
                     <!--</div>-->
