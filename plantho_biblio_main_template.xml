@@ -2012,19 +2012,19 @@ a:hover .zoom-insta {top:0%; opacity: 1;}
         margin-bottom: 10px;
       }
       #footer .widget &gt; h2 {
-          position: relative;
-     padding: 0 0px;
-    line-height: 40px;
-    margin-top: 0;
-    margin-bottom: 13px;
-    text-align: left;
-    color: #484848;
-    font-weight: 800;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-family: &#39;Lato&#39;;
-    text-align: center;
+      position: relative;
+      padding: 0 0px;
+      line-height: 40px;
+      margin-top: 0;
+      margin-bottom: 13px;
+      text-align: left;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: &quot;Open Sans&quot;,sans-serif;
+      text-align: center;
       }
       #footer .widget &gt; h2:after {
         display: none;
@@ -2074,7 +2074,7 @@ a:hover .zoom-insta {top:0%; opacity: 1;}
         position: fixed;
         width: 40px;
         height: 40px;
-        background-color: #7f957f;
+        background-color: transparent;
         font-size: 20px;
         line-height: 36px;
         text-align: center;
@@ -2091,7 +2091,7 @@ a:hover .zoom-insta {top:0%; opacity: 1;}
         transition: all 0.4s ease 0s;
       }
       .totop-inner:hover {
-        background-color: #7f957f;
+        background-color: transparent;
       }
       .copyright {
        margin-top: 20px;
@@ -5243,13 +5243,13 @@ div.custom-popup::-webkit-scrollbar-thumb {
     width: 60px;
     height: 60px;
 	line-height: 55px;
-    background-color: #404040;
+    background-color: transparent;
 	font-size: 35px;
 	bottom: 70px !important;
 	right: 20px;
 }
 .totop-inner:hover {
-	background-color: #404040;
+	background-color: transparent;
 }
 .totop-inner .fa{
 	font-size: 45px;
@@ -5679,7 +5679,7 @@ $(".container").fitVids();
           <!-- LOGO -->
           <div class='logo text-center'>
             <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-              <b:widget id='Header1' locked='true' title='devbiblio (Header)' type='Header' version='1'>
+              <b:widget id='Header1' locked='true' title='#planthro BIBLIO | Platform anthropocene Inc. (Header)' type='Header' version='1'>
                 <b:widget-settings>
                   <b:widget-setting name='displayUrl'>http://3.bp.blogspot.com/-rqpZZuf569c/WwSJCjheZoI/AAAAAAAABRI/I6yeq5xLrUkq-PVTZvIiMdaJVE3od1GJwCK4BGAYYCw/s1600/%2523planthro%2BBIBLIO%2Bbackground%2B%2523222222.png</b:widget-setting>
                   <b:widget-setting name='displayHeight'>242</b:widget-setting>
@@ -5821,7 +5821,7 @@ $(".container").fitVids();
             </ul>
 
 	<div id='smallIconHeader'>
-		<img alt='devbiblio' height='194px; ' id='Header1_headerimg' src='//4.bp.blogspot.com/-Yaml-8_-1v4/Wwa4GHawNTI/AAAAAAAABRQ/J3JLl13UFIIT6OxAnD8oEST0ry53tpM_wCLcBGAs/s1600/%2523planthro%2BBIBLIO%2Bbackground%2B%2523131313.png' style='display: block' width='1322px;'/>
+		<img alt='#planthro BIBLIO' height='194px; ' id='Header1_headerimg' src='//4.bp.blogspot.com/-Yaml-8_-1v4/Wwa4GHawNTI/AAAAAAAABRQ/J3JLl13UFIIT6OxAnD8oEST0ry53tpM_wCLcBGAs/s1600/%2523planthro%2BBIBLIO%2Bbackground%2B%2523131313.png' style='display: block' width='1322px;'/>
     </div>
 
 <!-- <div class='apps-box'>
@@ -6802,6 +6802,20 @@ $(".container").fitVids();
           </b:if>
         </b:includable>
                   </b:widget>
+                  <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
+                    <b:widget-settings>
+                      <b:widget-setting name='copyright'/>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+    <div class='widget-content' style='text-align: center;'>
+      <b:if cond='data:attribution != &quot;&quot;'>
+       <data:attribution/>
+      </b:if>
+    </div>
+
+    <b:include name='quickedit'/>
+  </b:includable>
+                  </b:widget>
                 </b:section>
               </div>
             </div>
@@ -6810,34 +6824,40 @@ $(".container").fitVids();
             <!-- SIDEBAR -->
             <div class='col-md-3'>
               <b:section class='sidebar' id='sidebar'>
-                <b:widget id='HTML1' locked='false' title='About space #planthro or BIBLIO' type='HTML'>
+                <b:widget id='HTML1' locked='false' title='A project by #planthro' type='HTML'>
                   <b:widget-settings>
                     <b:widget-setting name='content'>&lt;center&gt;					&lt;div class=&quot;photo-profile&quot;&gt;
 										&lt;img src=&quot;https://1.bp.blogspot.com/-W1zO2rEOqEQ/Wu0OLbBIDxI/AAAAAAAABOM/D9JNpCQWvBYdYIzsM2Ukk1L9GZAgv4kPgCLcBGAs/s1600/Pa1200X1200.png&quot; alt=&quot;#planthro profile image&quot; /&gt;
 									&lt;/div&gt;
 									&lt;div class=&quot;bio-profile&quot;&gt;
 										&lt;span class=&quot;profile-name&quot;&gt;#plantho&lt;/span&gt;
-										&lt;span class=&quot;profile-job&quot;&gt;18-25 characters here&lt;/span&gt;
+										&lt;span class=&quot;profile-job&quot;&gt;Understanding Human-Earth Interaction&lt;/span&gt;
 										&lt;span class=&quot;sparator center&quot;&gt;&lt;/span&gt;
-										&lt;p&gt;The Japanese call it Hanakotoba, and King Charles II brought it to Sweden from Persia in the 17th century. &lt;a href=&quot;/about&quot; class=&quot;more-profile&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+										&lt;p&gt;Platform anthropocene Inc.&#8203; or #planthro&#8203; is a New York
+registered, globally active, not-for-profit private operating foundation.
+&lt;br /&gt;
+#planthro&#8203; targets scientists, students, citizens, governing
+bodies, entrepreneurs and stakeholders concerned with the
+concept of anthropocene and its multiple implications.
+&lt;br /&gt;
+The organization aims at
+&lt;br /&gt;
+&#9679; conveying and sharing a lucid view of the complexity
+characterizing human interaction with Earth,
+&lt;br /&gt;
+&#9679; empowering individuals and organisations to work
+collaboratively in economic, social, environmental, and
+governance contexts,
+&lt;br /&gt;
+&#9679; supporting and promoting informed and creative solutions
+on sustainability, mitigation and adaptive strategies.
+&lt;br /&gt;
+&lt;a href=&quot;https://www.planthro.org&quot; class=&quot;more-profile&quot;&gt;Find our more...&lt;/a&gt;&lt;/p&gt;
 										
 									&lt;/div&gt;
 
 &lt;/center&gt;</b:widget-setting>
                   </b:widget-settings>
-                  <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-                </b:widget>
-                <b:widget id='HTML3' locked='false' title='' type='HTML'>
                   <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -6857,20 +6877,6 @@ $(".container").fitVids();
                   <b:includable id='main'>
           &lt;style&gt;.home #blog-pager{display:<data:content/>;}&lt;/style&gt;
         </b:includable>
-                </b:widget>
-                <b:widget id='Text3' locked='false' title='Footer Widget' type='Text' version='1'>
-                  <b:widget-settings>
-                    <b:widget-setting name='content'>There is, one knows not what sweet mystery about this sea, whose gently awful stirrings seem to speak of some hidden soul beneath; like those fabled undulations of the Ephesian sod over the buried Evangelist St. John. And meet it is, that over these sea-pastures</b:widget-setting>
-                  </b:widget-settings>
-                  <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
                 </b:widget>
                 <b:widget id='HTML904' locked='false' title='Related Posts Display' type='HTML' version='1'>
                   <b:widget-settings>
@@ -6935,7 +6941,7 @@ $(".container").fitVids();
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d7094786136074537606\x26blogName\x3ddevbiblio\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://devbiblio.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://devbiblio.blogspot.com/\x26vt\x3d7633392008366148229&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d5713380503392852407\x26blogName\x3d%23planthro+BIBLIO+%7C+Platform+anthropoc...\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://biblio.planthro.org/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://biblio.planthro.org/\x26vt\x3d-6051862361326825016&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -7172,15 +7178,14 @@ for(var i=0;i&lt;borp_number;i++){
             <a href='https://www.instagram.com/planthro/' target='_blank'><i class='fab fa-instagram'/></a>
             <a href='https://www.youtube.com/channel/UCUhjA1tU_CCLxhSnEIw0CGQ/playlists' target='_blank'><i class='fab fa-youtube'/></a>
             <a href='https://www.pinterest.com/planthro/' target='_blank'><i class='fab fa-pinterest'/></a>            
-            <a href='https://www.linkedin.com/company/platform-anthropecene-inc/' target='_blank'><i class='fab fa-linkedin'/></a>          
+            <a href='https://www.linkedin.com/company/planthro/' target='_blank'><i class='fab fa-linkedin'/></a>          
             </div>
 
           	<p>Created with <i class='fa fa-heart'/> <em>by</em> <a href='http://www.beautytemplates.com/' id='mycontent' ref='dofollow' style='visibility: hidden;' title='Minimal Blogger Template'>BeautyTemplates</a> | Distributed By <a href='https://gooyaabitemplates.com/' rel='dofollow' target='_blank'>Gooyaabi Templates</a> </p>
 				
           </div></div>
 
-        <div class='totop'><div class='totop-inner'><i class='fa fa-angle-up'/></div></div>
-        
+        <div class='totop'><div class='totop-inner'><img src='https://png.icons8.com/ios/40/C53307/up-squared.png'/></div></div>
         </div>
       </footer>
 
@@ -7588,7 +7593,7 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                         <input name='cof' type='hidden' value='FORID:10'/>
                         <input name='ie' type='hidden' value='ISO-8859-1'/>
 						<input name='max-results' type='hidden' value='9'/>
-                          <input id='search-form' name='q' placeholder='Keywords....' required='required' type='text'/>
+                          <input id='search-form' name='q' placeholder='Keywords...' required='required' type='text'/>
                           <button class='search-button' title='Search' type='submit'><i aria-hidden='true' class='fa fa-search'/></button>
                       </form>
                   </div>
@@ -7606,7 +7611,7 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                         <input name='cof' type='hidden' value='FORID:10'/>
                         <input name='ie' type='hidden' value='ISO-8859-1'/>
 						<input name='max-results' type='hidden' value='9'/>
-                          <input id='search-form' name='q' placeholder='Keywords....' required='required' type='text'/>
+                          <input id='search-form' name='q' placeholder='Keywords...' required='required' type='text'/>
                           <button class='search-button' title='Search' type='submit'><i aria-hidden='true' class='fa fa-search'/></button>
                       </form>
                   </div>
@@ -7639,33 +7644,29 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
   
   	<div class='custom-popup' id='topics-popup'>
 		<h2>Trending Topics</h2>
-		<div class='custom-wid-cloud-label' id='custom-wid-labels-list'>      	
+		<div class='custom-wid-cloud-label' id='custom-wid-labels-list'>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=climate&amp; max-results=9'>Climate</a></span>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=water&amp; max-results=9'>Water</a></span>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=energy&amp; max-results=9'>Energy</a></span>
-		 <br /><br />
 		 <span style='border: 1px solid #555;'><a href='../../search?q=atmosphere&amp; max-results=9'>Atmosphere</a></span>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=population&amp; max-results=9'>Population</a></span>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=Indigenous&amp; max-results=9'>Indigenous</a></span>
-		 <br /><br />
 		 <span style='border: 1px solid #555;'><a href='../../search?q=food&amp; max-results=9'>Food</a></span>   
 		 <span style='border: 1px solid #555;'><a href='../../search?q=history&amp; max-results=9'>History</a></span>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=resilience&amp; max-results=9'>Resilience</a></span>
-		 <br /><br />
 		 <span style='border: 1px solid #555;'><a href='../../search?q=sustainability&amp; max-results=9'>Sustainability</a></span>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=conservation&amp; max-results=9'>Conservation</a></span>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=future&amp; max-results=9'>Future</a></span>
-		 <br /><br />
 		 <span style='border: 1px solid #555;'><a href='../../search?q=governance&amp; max-results=9'>Governance</a></span>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=resources&amp; max-results=9'>Resources</a></span>
 		 <span style='border: 1px solid #555;'><a href='../../search?q=security&amp; max-results=9'>Security</a></span>
-		 <br /><br />
+		 <br/><br/>
       	</div>
 	</div>
 
 
       <div class='custom-popup' id='appBox' style=''>
-      	<h2>#planthro projects</h2>
+      	<h2><span style='font-family: &quot;Open Sans&quot;, sans-serif; font-weight: 300;'><em>#planthro</em></span> Projects</h2>
           <div class='apps-wrapper' id='apps-wrapper'>
               <!-- <div id='hideApp' style='display: none;'><span class='smallbutton' href='javascript:void(0)' ><i aria-hidden='true' class='fa fa-times'/></span></div> -->
               <!-- <div id='search-wrap'>-->
@@ -7679,7 +7680,7 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                           <span class='title'>BIBLIO</span>
                         </div>
                         <div class='icon-wrapper'>
-                          <span class='icon'><img src="https://cdn.rawgit.com/planthro/701535663b02256e076e26735a667aa0/raw/fb8361548f0a7bbdf2c3c566c95f31571540b89e/planthroWIKI.svg" width="60" /></span>
+                          <span class='icon'><img src='https://cdn.rawgit.com/planthro/701535663b02256e076e26735a667aa0/raw/fb8361548f0a7bbdf2c3c566c95f31571540b89e/planthroWIKI.svg' width='60'/></span>
                           <span class='title'>WIKI</span>
                         </div>
                         <div class='icon-wrapper'>
