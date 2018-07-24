@@ -1,4 +1,4 @@
-# biblio
-planthro BIBLIO | Platform anthropocene Inc. app website code.
-This is the main template code of the Platform anthropocene (planthro) Biblio app.
-View the implementation on beta.planthro.org
+BIBLIO
+#planthro BIBLIO | Platform anthropocene Inc. app website code.
+This is the template and content of the Platform anthropocene (#planthro) BIBLIO app project.
+View the implementation on biblio.planthro.org
