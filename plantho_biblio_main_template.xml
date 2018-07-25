@@ -2095,18 +2095,30 @@ a:hover .zoom-insta {top:0%; opacity: 1;}
       }
       .copyright {
        margin-top: 20px;
-       padding: 15px 0 12px;
+       padding: 40px 0 30px 0;
        background-color: RGBA(17,17,17,0.99); <!--AB #f6f6f6; -->
        font-size: 13px;
-       color: #484848;
-       font-family: &#39;Lato&#39;;
+       color: #fff;
+       font-family: &quot;Ubuntu&quot;,sans-serif;
       }
       .copyright p {
         margin: 0;
       }
 
-      .footer-left{float:left;padding: 2px 0 0;}
-      .footer-right{float:right}
+      .footer-left {
+      		float:left;
+      		padding:5px 15px 0;
+      		font-size:13px;
+      		font-weight:400;
+      		color:#777;
+      		font-family: &quot;Ubuntu&quot;,sans-serif;
+      	}
+      
+      .footer-right {
+      	float:right;
+      	text-align: right;
+      	font-size: 24px;
+      }
 
       .FollowByEmail .widget-content .desc {
         margin-top: 20px;
@@ -7173,15 +7185,15 @@ for(var i=0;i&lt;borp_number;i++){
    <div class='footer-right' style='visibility: hidden'>
    <!-- SOCIAL ICONS -->
             <div style='visibility: visible;'>
-            <a href='https://www.facebook.com/planthro' target='_blank'><i class='fab fa-facebook'/></a>            
-            <a href='https://twitter.com/planthro' target='_blank'><i class='fab fa-twitter'/></a>
-            <a href='https://www.instagram.com/planthro/' target='_blank'><i class='fab fa-instagram'/></a>
-            <a href='https://www.youtube.com/channel/UCUhjA1tU_CCLxhSnEIw0CGQ/playlists' target='_blank'><i class='fab fa-youtube'/></a>
-            <a href='https://www.pinterest.com/planthro/' target='_blank'><i class='fab fa-pinterest'/></a>            
-            <a href='https://www.linkedin.com/company/planthro/' target='_blank'><i class='fab fa-linkedin'/></a>          
+            <a style='padding: 0 10px 0;' href='https://www.facebook.com/planthro' target='_blank'><i class='fab fa-facebook'/></a>         
+            <a style='padding: 0 10px 0;' href='https://twitter.com/planthro' target='_blank'><i class='fab fa-twitter'/></a>
+            <a style='padding: 0 10px 0;' href='https://www.instagram.com/planthro/' target='_blank'><i class='fab fa-instagram'/></a>
+            <a style='padding: 0 10px 0;' href='https://www.youtube.com/channel/UCUhjA1tU_CCLxhSnEIw0CGQ/playlists' target='_blank'><i class='fab fa-youtube'/></a>
+            <a style='padding: 0 10px 0;' href='https://www.pinterest.com/planthro/' target='_blank'><i class='fab fa-pinterest'/></a>
+            <a style='padding: 0 10px 0;' href='https://www.linkedin.com/company/planthro/' target='_blank'><i class='fab fa-linkedin'/></a>
             </div>
 
-          	<p>Created with <i class='fa fa-heart'/> <em>by</em> <a href='http://www.beautytemplates.com/' id='mycontent' ref='dofollow' style='visibility: hidden;' title='Minimal Blogger Template'>BeautyTemplates</a> | Distributed By <a href='https://gooyaabitemplates.com/' rel='dofollow' target='_blank'>Gooyaabi Templates</a> </p>
+          	<p style='color:transparent; font-size:0; position:relative; z-index:-99;'>Created with <i class='fa fa-heart'/> <em>by</em> <a href='http://www.beautytemplates.com/' id='mycontent' ref='dofollow' style='visibility: hidden;' title='Minimal Blogger Template'>BeautyTemplates</a> | Distributed By <a href='https://gooyaabitemplates.com/' rel='dofollow' target='_blank'>Gooyaabi Templates</a> </p>
 				
           </div></div>
 
