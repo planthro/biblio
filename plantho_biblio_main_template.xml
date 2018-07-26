@@ -5290,7 +5290,7 @@ div.custom-popup::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 737px){
 #box, #appBox {
-    padding: 25px 0 0;
+    /*padding: 25px 0 0;*/
 }
 #search-wrapper, #apps-wrapper {
     width: 100%;
@@ -7185,12 +7185,12 @@ for(var i=0;i&lt;borp_number;i++){
    <div class='footer-right' style='visibility: hidden'>
    <!-- SOCIAL ICONS -->
             <div style='visibility: visible;'>
-            <a style='padding: 0 10px 0;' href='https://www.facebook.com/planthro' target='_blank'><i class='fab fa-facebook'/></a>         
-            <a style='padding: 0 10px 0;' href='https://twitter.com/planthro' target='_blank'><i class='fab fa-twitter'/></a>
-            <a style='padding: 0 10px 0;' href='https://www.instagram.com/planthro/' target='_blank'><i class='fab fa-instagram'/></a>
-            <a style='padding: 0 10px 0;' href='https://www.youtube.com/channel/UCUhjA1tU_CCLxhSnEIw0CGQ/playlists' target='_blank'><i class='fab fa-youtube'/></a>
-            <a style='padding: 0 10px 0;' href='https://www.pinterest.com/planthro/' target='_blank'><i class='fab fa-pinterest'/></a>
-            <a style='padding: 0 10px 0;' href='https://www.linkedin.com/company/planthro/' target='_blank'><i class='fab fa-linkedin'/></a>
+            <a href='https://www.facebook.com/planthro' style='padding: 0 10px 0;' target='_blank'><i class='fab fa-facebook'/></a>         
+            <a href='https://twitter.com/planthro' style='padding: 0 10px 0;' target='_blank'><i class='fab fa-twitter'/></a>
+            <a href='https://www.instagram.com/planthro/' style='padding: 0 10px 0;' target='_blank'><i class='fab fa-instagram'/></a>
+            <a href='https://www.youtube.com/channel/UCUhjA1tU_CCLxhSnEIw0CGQ/playlists' style='padding: 0 10px 0;' target='_blank'><i class='fab fa-youtube'/></a>
+            <a href='https://www.pinterest.com/planthro/' style='padding: 0 10px 0;' target='_blank'><i class='fab fa-pinterest'/></a>
+            <a href='https://www.linkedin.com/company/planthro/' style='padding: 0 10px 0;' target='_blank'><i class='fab fa-linkedin'/></a>
             </div>
 
           	<p style='color:transparent; font-size:0; position:relative; z-index:-99;'>Created with <i class='fa fa-heart'/> <em>by</em> <a href='http://www.beautytemplates.com/' id='mycontent' ref='dofollow' style='visibility: hidden;' title='Minimal Blogger Template'>BeautyTemplates</a> | Distributed By <a href='https://gooyaabitemplates.com/' rel='dofollow' target='_blank'>Gooyaabi Templates</a> </p>
