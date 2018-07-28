@@ -5042,7 +5042,7 @@ div.custom-popup::-webkit-scrollbar-thumb {
     float: right !important;
     overflow: hidden !important;
     display: block !important;
-	background-image: url(https://res.cloudinary.com/webdiscountss/image/upload/v1529156146/icons8-delete-50_aecazf.png);
+	background-image: url(https://res.cloudinary.com/planthro/image/upload/v1532787849/biblio%20cross-cancel%20100px.png);
     background-size: contain;
 	position: absolute;
     right: 0;
@@ -5693,7 +5693,7 @@ $(".container").fitVids();
             <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
               <b:widget id='Header1' locked='true' title='#planthro BIBLIO | Platform anthropocene Inc. (Header)' type='Header' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='displayUrl'>http://3.bp.blogspot.com/-rqpZZuf569c/WwSJCjheZoI/AAAAAAAABRI/I6yeq5xLrUkq-PVTZvIiMdaJVE3od1GJwCK4BGAYYCw/s1600/%2523planthro%2BBIBLIO%2Bbackground%2B%2523222222.png</b:widget-setting>
+                  <b:widget-setting name='displayUrl'>https://3.bp.blogspot.com/-3KxfOEJL_zk/W1yLTlSZt7I/AAAAAAAABkM/Arbnj2Q7lHMi39bAnaNEOSvqALVH3T1PQCLcBGAs/s1600/biblio%2Bbanner%2Bcolor%2Bpalette%2Bv3.png</b:widget-setting>
                   <b:widget-setting name='displayHeight'>242</b:widget-setting>
                   <b:widget-setting name='sectionWidth'>333</b:widget-setting>
                   <b:widget-setting name='useImage'>true</b:widget-setting>
@@ -5777,7 +5777,7 @@ $(".container").fitVids();
               <!-- <span class='item item-1'/>
               <span class='item item-2'/>
               <span class='item item-3'/> -->
-   				<img src='https://res.cloudinary.com/webdiscountss/image/upload/v1529156146/icons8-menu-50_xu2rad.png'/>
+   				<img src='https://res.cloudinary.com/planthro/image/upload/v1532787529/biblio%20apps-menu%20100px.png'/>
             </div>
             <div class='close-menu'/>
             <ul class='navlist'>
@@ -5785,19 +5785,19 @@ $(".container").fitVids();
 				<li>
 					<a class='lower-menu-item' data-effect='mfp-zoom-in' href='#' id='categories-popup-open'>
                       <span>Categories</span>	<!--<i class="fa fa-search"></i>-->
-                      <img src='https://res.cloudinary.com/webdiscountss/image/upload/v1529156146/icons8-categorize-50_dbzkm4.png'/>
+                      <img src='https://res.cloudinary.com/planthro/image/upload/v1532695482/biblio%20categories%20100px.png'/>
 					</a>
 			  	</li>
 				<li>
 					<a class='lower-menu-item' data-effect='mfp-zoom-in' href='#' id='topics-popup-open'>
                       <span>Topics</span>
-                      <img src='https://res.cloudinary.com/webdiscountss/image/upload/v1529156146/icons8-hashtag-activity-grid-50_wrmk15.png'/>
+                      <img src='https://res.cloudinary.com/planthro/image/upload/v1532695624/biblio%20topics%20100px.png'/>
 					</a>
 			  	</li>
 				<li>
 					<a class='lower-menu-item' data-effect='mfp-zoom-in' href='#' id='search-popup-open'>
                       <span>Search</span>
-                      <img src='https://res.cloudinary.com/webdiscountss/image/upload/v1529156146/icons8-search-50_vkiqfb.png'/>
+                      <img src='https://res.cloudinary.com/planthro/image/upload/v1532695740/biblio%20search%20100px.png'/>
 					</a>
 			  	</li>
               <!--<li><a href='#'>Categories</a>
@@ -5833,7 +5833,7 @@ $(".container").fitVids();
             </ul>
 
 	<div id='smallIconHeader'>
-		<img alt='#planthro BIBLIO' height='194px; ' id='Header1_headerimg' src='//4.bp.blogspot.com/-Yaml-8_-1v4/Wwa4GHawNTI/AAAAAAAABRQ/J3JLl13UFIIT6OxAnD8oEST0ry53tpM_wCLcBGAs/s1600/%2523planthro%2BBIBLIO%2Bbackground%2B%2523131313.png' style='display: block' width='1322px;'/>
+		<img alt='#planthro BIBLIO' height='194px; ' id='Header1_headerimg' src='https://3.bp.blogspot.com/-V4biK_NPq3U/W1yPY1Wy54I/AAAAAAAABkY/M4bkrn7wcl004iX3O7RGBm81kJqPxE8UgCLcBGAs/s1600/biblio%2Bsmall%2Bbanner%2Bcolor%2Bpalette%2Bv3%2Btransparent.png' style='display: block' width='1322px;'/>
     </div>
 
 <!-- <div class='apps-box'>
@@ -7197,7 +7197,7 @@ for(var i=0;i&lt;borp_number;i++){
 				
           </div></div>
 
-        <div class='totop'><div class='totop-inner'><img src='https://png.icons8.com/ios/40/C53307/up-squared.png'/></div></div>
+        <div class='totop'><div class='totop-inner'><img src='https://res.cloudinary.com/planthro/image/upload/v1532787654/biblio%20to-top-angle-up%20100px.png'/></div></div>
         </div>
       </footer>
 
