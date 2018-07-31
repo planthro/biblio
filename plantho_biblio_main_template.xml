@@ -4853,11 +4853,11 @@ $(document).ready(function(){
     }
   }
 
-	$(&quot;.post-media .image-wrap img&quot;).each(function(n, image){
+  $(&quot;.post-media .image-wrap img&quot;).each(function(n, image){
       var image = $(image);
-		console.log(image);
+    console.log(image);
       // rewrite the url to set the new size
-      image.attr({src : image.attr(&#39;src&#39;).replace(/s\B\d{2,4}/,&#39;s&#39; + 640)});
+      image.attr({src : image.attr(&#39;src&#39;).replace(/s\B\d{2,4}\//,&#39;s&#39; + 640 +&#39;/&#39;)});
 
       // remove any hard set width or height setting
       image.attr(&#39;width&#39;,null);
@@ -5394,29 +5394,29 @@ div.custom-popup::-webkit-scrollbar-thumb {
 
 $(".container").fitVids();
 
-	$('.image-popup-no-margins').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
-		closeBtnInside: false,
-		fixedContentPos: true,
-		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-		image: {
-			verticalFit: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300 // don't foget to change the duration also in CSS
-		},
+$('.image-popup-no-margins').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    fixedContentPos: true,
+    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300 // don't foget to change the duration also in CSS
+    },
         callbacks: {
           open: function(){
             //console.log("Image: "+ JSON.stringify($('figure.mfp-img')));
-			this.currItem.src = this.currItem.src.replace(/s\B\d{2,4}/,"s640");
-			this.currItem.img[0].src = this.currItem.src;
-			this.currItem.img[0].currentSrc = this.currItem.src;
-			//image.attr({src : image.attr(&#39;src&#39;).replace(/s\B\d{2,4}/,&#39;s&#39; + 640)});
+      this.currItem.src = this.currItem.src.replace(/s\B\d{2,4}\//,"s640/");
+      this.currItem.img[0].src = this.currItem.src;
+      this.currItem.img[0].currentSrc = this.currItem.src;
+      //image.attr({src : image.attr(&#39;src&#39;).replace(/s\B\d{2,4}/,&#39;s&#39; + 640)});
           }
         }
-	});
+  });
 	$('.zoom-gallery').each(function() { // the containers for all your galleries
     $(this).magnificPopup({
 		delegate: 'a.zoomer',
