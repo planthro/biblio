@@ -5730,7 +5730,7 @@ $('.image-popup-no-margins').magnificPopup({
               <!-- <span class='item item-1'/>
               <span class='item item-2'/>
               <span class='item item-3'/> -->
-   				<img src='https://res.cloudinary.com/planthro/image/upload/v1532787529/biblio%20apps-menu%20100px.png'/>
+   				<img src='https://res.cloudinary.com/planthro/image/upload/v1532787529/biblio/biblio%20apps-menu%20100px.png'/>
             </div>
             <div class='close-menu'/>
             <ul class='navlist'>
@@ -5786,7 +5786,7 @@ $('.image-popup-no-margins').magnificPopup({
             </ul>
 
 	<div id='smallIconHeader'>
-		<a href="/"><img alt='#planthro BIBLIO' height='194px; ' id='Header1_headerimg' src='https://3.bp.blogspot.com/-V4biK_NPq3U/W1yPY1Wy54I/AAAAAAAABkY/M4bkrn7wcl004iX3O7RGBm81kJqPxE8UgCLcBGAs/s1600/biblio%2Bsmall%2Bbanner%2Bcolor%2Bpalette%2Bv3%2Btransparent.png' style='display: block' width='1322px;'/></a>
+		<a href='/'><img alt='#planthro BIBLIO' height='194px; ' id='Header1_headerimg' src='https://3.bp.blogspot.com/-V4biK_NPq3U/W1yPY1Wy54I/AAAAAAAABkY/M4bkrn7wcl004iX3O7RGBm81kJqPxE8UgCLcBGAs/s1600/biblio%2Bsmall%2Bbanner%2Bcolor%2Bpalette%2Bv3%2Btransparent.png' style='display: block' width='1322px;'/></a>
     </div>
 
 <!-- <div class='apps-box'>
