@@ -5744,7 +5744,7 @@ $('.image-popup-no-margins').magnificPopup({
 				<li>
 					<a class='lower-menu-item' data-effect='mfp-zoom-in' href='#' id='topics-popup-open'>
                       <span>Topics</span>
-                      <img src='https://res.cloudinary.com/planthro/image/upload/v1532695624/biblio%20topics%20100px.png'/>
+                      <img src='https://res.cloudinary.com/planthro/image/upload/v1532695624/biblio/biblio%20topics%20100px.png'/>
 					</a>
 			  	</li>
 				<li>
