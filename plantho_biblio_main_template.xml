@@ -1757,7 +1757,7 @@ display:none
 
  .bio-profile p {
     font-size: 12px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -6801,13 +6801,13 @@ $('.image-popup-no-margins').magnificPopup({
 										&lt;span class=&quot;profile-job&quot;&gt;Understanding Human-Earth Interaction&lt;/span&gt;
 										&lt;span class=&quot;sparator center&quot;&gt;&lt;/span&gt;
 										&lt;p&gt;Platform anthropocene Inc.&#8203; or #planthro&#8203; is a New York
-registered, globally active, not-for-profit private operating foundation.
+registered, globally active, not-for-profit public charity organization.
 &lt;br /&gt;
 #planthro&#8203; targets scientists, students, citizens, governing
 bodies, entrepreneurs and stakeholders concerned with the
 concept of anthropocene and its multiple implications.
 &lt;br /&gt;
-The organization aims at
+The organization aims at:
 &lt;br /&gt;
 &#9679; conveying and sharing a lucid view of the complexity
 characterizing human interaction with Earth,
