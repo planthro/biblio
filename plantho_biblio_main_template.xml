@@ -5239,7 +5239,9 @@ div.custom-popup::-webkit-scrollbar-thumb {
 .mfp-figure:after{
 	background: none;
 }
-
+#page-wrap .pi-navigation1{
+	display: none;
+}
 @media screen and (max-width: 737px){
 #box, #appBox {
     /*padding: 25px 0 0;*/
