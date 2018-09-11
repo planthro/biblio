@@ -1333,6 +1333,15 @@ li.megamenu.col-5.menu-item-has-children.item-plus:after {
 display:none
 }
 
+.resumeName {
+font-family: &quot;Open Sans&quot;, &quot;serif&quot;;
+font-weight: 300;
+font-size:inherit; 
+color:inherit;
+text-transform: lowercase;
+font-style: italic;
+}
+
       .blog-content .post .post-body .post-title h2 a {
         display: block;
         color: inherit;
@@ -6791,22 +6800,21 @@ $('.image-popup-no-margins').magnificPopup({
             <!-- SIDEBAR -->
             <div class='col-md-3'>
               <b:section class='sidebar' id='sidebar'>
-                <b:widget id='HTML1' locked='false' title='A project by #planthro' type='HTML'>
+                <b:widget id='HTML1' locked='false' title='' type='HTML'>
                   <b:widget-settings>
                     <b:widget-setting name='content'>&lt;center&gt;					&lt;div class=&quot;photo-profile&quot;&gt;
 										&lt;img src=&quot;https://1.bp.blogspot.com/-W1zO2rEOqEQ/Wu0OLbBIDxI/AAAAAAAABOM/D9JNpCQWvBYdYIzsM2Ukk1L9GZAgv4kPgCLcBGAs/s1600/Pa1200X1200.png&quot; alt=&quot;#planthro profile image&quot; /&gt;
 									&lt;/div&gt;
 									&lt;div class=&quot;bio-profile&quot;&gt;
-										&lt;span class=&quot;profile-name&quot;&gt;#planthro&lt;/span&gt;
-										&lt;span class=&quot;profile-job&quot;&gt;Understanding Human-Earth Interaction&lt;/span&gt;
-										&lt;span class=&quot;sparator center&quot;&gt;&lt;/span&gt;
-										&lt;p&gt;Platform anthropocene Inc.&#8203; or #planthro&#8203; is a New York
+										
+										
+										&lt;p&gt;Platform anthropocene Inc. or &lt;span class=&quot;resumeName&quot;&gt;#planthro&#8203;&lt;/span&gt; is a New York
 registered, globally active, not-for-profit public charity organization.
-&lt;br /&gt;
-#planthro&#8203; targets scientists, students, citizens, governing
+&lt;br /&gt;&lt;br /&gt;
+&lt;span class=&quot;resumeName&quot;&gt;#planthro&#8203;&lt;/span&gt; targets scientists, students, citizens, governing
 bodies, entrepreneurs and stakeholders concerned with the
 concept of anthropocene and its multiple implications.
-&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
 The organization aims at:
 &lt;br /&gt;
 &#9679; conveying and sharing a lucid view of the complexity
@@ -6818,8 +6826,8 @@ governance contexts,
 &lt;br /&gt;
 &#9679; supporting and promoting informed and creative solutions
 on sustainability, mitigation and adaptive strategies.
-&lt;br /&gt;
-&lt;a href=&quot;https://www.planthro.org&quot; class=&quot;more-profile&quot;&gt;Find our more...&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.planthro.org&quot; class=&quot;more-profile&quot;&gt;Find out more...&lt;/a&gt;&lt;/p&gt;
 										
 									&lt;/div&gt;
 
