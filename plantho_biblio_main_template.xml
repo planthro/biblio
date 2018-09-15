@@ -607,7 +607,8 @@ div#header h1 {
 }
       .header {
         position: relative;
-        background: #222222; <!--AB -->
+        background: #222222; /* AB */
+        border: 1px solid #222; /* Removes spurious spacing between elements */
       }
       .header .logo {
         padding: 35px 20px;
