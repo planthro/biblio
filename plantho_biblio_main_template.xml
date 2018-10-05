@@ -5750,7 +5750,7 @@ $('.image-popup-no-margins').magnificPopup({
 				<li>
 					<a class='lower-menu-item' data-effect='mfp-zoom-in' href='#' id='categories-popup-open'>
                       <span>Categories</span>	<!--<i class="fa fa-search"></i>-->
-                      <img src='https://res.cloudinary.com/planthro/image/upload/v1532695482/biblio%20categories%20100px.png'/>
+                      <img src='https://res.cloudinary.com/planthro/image/upload/v1532695482/biblio/biblio%20categories%20100px.png'/>
 					</a>
 			  	</li>
 				<li>
@@ -5762,7 +5762,7 @@ $('.image-popup-no-margins').magnificPopup({
 				<li>
 					<a class='lower-menu-item' data-effect='mfp-zoom-in' href='#' id='search-popup-open'>
                       <span>Search</span>
-                      <img src='https://res.cloudinary.com/planthro/image/upload/v1532695740/biblio%20search%20100px.png'/>
+                      <img src='https://res.cloudinary.com/planthro/image/upload/v1532695740/biblio/biblio%20search%20100px.png'/>
 					</a>
 			  	</li>
               <!--<li><a href='#'>Categories</a>
