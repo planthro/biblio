@@ -5875,7 +5875,7 @@ $('.image-popup-no-margins').magnificPopup({
                     <b:widget-settings>
                       <b:widget-setting name='showShareButtons'>false</b:widget-setting>
                       <b:widget-setting name='authorLabel'>By</b:widget-setting>
-                      <b:widget-setting name='disableGooglePlusShare'>false</b:widget-setting>
+                      <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                       <b:widget-setting name='timestampLabel'>on</b:widget-setting>
                       <b:widget-setting name='reactionsLabel'>Reaksi:</b:widget-setting>
