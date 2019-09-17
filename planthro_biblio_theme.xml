@@ -5932,7 +5932,7 @@ $('.image-popup-no-margins').magnificPopup({
           <!-- LOGO -->
           <div class='logo text-center'>
             <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-              <b:widget id='Header1' locked='true' title='devBIBLIO (Header)' type='Header' version='1'>
+              <b:widget id='Header1' locked='true' title='#planthro BIBLIO | Platform anthropocene Inc. (Header)' type='Header' version='1'>
                 <b:widget-settings>
                   <b:widget-setting name='displayUrl'>https://2.bp.blogspot.com/-lo44RZ99epo/XEjwkxJ_BJI/AAAAAAAACe8/k6Rf93_YHUQ_Xx5ugub5Wn_w9lZ0VLW6wCLcBGAs/s1600/%2523planthro%2Btransparent%2Btext%2BbannersBIBLIO%2Bindex%2Bbanner.png</b:widget-setting>
                   <b:widget-setting name='displayHeight'>242</b:widget-setting>
@@ -6155,11 +6155,11 @@ $('.image-popup-no-margins').magnificPopup({
                       <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
                       <b:widget-setting name='backlinksLabel'>Link ke posting ini</b:widget-setting>
                       <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-                      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                      <b:widget-setting name='style.textcolor'>#1693a5</b:widget-setting>
                       <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+                      <b:widget-setting name='style.urlcolor'>#ed6a35</b:widget-setting>
                       <b:widget-setting name='showAuthor'>false</b:widget-setting>
-                      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+                      <b:widget-setting name='style.linkcolor'>#ed6a35</b:widget-setting>
                       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
                       <b:widget-setting name='showLabels'>true</b:widget-setting>
                       <b:widget-setting name='postLabelsLabel'>Categories:</b:widget-setting>
@@ -7213,7 +7213,7 @@ on sustainability, mitigation and adaptive strategies.
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d7094786136074537606\x26blogName\x3ddevBIBLIO\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://devbiblio.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://devbiblio.blogspot.com/\x26vt\x3d7633392008366148229&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d5713380503392852407\x26blogName\x3d%23planthro+BIBLIO+%7C+Platform+anthropoc...\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://biblio.planthro.org/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://biblio.planthro.org/\x26vt\x3d-6051862361326825016&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
