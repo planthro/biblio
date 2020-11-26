@@ -8360,7 +8360,7 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                       <div class='icon-row'>
                         <div class='icon-wrapper'>
                           <a href='javascript:void()'>
-                            <span class='icon biblio'><img src='https://png.icons8.com/ios/40/ffffff/magazine-filled.png'/></span>
+                            <span class='icon biblio'><img src='https://res.cloudinary.com/planthro/image/upload/v1564486079/biblio/biblio-ffffff-40px.png'/></span>
                             <span class='title biblio-text'>BIBLIO</span>
                           </a>
                         </div>
@@ -8372,31 +8372,31 @@ image.attr({src : image.attr('src').replace("s400", "s1600")});
                         </div>
                         <div class='icon-wrapper'>
 							<a href='https://exchange.planthro.org' target='_blank'>
-                              <span class='icon exchange'><img src='https://png.icons8.com/ios/40/ffffff/communication-filled.png'/></span>
+                              <span class='icon exchange'><img src='https://res.cloudinary.com/planthro/image/upload/v1602236714/exchange/communication-filled-exchnage-ffffff-40px.png'/></span>
                               <span class='title exchange-text'>EXCHANGE</span>
                           	</a>
                         </div>
 						<div class='icon-wrapper'>
 							<a href='https://opinions.planthro.org' target='_blank'>
-                              <span class='icon opinions'> <img src='https://png.icons8.com/ios/40/ffffff/quote-left-filled.png'/> </span>
+                              <span class='icon opinions'> <img src='https://res.cloudinary.com/planthro/image/upload/v1564574353/opinions/quote-left-opinions-40px.png'/> </span>
                               <span class='title opinions-text'>OPINIONS</span>
                           	</a>
                         </div>
 						<div class='icon-wrapper'>
 							<a href='https://analytics.planthro.org' target='_blank'>
-                              <span class='icon analytics'><img src='https://png.icons8.com/ios/40/ffffff/spaceship-earth-epcot-filled.png'/></span>
+                              <span class='icon analytics'><img src='https://res.cloudinary.com/planthro/image/upload/v1602237465/analytics/mesh-filled-analytics-ffffff-40px.png'/></span>
                               <span class='title analytics-text'>ANALYTICS</span>
                           	</a>
                         </div>
 						<div class='icon-wrapper'>
 							<a href='https://events.planthro.org' target='_blank'>
-                              <span class='icon events'><img src='https://png.icons8.com/ios/40/ffffff/collect-filled.png'/></span>
+                              <span class='icon events'><img src='https://res.cloudinary.com/planthro/image/upload/v1602237835/events/collect-filled-events-ffffff-40px.png'/></span>
                               <span class='title events-text'>EVENTS</span>
                           	</a>
                         </div>
 						<div class='icon-wrapper'>
 							<a href='https://outreach.planthro.org' target='_blank'>
-                              <span class='icon outreach'><img src='https://png.icons8.com/ios/40/ffffff/sales-channels-filled.png'/></span>
+                              <span class='icon outreach'><img src='https://res.cloudinary.com/planthro/image/upload/v1602238357/outreach/sales-channels-filled-outreach-ffffff-40px.png'/></span>
                               <span class='title outreach-text'>OUTREACH</span>
                           	</a>
                         </div>
